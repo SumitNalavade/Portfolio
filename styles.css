@@ -219,5 +219,9 @@ main {
 
         font-size: 1em;
     }
+	
+.navlinks:hover {
+	color:#64ffda;
+}
   
 }

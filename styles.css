@@ -67,6 +67,42 @@ main {
 
     margin-top: 5em;
     margin-bottom: 5em;
+    
+}
+
+#welcome {
+    flex-direction: row;
+    max-width: 1500px;
+}
+
+.portfolio-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#headingcontainer {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    border: none;
+}
+
+#welcome div {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#selfimgcontainer {
+    display: flex;
+    width: 95%;
+    border: none;
+    margin: 0em 0em;
+}
+
+#selfimg {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 #welcome h1 {
@@ -113,20 +149,6 @@ main {
     margin-bottom: 2em;
 }
 
-.portfolio-img-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.portfolioimg {
-    width: 100%;
-
-    object-fit: contain;
-
-    border-radius: 5%;
-}
-
 
 #linkcontainer {
     display: flex;
@@ -148,11 +170,18 @@ main {
     color: var(--primary-color);
 
     transition: 0.3s;
+
+    display: flex;
+    align-items: center;
 }
 
 .contactlinks:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+.icon {
+    margin-left: 0.75em;
 }
 
 .card {
@@ -215,17 +244,12 @@ main {
         align-items: center;
     }
 
-    .portfolioimg {
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-
     #navbar {
         flex-wrap: wrap;
     }
 
     .navlinks {
-        margin: 0.75em 0em;
+        margin: 0.5em 0em;
 
         width: 50%;
 
@@ -237,5 +261,14 @@ main {
 .navlinks:hover {
 	color:var(--primary-color);
 }
-  
+
+#welcome {
+    flex-direction: column;
+}
+
+.icon {
+    margin-left: 0.3em;
+}
+
+
 }

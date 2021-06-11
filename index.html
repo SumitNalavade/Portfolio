@@ -22,13 +22,13 @@
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <a class="nav-item" href="#">Home</a>
-                <a class="nav-item" href="#aboutsection">About</a>
-                <a class="nav-item" href="#portfoliosection">Portfolio</a>
-                <a class="nav-item" href="#contactsection">Contact</a>
-            </div>
-            <a class="navbar-brand">SN</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#aboutsection">About</a>
+            <a class="nav-item" href="#portfoliosection">Portfolio</a>
+            <a class="nav-item" href="#contactsection">Contact</a>
+        </div>
+        <a class="navbar-brand">SN</a>
     </nav>
     <main>
         <div class="container" id="welcome">
@@ -47,7 +47,7 @@
                 <h3>About</h3>
             </div>
             <p class="containertext">Hi, My name is Sumit Nalavade. I'm a full-stack based in Frisco, Texas </p>
-            <p class="containertext"> <br>As a Junior in high school, I'm looking forward to expanding my knowledge of
+            <p class="containertext"> <br>As a Senior in high school, I'm looking forward to expanding my knowledge of
                 the software industry as I plan to major in Computer Science.</p>
             <p class="containertext"> <br>I have a very strong understanding and extensive experience in <span
                     class="skills">Python</span> and I'm
@@ -62,27 +62,23 @@
                 <h4>Some of the projects I've worked on</h4>
             </div>
 
-            <div class="portfolio-img-container">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/Githubss.PNG"
-                        class="card-img-top" alt="Photo preview of GPA Aggregator App">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Frisco ISD GPA Aggregator</h5>
-                        <p class="card-text">Web scraping project in Python to automatically calculate student GPAs
-                            using information
-                            from Home Access Center</p>
-                        <a href="https://github.com/SumitNalavade/Frisco-ISD-GPA-Calc---Real-Time" target="_blank"
-                            class="btn btn-primary mt-auto">Visit</a>
-                    </div>
+            <div class="cardholder" id = "portfoliosection">
+                <div class="cardy">
+                    <img src="Githubss.PNG" id="cardimg">
+                    <h5 class="cardyheader">Frisco ISD GPA Aggregator</h5>
+                    <p class="cardytext">Web scraping project in Python to automatically calculate student GPAs using
+                        information from
+                        Home Access Center</p>
+                    <a href="https://github.com/SumitNalavade/Frisco-ISD-GPA-Calc---Real-Time" target="_blank"
+                        class="visitbutton">Visit</a>
+
                 </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/portfolioss.PNG"
-                        class="card-img-top" alt="Photo Preview of Portfolio Website">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Portfolio Website</h5>
-                        <p class="card-text">Personal Portfolio site to showcase my skills and projects</p>
-                        <a href="#" class="btn btn-primary mt-auto">Visit</a>
-                    </div>
+
+                <div class="cardy">
+                    <img src="portfolioss.PNG" id="cardimg">
+                    <h5 class="cardyheader">Portfolio Site</h5>
+                    <p class="cardytext">Personal Portfolio site to showcase my skills and projects</p>
+                    <a href="https://github.com/SumitNalavade/Portfolio" target="_blank" class="visitbutton">Visit</a>
                 </div>
             </div>
         </div>
@@ -128,5 +124,6 @@
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>

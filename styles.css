@@ -7,35 +7,37 @@
     --secondary-text-color: #8892b0;
 }
 
+#mainnav {
+    background-color: inherit!important;
+    box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+}
+.nav-item {
+    text-decoration: none;
+    color: var(--primary-color);
+
+    font-size: 1.5em;
+    font-weight: 600;
+
+    padding: 0.5em 0em;
+}
+
+.nav-item:hover {
+    color: var(--secondary-color);
+}
+
+#navbarNav {
+    justify-content: space-evenly;
+}
+
 body {
     background-color: var(--main-bg-color);
 
     font-family: 'Montserrat', sans-serif;
 }
 
-#navbar {
-    min-height: 8vh;
-
-    box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
-
-    background-color: var(--main-bg-color);
-
-    justify-content: space-around;
-}
-
-.navlinks {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 600;
-
-    font-size: 1.25em;
-
-    transition: 0.3s;
-}
-
-.navlinks:hover {
-	color: var(--secondary-color);
-}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
 
 main {
     color: white;
@@ -236,39 +238,65 @@ main {
     color: var(--primary-color);
 }
 
+ /* Set the border color */
 
-@media (max-width: 700px) {
+ .custom-toggler.navbar-toggler {
+    border-color: #64ffda;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #64ffda;
+}
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(100, 255, 218, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+    display: none;
+    color: var(--primary-color)!important;
+    font-weight: 700;
+    font-size: 1.5em;
+
+    order: -1;
+
+    margin-left: 0.5em;
+}
+
+@media (max-width: 767px) {
     .portfolio-img-container {
         flex-direction: column;
 
         align-items: center;
     }
 
-    #navbar {
-        flex-wrap: wrap;
+    #welcome {
+        flex-direction: column;
     }
 
-    .navlinks {
-        margin: 0.5em 0em;
+    .icon {
+        margin-left: 0.3em;
+    }
 
+    .navbar-collapse {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .nav-item {
+        padding: 0.5em 0em;
         width: 50%;
 
-        text-align: center;
-
-        font-size: 1em;
+        font-size: 1.25em;
     }
-	
-.navlinks:hover {
-	color:var(--primary-color);
-}
 
-#welcome {
-    flex-direction: column;
-}
-
-.icon {
-    margin-left: 0.3em;
+    .navbar-brand {
+        display: initial;
+    }
 }
 
 
-}

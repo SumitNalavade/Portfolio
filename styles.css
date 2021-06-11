@@ -77,11 +77,6 @@ main {
     max-width: 1500px;
 }
 
-.portfolio-img-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
 #headingcontainer {
     margin-top: 0em;
@@ -151,12 +146,76 @@ main {
     margin-bottom: 2em;
 }
 
+.cardholder {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardy {
+    width: 40%;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+
+#cardimg {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.cardyheader {
+    max-width: 95%;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.cardytext {
+    width: 90%;
+}
+
+.cardyheader, .cardytext{
+        margin: 1em 0em;
+    line-height: 1.5;
+}
+
 
 #linkcontainer {
     display: flex;
     flex-wrap: wrap;
 
     justify-content: center;
+}
+
+.visitbutton {
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25em;
+
+    padding: 0.5em 2em;
+
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+
+    margin-top: auto;
+    margin-bottom: 1em;
+    
+    transition: 0.25s;
+}
+
+.visitbutton:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .contactlinks {
@@ -186,30 +245,6 @@ main {
     margin-left: 0.75em;
 }
 
-.card {
-    color: white;
-
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-
-    background-color: inherit;
-    border-color: var(--primary-color);
-
-    margin-bottom: 2em;
-
-    flex-basis: 40%;
-}
-
-.card-title, .card-text {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-
-    line-height: 1.5;
-}
-
-.card-title {
-    font-weight: 600;
-}
 
 .btn-primary {
     background-color: var(--main-bg-color);
@@ -297,6 +332,14 @@ main {
     .navbar-brand {
         display: initial;
     }
+
+    .cardholder {
+        flex-direction: column;
+    }
+
+    .cardy {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-

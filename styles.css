@@ -154,7 +154,7 @@ main {
     justify-content: space-around;
 }
 
-.card {
+.cardy {
     width: 40%;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
@@ -166,7 +166,6 @@ main {
     margin-top: 1em;
     margin-bottom: 1em;
     
-    background-color: var(--main-bg-color);
 }
 
 #cardimg {
@@ -175,17 +174,17 @@ main {
     border-radius: 10px;
 }
 
-.cardheader {
+.cardyheader {
     max-width: 95%;
     font-size: 1.25em;
     font-weight: 600;
 }
 
-.cardtext {
+.cardytext {
     width: 90%;
 }
 
-.cardheader, .cardtext{
+.cardyheader, .cardytext{
         margin: 1em 0em;
     line-height: 1.5;
 }
@@ -338,7 +337,7 @@ main {
         flex-direction: column;
     }
 
-    .card {
+    .cardy {
         width: 95%;
         margin-left: auto;
         margin-right: auto;

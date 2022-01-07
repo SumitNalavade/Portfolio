@@ -96,6 +96,14 @@ main {
     margin: 0em 0em;
 }
 
+.imgContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.imgContainer img {
+    padding: 0em 1em;
+}
+
 #selfimg {
     width: 100%;
     object-fit: contain;

@@ -190,11 +190,13 @@ main {
 }
 
 
-#linkcontainer {
+.linksContainer {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 1em;
 }
 
 .visitbutton {
@@ -216,6 +218,13 @@ main {
 .visitbutton:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+#contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .contactlinks {
@@ -299,6 +308,8 @@ main {
 
     margin-left: 0.5em;
 }
+
+
 
 @media (max-width: 767px) {
     .portfolio-img-container {

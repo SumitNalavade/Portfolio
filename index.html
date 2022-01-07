@@ -5,7 +5,7 @@
 <head>
     <title>Sumit Nalavade - Portfolio</title>
     <meta name="description"
-        content="Sumit Nalavade - Web developer based in Frisco, Texas. Senior at Heritage High School">
+        content="Sumit Nalavade - Web Developer based in Frisco, Texas. Senior at Heritage High School">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="cssreset.css">
@@ -59,15 +59,11 @@
             <p class="containertext">Hi, My name is Sumit Nalavade. I'm a web developer based in Frisco, Texas </p>
             <p class="containertext"> <br>As a Senior in high school, I'm looking forward to expanding my knowledge of
                 the software industry as I plan to major in Computer Science.</p>
-            <p class="containertext"> <br>I have a very strong understanding and extensive experience in <span
-                    class="skills">Python</span> and I'm
-                working on building my experience with web technologies including <span class="skills">HTML</span>,
-                <span class="skills">CSS</span>,
-                <span class="skills">JavaScript</span> and <span class="skills">React</span>.
-            </p>
-            <p class="containertext"> <br> I have extensive experience in front end web development using HTML, CSS and Javascript as well as Python/Flask. In addition, I've dabbled in Mobile
-                App Development using Swift to create iOS apps and am working on furthur improving my skills.</p>
-            
+            <p class="containertext"> <br>I have a very strong understanding and extensive experience in web technologies including front-end development with <span class="skills">HTML/CSS, EJS, and JavaScript</span> 
+                as well as backend development with <span class="skills">Node.js, Express.js, MongoDB and Firebase</span>.
+            </p>    
+        
+            <p class="containertext">Currently, I'm excited to work on more full-stack projects and increase my knowledge of web technologies including front-end libraries such as <span class="skills">React.js</span>.</p>
         </div>
         <div class="container" id="portfoliosection">
             <div class="containerheader">
@@ -77,56 +73,62 @@
 
             <div class="cardholder" id="portfoliosection">
                 <div class="cardy">
+                    <img src="GPASiteSS.png" id="cardimg">
+                    <h5 class="cardyheader">FriscoISD Real-Time GPA Calculator</h5>
+                    <p class="cardytext">Created an API using <span class="skills">Puppeteer.js</span> to scrape student grades/information from the Home Access Center and automate real time GPA calculation.</p>
+                    <p class="cardytext">Displayed information and results in a responsive web application.</p>
+                    <div class="linksContainer">
+                        <a href="https://fisd-gpa-calc.herokuapp.com/" target="_blank" class="visitbutton">Demo</a>
+                        <a href="https://github.com/SumitNalavade/FriscoISD_GPA_Site" target="_blank" class="visitbutton">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="cardy">
+                    <div style="display: flex; width: 100%; justify-content: space-around;">
+                        <img src="voluntrackerSS.png" id="cardimg">
+                        <img src="voluntrackerSS2.png" id="cardimg">
+                    </div>
+                    <h5 class="cardyheader">Voluntracker</h5>
+                    <p class="cardytext">iOS application built with a <span class="skills">Express.js</span> and <span class="skills">Firebase</span> backend to store students' volunteer hours.</p>
+
+                    <div class="linksContainer">
+                        <a href="https://github.com/SumitNalavade/Voluntracker" target="_blank" class="visitbutton">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="cardy">
+                    <img src="EcoVilleSS.png" id="cardimg">
+                    <h5 class="cardyheader">EcoVille</h5>
+                    <p class="cardytext">Online platform that allows individuals to reduce overall waste by donating unused goods amongst others in their community.</p>
+                    <p class="cardytext">Won second place overall and best technical score at the 2021 Collin College Hackathon.</p>
+                    <p class="cardytext">Built with <span class="skills">HTML/CSS/JavaScript</span>, <span class="skills">Express.js</span>, <span class="skills">Ejs</span>, <span class="skills">SCSS</span> and <span class="skills">Google Firebase</span>.</p>
+                    <div class="linksContainer">
+                        <a href="https://ecoville.herokuapp.com/" target="_blank" class="visitbutton">Demo</a>
+                        <a href="https://github.com/SumitNalavade/ecoville" target="_blank" class="visitbutton">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="cardy">
                     <img src="watchON.png" id="cardimg">
                     <h5 class="cardyheader">WatchON</h5>
                     <p class="cardytext">Front-end project to access information from The Movies Database API and
                         present it through a client facing site</p>
-                    <a href="https://watchon1.herokuapp.com/" target="_blank" class="visitbutton">Demo</a>
+
+                    <div class="linksContainer">
+                        <a href="https://watchon1.herokuapp.com/" target="_blank" class="visitbutton">Demo</a>
+                        <a href="https://github.com/SumitNalavade/watchON" target="_blank" class="visitbutton">GitHub</a>
+                    </div>
                 </div>
-
-                <div class="cardy">
-                    <img src="easyvax1.PNG" id="cardimg">
-                    <h5 class="cardyheader">EasyVax</h5>
-                    <p class="cardytext">Web application to find COVID-19 Vaccines anywhere in the world</p>
-                    <a href="https://easyvax.herokuapp.com/" target="_blank" class="visitbutton">Demo</a>
-                </div>
-
-                <div class="cardy">
-                    <img src="freestyle.png" id="cardimg">
-                    <h5 class="cardyheader">FreeStyle</h5>
-                    <p class="cardytext">Web application to check for grammatical and AP style errors</p>
-                    <a href="https://freestyles.herokuapp.com/" target="_blank" class="visitbutton">Demo</a>
-
-                </div>
-
-                <div class="cardy">
-                    <img src="Githubss.PNG" id="cardimg">
-                    <h5 class="cardyheader">Frisco ISD GPA Aggregator</h5>
-                    <p class="cardytext">Web scraping project in Python to automatically calculate student GPAs using
-                        information from
-                        Home Access Center</p>
-                    <a href="https://github.com/SumitNalavade/Frisco-ISD-GPA-Calc---Real-Time" target="_blank"
-                        class="visitbutton">Visit</a>
-
-                </div>
-
-                <div class="cardy">
-                    <img src="portfolioss.PNG" id="cardimg">
-                    <h5 class="cardyheader">Portfolio Site</h5>
-                    <p class="cardytext">Personal Portfolio site to showcase my skills and projects</p>
-                    <a href="https://github.com/SumitNalavade/Portfolio" target="_blank" class="visitbutton">Visit</a>
-                </div>
-
             </div>
         </div>
 
         <div class="container" id="contactsection">
             <div class="containerheader">
                 <h3>Contact</h3>
-                <h4>You can reach me using any of these links :)</h4>
+                <h4>You can reach me using any of these links</h4>
             </div>
 
-            <div id="linkcontainer">
+            <div id="contactContainer">
                 <a href="mailto: vs.nalavade2003@gmail.com" class="contactlinks">Email <svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="icon bi bi-envelope" viewBox="0 0 16 16">

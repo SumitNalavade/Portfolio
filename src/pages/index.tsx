@@ -24,14 +24,14 @@ const Index: React.FC = () => {
           <Col lg={6} className="order-lg-1 d-flex justify-content-center align-items-center" >
             <Card bg="cardBackground" className="h-100 rounded" >
               <Card.Body className="text-center d-flex flex-column justify-content-around text-main">
-                <div className="">
+                <Container className="">
                   <Card.Title className="display-1 my-4">Sumit Nalavade</Card.Title>
                   <Card.Text  className="display-8 my-4">Full-Stack Developer</Card.Text>
                   <Card.Text  className="display-8 my-4">Texas A&M Engineering '26</Card.Text>
-                </div>
+                </Container>
 
                 <div className="">
-                  <Link className='text-main' to="/404">
+                  <Link className='text-main' to="/projects">
                     <Button type="button" className="btn btn-large btn-highlight text-main w-75 py-3">Check Out My Work!</Button>
                   </Link>
                 </div>

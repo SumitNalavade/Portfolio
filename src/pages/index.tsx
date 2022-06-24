@@ -18,7 +18,7 @@ const Index: React.FC = () => {
       <Container fluid className="p-sm-5 d-flex justify-content-center align-items-center h-100">
         <Row >
         <Col lg={6} className="p-5 order-lg-2 d-flex justify-content-center align-items-center" >
-            <StaticImage src="../images/sumit-rounded.png" alt="Picture of myself" className='border border-10 rounded-circle border-highlight' style={{maxWidth: "500px"}} />
+            <StaticImage src="../images/sumit-sketch.png" alt="Picture of myself" className='border border-10 rounded-circle border-highlight' style={{maxWidth: "500px"}} />
           </Col>
 
           <Col lg={6} className="order-lg-1 d-flex justify-content-center align-items-center" >

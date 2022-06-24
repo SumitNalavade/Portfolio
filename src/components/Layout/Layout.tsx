@@ -17,9 +17,6 @@ const Layout: React.FC<Props> = ({ children }) => {
 
 const layoutStyles = {
     topContainer: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         backgroundColor: "#242629",
         width: "100%",
         height: "100vh",

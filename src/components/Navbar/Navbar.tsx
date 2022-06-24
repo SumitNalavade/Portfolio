@@ -10,9 +10,9 @@ const MainNav: React.FC = () => {
         <Navbar bg="highlight" >
             <Container fluid className="d-flex justify-content-end">
                 <Nav>
-                    <Nav.Link className="mx-2 text-main"><AiOutlineGithub /></Nav.Link>
-                    <Nav.Link className="mx-2 text-main"><AiOutlineInstagram /></Nav.Link>
-                    <Nav.Link className="mx-2 text-main"><AiOutlineMail /></Nav.Link>
+                    <Nav.Link className="mx-2 text-main display-8" href="https://github.com/SumitNalavade" target="_blank"><AiOutlineGithub /></Nav.Link>
+                    <Nav.Link className="mx-2 text-main display-8" href="https://www.instagram.com/sumit.nalavade24/" target="_blank" ><AiOutlineInstagram /></Nav.Link>
+                    <Nav.Link className="mx-2 text-main display-8" href="vs.nalavade2003@gmail.com" target="_blank"><AiOutlineMail /></Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

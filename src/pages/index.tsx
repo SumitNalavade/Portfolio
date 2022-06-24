@@ -15,10 +15,10 @@ import "../components/Layout/custom.scss";
 const Index: React.FC = () => {
   return (
     <Layout>
-      <Container fluid className="p-sm-5">
+      <Container fluid className="p-sm-5 d-flex justify-content-center align-items-center h-100">
         <Row >
         <Col lg={6} className="p-5 order-lg-2 d-flex justify-content-center align-items-center" >
-            <StaticImage src="../images/sumit.png" alt="Picture of myself" className='border border-10 rounded-circle border-highlight' style={{maxWidth: "500px"}} />
+            <StaticImage src="../images/sumit-rounded.png" alt="Picture of myself" className='border border-10 rounded-circle border-highlight' style={{maxWidth: "500px"}} />
           </Col>
 
           <Col lg={6} className="order-lg-1 d-flex justify-content-center align-items-center" >
@@ -31,7 +31,7 @@ const Index: React.FC = () => {
                 </Container>
 
                 <div className="">
-                  <Link className='text-main' to="/projects">
+                  <Link className='text-main' to="/about">
                     <Button type="button" className="btn btn-large btn-highlight text-main w-75 py-3">Check Out My Work!</Button>
                   </Link>
                 </div>

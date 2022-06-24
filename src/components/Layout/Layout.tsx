@@ -23,7 +23,8 @@ const layoutStyles = {
         backgroundColor: "#242629",
         width: "100%",
         height: "100vh",
-        overflow: "hidden"
+        overflow: "hidden",
+        fontFamily: "montserrat"
     }
 }
 

@@ -17,21 +17,23 @@ const Index: React.FC = () => {
     <Layout>
       <Container fluid className="p-sm-5">
         <Row >
-        <Col lg={6} className="p-sm-5 order-lg-2" >
-            <StaticImage src="../images/sumit.png" alt="Picture of myself" className='border border-5 rounded-circle border-highlight' />
+        <Col lg={6} className="p-5 order-lg-2 d-flex justify-content-center align-items-center" >
+            <StaticImage src="../images/sumit.png" alt="Picture of myself" className='border border-10 rounded-circle border-highlight' style={{maxWidth: "500px"}} />
           </Col>
 
-          <Col lg={6} className="p-sm-5 order-lg-1" >
+          <Col lg={6} className="order-lg-1 d-flex justify-content-center align-items-center" >
             <Card bg="cardBackground" className="h-100 rounded" >
               <Card.Body className="text-center d-flex flex-column justify-content-around text-main">
-                <div>
-                  <Card.Title className="display-1">Sumit Nalavade</Card.Title>
-                  <Card.Text  className="display-5">Full-Stack Developer</Card.Text>
-                  <Card.Text  className="display-6">Texas A&M Engineering '26</Card.Text>
+                <div className="">
+                  <Card.Title className="display-1 my-4">Sumit Nalavade</Card.Title>
+                  <Card.Text  className="display-8 my-4">Full-Stack Developer</Card.Text>
+                  <Card.Text  className="display-8 my-4">Texas A&M Engineering '26</Card.Text>
                 </div>
 
-                <div>
-                  <Link className='text-main' to="/404"><Button type="button" className="btn btn-large btn-tertiary text-main w-50 py-3">Check out my work!</Button></Link>
+                <div className="">
+                  <Link className='text-main' to="/404">
+                    <Button type="button" className="btn btn-large btn-highlight text-main w-75 py-3">Check Out My Work!</Button>
+                  </Link>
                 </div>
               </Card.Body>
             </Card>
@@ -41,12 +43,5 @@ const Index: React.FC = () => {
     </Layout>
   )
 };
-
-const homeStyles = {
-  selfImage: {
-    border: "20px solid #7f5af0",
-    borderRadius: "50%",
-  }
-}
 
 export default Index;

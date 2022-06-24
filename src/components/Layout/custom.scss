@@ -17,6 +17,28 @@ $theme-colors: (
     "tertiary": #2cb67d
 );
 
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  10: 10px
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.5rem
+);
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }

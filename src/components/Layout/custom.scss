@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+    "background": #242629,
+    "headline": #fffffe,
+    "subHeadline": #94a1b2,
+    "cardBackground": #16161a,
+    "cardHeading": #fffffe,
+    "cardParagraph": #94a1b2,
+    "stroke": #010101,
+    "main": #fffffe,
+    "highlight": #7f5af0,
+    "secondary": #72757e,
+    "tertiary": #2cb67d
+);
+
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  10: 10px
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.5rem
+);
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

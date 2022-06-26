@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { AiOutlineGithub } from 'react-icons/ai';
 
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar";
 
 const Projects: React.FC = () => {
     return (

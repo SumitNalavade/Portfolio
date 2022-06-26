@@ -6,11 +6,14 @@ import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar";
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
+
 const MainNav: React.FC = () => {
     return (
         <Navbar bg="highlight" >
-            <Container fluid className="d-flex justify-content-between">
-                <Navbar.Collapse>
+            <Container fluid className="d-flex justify-content-between align-items-center">
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link><Link to="/" className="mx-2 text-main text-decoration-none">Home</Link></Nav.Link>
                         <Nav.Link><Link to="/projects" className="mx-2 text-main text-decoration-none">Projects</Link></Nav.Link>

@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Container from "react-bootstrap/Container";
+import "./custom.scss";
 
 interface Props {
     children: React.ReactNode
@@ -17,6 +18,8 @@ const Layout: React.FC<Props> = ({ children }) => {
 
 const layoutStyles = {
     topContainer: {
+        margin: 0,
+        padding: 0,
         backgroundColor: "#242629",
         width: "100%",
         height: "100vh",

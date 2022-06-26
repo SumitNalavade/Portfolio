@@ -15,7 +15,7 @@ const Info: React.FC = () => {
             </Col>
 
             <Col lg={6} className="d-flex justify-content-center">
-                <StaticImage src="../images/sumit-rounded.png" alt="Picture of myself" className='border border-4 rounded-circle rounded-4 border-tertiary' style={{maxWidth: "450px"}} />
+                <StaticImage src="../../images/sumit-rounded.png" alt="Picture of myself" className='border border-4 rounded-circle rounded-4 border-tertiary' style={{maxWidth: "450px"}} />
             </Col>
         </Row>
     );

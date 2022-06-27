@@ -63,8 +63,10 @@ $theme-colors: (
   font-family: 'Montserrat', sans-serif;
 }
 
-span[style^="box-sizing:border-box;display:inline-block"] {
-  display: block !important;
+@media only screen and (max-width: 992px) {
+  .mobileStacked {
+    flex-direction: column;
+  }
 }
 
 @import "~bootstrap/scss/bootstrap";

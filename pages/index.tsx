@@ -3,19 +3,17 @@ import type { NextPage } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 
-import Navbar from '../components/Navbar';
-
 import styles from "../styles/index.module.scss";
 
 const Home: NextPage = () => {
   return (
     <div className="container d-flex align-items-center">
       <div className={`container-fluid d-flex justify-content-center align-items-center ${styles.flexContainer}`} >
-        <div className='order-lg-2 w-50 m-5'>
-          <Image src="/Images/sumit-rounded.png" layout='responsive' width={5} height={5} className="border border-8 rounded-circle border-tertiary" />
+        <div className='order-lg-2 container-sm m-5'>
+          <Image src="/Images/sumit-rounded.png" layout='responsive' width={5} height={5} className={`border border-8 rounded-circle border-tertiary ${styles.profilePic}`} />
         </div>
 
-        <div className='order-lg-1'>
+        <div className='order-lg-1 container-sm'>
           <div className='card rounded bg-cardBackground'>
             <div className='card-body text-main text-center'>
                 <div className='text-center'>

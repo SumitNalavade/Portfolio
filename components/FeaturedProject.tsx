@@ -1,8 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 
 import { FeaturedProject } from "../utils/Project";
 import { AiOutlineGithub } from 'react-icons/ai';
+import SectionWithDescription from './SectionWithDescription';
 
 import styles from "../styles/components/featuredProject.module.scss";
 
@@ -19,19 +19,14 @@ const Featured: React.FC<Props> = ({ proj }) => {
                 <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center mb-2">
                         <h5 className="card-title">{proj.title}</h5>
-                        <p className="card-title display-8"><AiOutlineGithub /></p>
+                        <a className="card-title display-8 text-main" href={proj.link} target="_blank"><AiOutlineGithub /></a>
                     </div>
                     <p className="card-text">{proj.description}</p>
                 </div>
             </div>
         </div>
 
-        <div className='container d-flex mx-md-3 mx-lg-5 flex-column align-items-start text-main'>  
-            <u className={`text-tertiary`} style={{"textDecorationThickness": "5px"}}><p className="display-6 text-main">Featured Project</p></u>
-                <div className=''>
-                    {proj.longDescription}
-                </div>
-        </div>
+        <SectionWithDescription title='Featured Project' content={proj.longDescription} />
         </>
     );
 };

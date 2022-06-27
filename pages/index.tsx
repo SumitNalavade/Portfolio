@@ -12,8 +12,10 @@ const Home: NextPage = () => {
             <div className='card-body text-main text-center'>
                 <div className='text-center'>
                   <p className="display-1 my-4">Sumit Nalavade</p>
-                  <p className="display-8 my-4">Full-Stack Developer</p>
-                  <p className="display-8 my-4">Texas A&M Engineering '26</p>
+                  <div className={styles.wrapper}>
+                    <p className={`display-8 my-2 ${styles.typingDemo}`}>Full-Stack Developer</p>
+                    <p className={`display-8 my-4 ${styles.typingDemo}`}>Texas A&M Engineering '26</p>
+                  </div>
                 </div>
 
                 <div className="">

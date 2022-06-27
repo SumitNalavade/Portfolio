@@ -5,7 +5,7 @@ import Image from "next/image";
 import Navbar from '../components/Navbar';
 import DisplayFeaturedProject from '../components/FeaturedProject';
 
-import styles from "../styles/about.module.scss";
+import styles from "../styles/pages/about.module.scss";
 import { FeaturedProject } from '../utils/Project';
 
 const About: NextPage = () => {
@@ -29,7 +29,7 @@ const About: NextPage = () => {
                     </div>
                 </div>
 
-                <div className={`container-lg d-flex align-items-center my-5 ${styles.flexContainer}`}>
+                <div className={`container-lg d-flex align-items-center my-10 ${styles.flexContainer}`}>
                     <DisplayFeaturedProject proj={featuredProject} />
                 </div>
         </div>

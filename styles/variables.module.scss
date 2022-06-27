@@ -1,0 +1,26 @@
+$background: #242629;
+$headline: #fffffe;
+$subHeadline: #94a1b2;
+$cardBackground: #16161a;
+$cardHeading: #fffffe;
+$cardParagraph: #94a1b2;
+$stroke: #010101;
+$main: #fffffe;
+$highlight: #7f5af0;
+$secondary: #72757e;
+$tertiary: #2cb67d;
+
+
+:export {
+    background: $background;
+    headline: $headline;
+    subHeadline: $subHeadline;
+    cardBackground: $cardBackground;
+    cardHeading: $cardHeading;
+    cardParagraph: $cardParagraph;
+    stroke: $stroke;
+    main: $main;
+    highlight: $highlight;
+    secondary: $secondary;
+    tertiary: $tertiary;
+  }

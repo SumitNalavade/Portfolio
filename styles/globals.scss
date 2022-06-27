@@ -1,0 +1,41 @@
+@import "./variables.module.scss";
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem,
+  8: 1.5rem
+);
+
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  10: 10px
+);
+
+$theme-colors: (
+    "background": $background,
+    "headline": $headline,
+    "subHeadline": $subHeadline,
+    "cardBackground": $cardBackground,
+    "cardHeading": $cardHeading,
+    "cardParagraph": $cardParagraph,
+    "stroke": $stroke,
+    "main": $main,
+    "highlight": $highlight,
+    "secondary": $secondary,
+    "tertiary": $tertiary
+);
+
+#__next {
+  background-color: #242629;
+}
+
+@import "~bootstrap/scss/bootstrap";

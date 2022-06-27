@@ -1,0 +1,11 @@
+@import "./variables.module.scss";
+
+.textDecorate {
+    text-decoration-thickness: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+}

@@ -1,4 +1,5 @@
 @import "./variables.module.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 $display-font-sizes: (
   1: 5rem,
@@ -24,6 +25,22 @@ $border-widths: (
   10: 10px
 );
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 3.5,
+  7: $spacer * 4,
+  8: $spacer * 4.5,
+  9: $spacer * 5,
+  10: $spacer * 5.5
+);
+
+
 $theme-colors: (
     "background": $background,
     "headline": $headline,
@@ -38,8 +55,16 @@ $theme-colors: (
     "tertiary": $tertiary
 );
 
-#__next {
+#__next, html {
   background-color: #242629;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+span[style^="box-sizing:border-box;display:inline-block"] {
+  display: block !important;
 }
 
 @import "~bootstrap/scss/bootstrap";

@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import Navbar from '../components/Navbar';
 import SectionHeader from '../components/SectionHeader';
 
-const Project: NextPage = () => {
+const Work: NextPage = () => {
     return (
         <div className="h-100">
             <Navbar />
@@ -55,4 +55,4 @@ const Project: NextPage = () => {
     )
 };
 
-export default Project;
+export default Work;

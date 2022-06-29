@@ -32,7 +32,7 @@ export async function getImages() {
         readme.value = Marked.parse(readme.value).match(/<img[^>]+src="([^">]+)"/);
 
         if(!readme.value) {
-            readme.value = ["https://149611589.v2.pressablecdn.com/wp-content/uploads/2020/09/github-logo-black-on-white.png", "https://149611589.v2.pressablecdn.com/wp-content/uploads/2020/09/github-logo-black-on-white.png"]
+            readme.value = ["https://pngimg.com/uploads/github/github_PNG15.png", "https://pngimg.com/uploads/github/github_PNG15.png"]
         }
     });
 

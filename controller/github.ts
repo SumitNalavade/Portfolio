@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Marked } from "@ts-stack/markdown";
 import { IProject } from "../utils/Project";
 
 export default async function getProjects() {
@@ -8,9 +9,32 @@ export default async function getProjects() {
         return {
             title: repo.name,
             description: repo.description,
-            url: repo.url
+            url: repo.url,
+            default_branch: repo.default_branch
         }
     })
 
     return projects;
+};
+
+export async function getImages() {
+    const projects = await getProjects();
+    let readMes = projects.map(async (project: IProject) => {
+        try {
+            return await (await axios.get(`https://raw.githubusercontent.com/SumitNalavade/${project.title}/${project.default_branch}/README.md`)).data
+        } catch {
+            return "Temp"
+        }
+    });
+
+    const settledReadMes = await Promise.allSettled(readMes);
+    settledReadMes.map((readme: any) => {
+        readme.value = Marked.parse(readme.value).match(/<img[^>]+src="([^">]+)"/);
+
+        if(!readme.value) {
+            readme.value = ["https://149611589.v2.pressablecdn.com/wp-content/uploads/2020/09/github-logo-black-on-white.png", "https://149611589.v2.pressablecdn.com/wp-content/uploads/2020/09/github-logo-black-on-white.png"]
+        }
+    });
+
+    return settledReadMes;
 };

@@ -18,7 +18,7 @@ const Navbar: NextPage = () => {
           <Link href="/about"><a className="nav-link">About</a></Link>
         </li>
         <li className="nav-item">
-        <Link href="/projects"><a className="nav-link">Projects</a></Link>
+        <Link href="/work"><a className="nav-link">Work</a></Link>
         </li>
       </ul>
       <span className="navbar-text">

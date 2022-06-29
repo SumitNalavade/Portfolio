@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 
 import Navbar from '../components/Navbar';
 import SectionWithDescription from '../components/SectionWithDescription';
-import DisplayFeaturedProject from '../components/FeaturedProject';
+import { FeaturedProject } from '../components/Projects';
 
 import { IFeaturedProject } from '../utils/Project';
 
@@ -15,7 +15,8 @@ const About: NextPage = () => {
         description: "2022 YelpCamp project from The Web Developer Bootcamp",
         imagePath: "https://user-images.githubusercontent.com/48499839/174972530-0c992a40-138b-473d-ae9a-bd7f2a02872a.png",
         url: "https://github.com/SumitNalavade/YelpCamp",
-        longDescription: "Yelp-like full-stack web application from the 2022 Web Developer Bootcamp"
+        longDescription: "Yelp-like full-stack web application from the 2022 Web Developer Bootcamp",
+        language: "JavaScript"
     });
 
     return (
@@ -31,13 +32,13 @@ const About: NextPage = () => {
                             Ducimus vero, architecto rerum culpa quisquam temporibus obcaecati, amet dolores in consequuntur saepe dolor voluptatibus reprehenderit reiciendis dolorem adipisci harum laboriosam laudantium minus aliquam atque aut unde tempora. Voluptates, at!'>
                     
                         <ReactMarkdown className='mt-5'>
-                            ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SumitNalavade&theme=radical&count_private=true)
+                            ![Sumit's GitHub stats](https://github-readme-stats.vercel.app/api?username=SumitNalavade&theme=radical&count_private=true)
                         </ReactMarkdown>
                     </SectionWithDescription>
                 </div>
                 
                 <div className={`container-lg d-flex align-items-center my-10 mobileStacked`}>
-                    <DisplayFeaturedProject proj={featuredProject} />
+                    <FeaturedProject proj={featuredProject} />
                 </div>
         </div>
     );

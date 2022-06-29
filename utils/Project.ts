@@ -4,6 +4,7 @@ export interface IProject {
     imagePath?: string,
     url: string,
     default_branch?: string
+    language?: string
 };
 
 export interface IFeaturedProject extends IProject {

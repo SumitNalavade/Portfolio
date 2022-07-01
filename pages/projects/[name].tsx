@@ -2,7 +2,7 @@ import React from 'react';
 import type{ NextPage, GetServerSideProps } from "next";
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
-import Navbar from '../../components/Navbar';
+import Layout from '../../components/Layout';
 import { Card } from "../../components/Projects";
 
 import { getProject } from "../../utils/github";
@@ -13,8 +13,7 @@ interface Props {
 }
 const Project: NextPage<Props> = ({ project }) => {
     return (
-        <div className='h-100'>
-            <Navbar />
+        <Layout>
             <div className={`container-lg my-5 mobileStacked`}>
                 <div className="container">
                     <div className="row gx-5">
@@ -30,8 +29,7 @@ const Project: NextPage<Props> = ({ project }) => {
                     </div>
                 </div>
             </div>
-
-        </div>
+        </Layout>
     )
 };
 

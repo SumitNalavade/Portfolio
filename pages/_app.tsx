@@ -26,3 +26,5 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp
+
+//Add footer (https://abdulrahman.id/projects)

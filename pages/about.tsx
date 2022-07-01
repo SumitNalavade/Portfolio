@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import type { NextPage } from 'next';
+import type { NextPage, GetServerSideProps } from 'next';
 import Image from "next/image";
 import ReactMarkdown from 'react-markdown';
 
@@ -7,17 +7,14 @@ import Navbar from '../components/Navbar';
 import SectionWithDescription from '../components/SectionWithDescription';
 import { FeaturedProject } from '../components/Projects';
 
-import { IFeaturedProject, IProject } from '../utils/Project';
+import { IProject } from '../utils/project';
 
 interface Props {
     pinnedProjects: IProject[]
 }
 
 const About: NextPage<Props> = ({ pinnedProjects }) => {
-    const [featuredProject, setFeaturedProject] = useState<IFeaturedProject>({
-        ...pinnedProjects[0],
-        longDescription: pinnedProjects[0].description
-    });
+    const [featuredProject, setFeaturedProject] = useState<IProject>({...pinnedProjects[0]});
 
     return (
         <div className={"h-100"}>
@@ -43,5 +40,9 @@ const About: NextPage<Props> = ({ pinnedProjects }) => {
         </div>
     );
 };
+
+export const getServerSideProps: GetServerSideProps = async() => {
+    return { props: {  } }
+}
 
 export default About;

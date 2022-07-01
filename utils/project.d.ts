@@ -5,10 +5,7 @@ export interface IProject {
     url: string,
     default_branch?: string
     language?: string
-};
-
-export interface IFeaturedProject extends IProject {
-    longDescription: string
+    readMe?: string
 };
 
 export type ProjectsContextType = {

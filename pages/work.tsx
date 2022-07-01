@@ -1,11 +1,11 @@
 import React from 'react';
-import type { NextPage } from 'next';
+import type { NextPage, GetServerSideProps } from 'next';
 
 import Navbar from '../components/Navbar';
 import SectionHeader from '../components/SectionHeader';
 import { Project } from '../components/Projects';
 
-import { IProject } from "../utils/Project";
+import { IProject } from "../utils/project";
 
 interface Props {
     pinnedProjects: IProject[]
@@ -29,5 +29,9 @@ const Work: NextPage<Props> = ({ pinnedProjects }) => {
         </div>
     )
 };
+
+export const getServerSideProps: GetServerSideProps = async() => {
+    return { props: {  } }
+}
 
 export default Work;

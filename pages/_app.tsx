@@ -3,8 +3,8 @@ import App, { AppProps, AppContext } from 'next/app';
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import { IProject } from '../utils/Project';
-import { getPinnedProjects } from '../controller/github';
+import { IProject } from '../utils/project';
+import { getPinnedProjects } from '../utils/github';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import "../styles/cssreset.css";

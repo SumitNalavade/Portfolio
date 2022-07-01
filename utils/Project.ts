@@ -3,7 +3,6 @@ export interface IProject {
     description: string,
     imagePath?: string,
     url: string,
-    default_branch?: string
     language?: string
     readMe?: string
 };

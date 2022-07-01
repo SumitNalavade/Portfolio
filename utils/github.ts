@@ -1,8 +1,9 @@
 import axios from "axios";
 import { Marked } from "@ts-stack/markdown";
-import { IProject } from "../utils/project";
+import { IProject } from "../utils/Project";
 
 export async function getPinnedProjects() {
+
     const projects: IProject[] = (await axios.get("https://gh-pinned-repos.egoist.sh/?username=SumitNalavade")).data.map(async (repo: any) => {
         let readMe: string = "";
 

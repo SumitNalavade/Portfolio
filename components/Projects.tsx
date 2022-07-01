@@ -1,10 +1,8 @@
 import React from 'react';
 
-import { IProject } from "../utils/project";
+import { IProject } from "../utils/Project";
 import { AiOutlineGithub } from 'react-icons/ai';
-import SectionWithDescription from './SectionWithDescription';
 
-import featuredProjectStyles from "../styles/components/featuredProject.module.scss";
 import cardStyles from "../styles/components/card.module.scss";
 
 interface CardProps {
@@ -24,21 +22,6 @@ const Card: React.FC<CardProps> = ({ proj }) => {
                 </div>
         </div>
     )
-};
-
-interface FeaturedProjectProps {
-    proj: IProject
-}
-export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ proj }) => {
-    return (
-        <>
-        <div className={`mx-lg-5 w-75 ${featuredProjectStyles.featuredProjectContainer}`}>
-            <Card proj={proj} />
-        </div>
-
-        <SectionWithDescription title='Featured Project' content={proj.description} />
-        </>
-    );
 };
 
 interface ProjectProps {

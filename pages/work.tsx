@@ -5,12 +5,12 @@ import Navbar from '../components/Navbar';
 import SectionHeader from '../components/SectionHeader';
 import { Project } from '../components/Projects';
 
-import { IProject } from "../utils/project";
+import { getPinnedProjects } from '../utils/github';
+import { IProject } from "../utils/Project";
 
 interface Props {
     pinnedProjects: IProject[]
 }
-
 const Work: NextPage<Props> = ({ pinnedProjects }) => {
     return (
         <div className="h-100">
@@ -31,7 +31,9 @@ const Work: NextPage<Props> = ({ pinnedProjects }) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async() => {
-    return { props: {  } }
+    const pinnedProjects: IProject[] = await getPinnedProjects();
+
+    return { props: { pinnedProjects } }
 }
 
 export default Work;

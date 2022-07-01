@@ -1,9 +1,10 @@
 export interface IProject {
-    title: string;
-    description: string,
-    imagePath?: string,
-    url: string,
+    name: string
+    description: string
+    imagePath: string
+    url: string
     language?: string
+    default_branch?: string
     readMe?: string
 };
 

@@ -1,17 +1,18 @@
 import React from 'react';
 import type { NextPage, GetServerSideProps } from 'next';
+import Link from 'next/link';
 
-import Navbar from '../components/Navbar';
-import SectionHeader from '../components/SectionHeader';
-import { Project } from '../components/Projects';
+import Navbar from '../../components/Navbar';
+import SectionHeader from '../../components/SectionHeader';
+import { Card } from '../../components/Projects';
 
-import { getPinnedProjects } from '../utils/github';
-import { IProject } from "../utils/Project";
+import { getPinnedProjects } from '../../utils/github';
+import { IProject } from "../../utils/Project";
 
 interface Props {
     pinnedProjects: IProject[]
 }
-const Work: NextPage<Props> = ({ pinnedProjects }) => {
+const Projects: NextPage<Props> = ({ pinnedProjects }) => {    
     return (
         <div className="h-100">
             <Navbar />
@@ -21,7 +22,13 @@ const Work: NextPage<Props> = ({ pinnedProjects }) => {
                     <div className="row">
                     {/* <!--ADD CLASSES HERE d-flex align-items-stretch--> */}
                     {pinnedProjects.map((project: IProject, index)=> {
-                        return <Project key={index} proj={project} /> 
+                        return (
+                            <Link href={`/projects/${project.name}`}>
+                                <div key={index} className="col-lg-4 mb-5 d-flex align-items-stretch">    
+                                    <Card proj={project} key={index} />
+                                </div>
+                            </Link>
+                        ) 
                     })}
                     </div>
                 </div>
@@ -36,4 +43,4 @@ export const getServerSideProps: GetServerSideProps = async() => {
     return { props: { pinnedProjects } }
 }
 
-export default Work;
+export default Projects;

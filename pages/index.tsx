@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import type { NextPage } from 'next';
 import Link from "next/link";
 
+import { IProject } from '../utils/Project';
+
 import styles from "../styles/pages/index.module.scss";
 
 const Home: NextPage = () => {
@@ -27,5 +29,6 @@ const Home: NextPage = () => {
     </div>
   )
 };
+
 
 export default Home;

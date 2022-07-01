@@ -67,6 +67,10 @@ $theme-colors: (
   .mobileStacked {
     flex-direction: column;
   }
+  
+  .github-calendar {
+    display: none
+  }
 }
 
 @import "~bootstrap/scss/bootstrap";

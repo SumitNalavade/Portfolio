@@ -7,16 +7,16 @@ import Navbar from '../components/Navbar';
 import SectionWithDescription from '../components/SectionWithDescription';
 import { FeaturedProject } from '../components/Projects';
 
-import { IFeaturedProject } from '../utils/Project';
+import { IFeaturedProject, IProject } from '../utils/Project';
 
-const About: NextPage = () => {
+interface Props {
+    pinnedProjects: IProject[]
+}
+
+const About: NextPage<Props> = ({ pinnedProjects }) => {
     const [featuredProject, setFeaturedProject] = useState<IFeaturedProject>({
-        title: "YelpCamp",
-        description: "2022 YelpCamp project from The Web Developer Bootcamp",
-        imagePath: "https://user-images.githubusercontent.com/48499839/174972530-0c992a40-138b-473d-ae9a-bd7f2a02872a.png",
-        url: "https://github.com/SumitNalavade/YelpCamp",
-        longDescription: "Yelp-like full-stack web application from the 2022 Web Developer Bootcamp",
-        language: "JavaScript"
+        ...pinnedProjects[0],
+        longDescription: pinnedProjects[0].description
     });
 
     return (

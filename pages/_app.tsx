@@ -1,15 +1,20 @@
 import { useEffect } from 'react';
-import type { AppProps } from 'next/app';
+import App, { AppProps, AppContext } from 'next/app';
 import { useRouter } from "next/router";
 import Head from "next/head";
+
+import { IProject } from '../utils/Project';
+import { getPinnedProjects } from '../controller/github';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import "../styles/cssreset.css";
 import '../styles/globals.scss';
-import variables from "../styles/variables.module.scss";
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+type TProps = Pick<AppProps, "Component" | "pageProps"> & {
+  pinnedProjects: IProject[];
+};
+function MyCustomApp({ Component, pageProps, pinnedProjects }: TProps) {
   const router = useRouter();
   useEffect(() => {
     typeof document !== undefined
@@ -21,8 +26,17 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Head>
        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
-    <Component {...pageProps} /></>
+    <Component {...pageProps} pinnedProjects={pinnedProjects} />
+    </>
   );
 }
 
-export default MyApp
+MyCustomApp.getInitialProps = async (context: AppContext) => {
+  const ctx = await App.getInitialProps(context);
+  const pinnedProjects: IProject[] = await getPinnedProjects();
+
+  return { ...ctx, pinnedProjects: [...pinnedProjects] };
+};
+
+export default MyCustomApp;
+

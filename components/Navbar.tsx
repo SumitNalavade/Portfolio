@@ -24,13 +24,13 @@ const Navbar: NextPage = () => {
       <span className="navbar-text">
         <ul className="navbar-nav">
             <li className="nav-item">
-                <Link href="/about"><a className="nav-link"><AiOutlineGithub /></a></Link>
+                <a className="nav-link" href='https://github.com/SumitNalavade' target="_blank"><AiOutlineGithub /></a>
             </li>
             <li className="nav-item">
-                <Link href="/projects"><a className="nav-link"><AiOutlineInstagram /></a></Link>
+              <a className="nav-link" href='https://www.instagram.com/sumit.nalavade24/' target="_blank"><AiOutlineInstagram /></a>
             </li>
             <li className="nav-item">
-                <Link href="/projects"><a className="nav-link"><AiOutlineMail /></a></Link>
+            <a className="nav-link" href='mailto: vs.nalavade2003@gmail.com' target="_blank"><AiOutlineMail /></a>
             </li>
         </ul>
       </span>

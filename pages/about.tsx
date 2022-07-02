@@ -11,7 +11,7 @@ const About: NextPage = () => {
         <Layout>
             <div className={`container-lg d-flex align-items-center my-5 mobileStacked`}>
                     <div className='mx-md-3 mx-lg-5 w-75'>
-                        <img src="/Images/sumit-rounded.png" className={`border border-8 rounded-circle border-tertiary`} />
+                        <Image src="/Images/sumit-rounded.png" alt='Image of myself' height={50} width={50} layout="responsive" className={`border border-8 rounded-circle border-tertiary`} />
                     </div>
 
                     <div className='container d-flex justify-content-center mx-md-3 mx-lg-5 flex-column text-main'> 
@@ -40,7 +40,7 @@ const About: NextPage = () => {
                     </div>
                 </div>
                 <div className='container-lg d-flex justify-content-center mb-4'>
-                    <img src="https://ghchart.rshah.org/f24087/SumitNalavade" className='github-calendar' style={{ width: "75%" }} />
+                    <img src="https://ghchart.rshah.org/f24087/SumitNalavade" className='github-calendar' alt="GitHub stats" style={{ width: "75%" }} />
                 </div>
         </Layout>
     );

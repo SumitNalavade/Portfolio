@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react'
 import type { NextPage } from 'next';
 import Link from "next/link";
+import Head from 'next/head';
 
 import styles from "../styles/pages/index.module.scss";
 
 const Home: NextPage = () => {
   return (
+    <>
+    <Head>
+        <title>Sumit Nalavade</title>
+        <meta name="description" content="Sumit Nalavade - Full-stack developer based in Frisco, Texas. Incoming engineering freshman at Texas A&M University"></meta>
+    </Head>
     <div className={`container-fluid d-flex justify-content-center align-items-center h-100 ${styles.topContainer}`}>
           <div className={`card rounded bg-background m-lg-5 container-fluid ${styles.infoContainer}`}>
             <div className='card-body text-main text-center'>
@@ -25,6 +31,7 @@ const Home: NextPage = () => {
             </div>
           </div>
     </div>
+    </>
   )
 };
 

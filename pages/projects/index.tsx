@@ -22,7 +22,7 @@ const Projects: NextPage<Props> = ({ pinnedProjects }) => {
                     {/* <!--ADD CLASSES HERE d-flex align-items-stretch--> */}
                     {pinnedProjects.map((project: IProject, index)=> {
                         return (
-                            <Link href={`/projects/${project.name}`}>
+                            <Link key={index} href={`/projects/${project.name}`}>
                                 <div key={index} className="col-lg-4 mb-5 d-flex align-items-stretch">    
                                     <Card proj={project} key={index} />
                                 </div>

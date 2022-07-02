@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage, GetServerSideProps } from 'next';
 import Link from 'next/link';
 
-import Navbar from '../../components/Navbar';
+import Layout from '../../components/Layout';
 import SectionHeader from '../../components/SectionHeader';
 import { Card } from '../../components/Projects';
 
@@ -14,8 +14,7 @@ interface Props {
 }
 const Projects: NextPage<Props> = ({ pinnedProjects }) => {    
     return (
-        <div className="h-100">
-            <Navbar />
+        <Layout>
             <div className='d-flex justify-content-center pt-5'><SectionHeader title='Projects' /></div>
             <section className="bg-background pt-5 pb-5 shadow-sm">
                 <div className="container">
@@ -33,7 +32,7 @@ const Projects: NextPage<Props> = ({ pinnedProjects }) => {
                     </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 };
 

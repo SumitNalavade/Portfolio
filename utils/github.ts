@@ -3,7 +3,7 @@ import { Marked } from "@ts-stack/markdown";
 import { IProject } from "../utils/Project";
 
 export async function getProject(name: string) {
-    const repo: IProject = (await axios.get(`https://api.github.com/repos/SumitNalavade/${name}`)).data;
+    const repo: any = (await axios.get(`https://api.github.com/repos/SumitNalavade/${name}`)).data;
 
     try {
         repo.readMe = (await axios.get(`https://raw.githubusercontent.com/SumitNalavade/${repo.name}/${repo.default_branch}/README.md`)).data;
@@ -12,7 +12,8 @@ export async function getProject(name: string) {
     }
     
     repo.imagePath = `https://opengraph.githubassets.com/1/SumitNalavade/${repo.name}`
-
+    repo.url = repo.html_url;
+    
     return repo;
 }
 

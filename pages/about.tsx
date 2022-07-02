@@ -16,10 +16,24 @@ const About: NextPage = () => {
 
                     <div className='container d-flex justify-content-center mx-md-3 mx-lg-5 flex-column text-main'> 
                         <SectionHeader title="About Me" />
-                        <p>'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error id illo ducimus unde rerum, quis incidunt sed, numquam excepturi sunt reiciendis. Officia, placeat amet! Ab quis veniam nemo illum nihil?
-                            Perferendis earum explicabo magnam, corporis temporibus et distinctio dolorum culpa ea officia inventore quia quo? Vel repellendus cupiditate nam ab voluptas facilis, tempore earum! Atque facere eaque hic dicta? Placeat.
-                            Ducimus vero, architecto rerum culpa quisquam temporibus obcaecati, amet dolores in consequuntur saepe dolor voluptatibus reprehenderit reiciendis dolorem adipisci harum laboriosam laudantium minus aliquam atque aut unde tempora. Voluptates, at!'</p>
-                 
+                        <p>
+                            Hey there, <br />
+                            My name is Sumit.
+                        </p>
+                        <p>
+                            I am an incoming freshman at Texas A&M University (Gig 'Em)! as well as a full stack developer.
+                        </p>
+                        <p>
+                            My primary area of experience working with the MERN stack including Next.js and Typescript. <br />
+                            In addition, I have also created and deployed products with React Native for both Android and iOS.
+                        </p>
+                        <p>
+                            Some of the technologies I'm looking forward to using include Svlete/Svelete Kit, SQL, Spring and more.
+                        </p>
+                        <p>
+                            Feel free to take a look at some of my projects on this site and on my GitHub. <br />
+                            If you want to contact me, don't be afraid to reach out on my Instagram or Email 😉
+                        </p>
                         <ReactMarkdown className='mt-5 d-flex justify-content-center'>
                             ![Sumit's GitHub stats](https://github-readme-stats.vercel.app/api?username=SumitNalavade&theme=radical&count_private=true)
                         </ReactMarkdown>

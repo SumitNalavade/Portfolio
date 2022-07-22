@@ -8,7 +8,7 @@ import SectionHeader from '../components/SectionHeader';
 
 const About: NextPage = () => {
     return (
-        <Layout>
+        <Layout pageName="about">
             <div className={`container-lg d-flex align-items-center my-5 mobileStacked`}>
                     <div className='mx-md-3 mx-lg-5 w-75'>
                         <Image src="/Images/sumit.png" alt='Image of myself' height={50} width={50} layout="responsive" className={`border border-8 rounded-circle border-tertiary`} />

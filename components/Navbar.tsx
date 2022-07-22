@@ -4,7 +4,11 @@ import Link from 'next/link';
 
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 
-const Navbar: NextPage = () => {
+interface Props {
+  pageName: string
+}
+
+const Navbar: NextPage<Props> = ({ pageName }) => {
     return (
         <nav className="navbar navbar-expand-lg bg-highlight navbar-dark">
   <div className="container-fluid">
@@ -15,10 +19,10 @@ const Navbar: NextPage = () => {
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link href="/about"><a className="nav-link">About</a></Link>
+          <Link href="/about"><a style={{ "textDecoration": `${ pageName =="about" ? "underline" : "none" }` }} className="nav-link">About</a></Link>
         </li>
         <li className="nav-item">
-        <Link href="/projects"><a className="nav-link">Projects</a></Link>
+        <Link href="/projects"><a className="nav-link" style={{ "textDecoration": `${ pageName =="projects" ? "underline" : "none" }` }}>Projects</a></Link>
         </li>
       </ul>
       <span className="navbar-text">

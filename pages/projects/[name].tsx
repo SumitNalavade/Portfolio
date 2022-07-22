@@ -13,7 +13,7 @@ interface Props {
 }
 const Project: NextPage<Props> = ({ project }) => {
     return (
-        <Layout>
+        <Layout pageName="project">
             <div className={`container-lg my-5 mobileStacked`}>
                 <div className="container">
                     <div className="row gx-5">

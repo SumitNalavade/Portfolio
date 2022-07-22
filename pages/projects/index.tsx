@@ -14,7 +14,7 @@ interface Props {
 }
 const Projects: NextPage<Props> = ({ pinnedProjects }) => {    
     return (
-        <Layout>
+        <Layout pageName="projects">
             <div className='d-flex justify-content-center pt-5'><SectionHeader title='Projects' /></div>
             <section className="bg-background pt-5 pb-5 shadow-sm">
                 <div className="container">

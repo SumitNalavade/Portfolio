@@ -17,18 +17,20 @@ const About: NextPage = () => {
                     <div className='container-lg d-flex mx-md-3 mx-lg-5 flex-column text-main'> 
                         <SectionHeader title="About Me" />
                         <p>
-                            Hey there, <br />
-                            My name is Sumit.
+                            Hey there,
+                            my name is Sumit.
                         </p>
                         <p>
-                            I am an incoming freshman at Texas A&M University (Gig 'Em)! as well as a full stack developer.
+                            I am an engineering student Texas A&M University (Gig 'Em)!
                         </p>
                         <p>
                             My primary area of experience working with the MERN stack including Next.js and Typescript. <br />
+                        </p>
+                        <p>
                             In addition, I have also created and deployed products with React Native for both Android and iOS.
                         </p>
                         <p>
-                            Some of the technologies I'm looking forward to using include Svlete/Svelete Kit, SQL, Spring and more.
+                            Some of the areas of technology I'm looking to learn more about include embedded systems, game development and more!
                         </p>
                         <p>
                             Feel free to take a look at some of my projects on this site and on my GitHub. <br />

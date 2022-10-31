@@ -36,7 +36,7 @@ const Projects: NextPage<Props> = ({ pinnedProjects }) => {
     )
 };
 
-export const getServerSideProps: GetServerSideProps = async() => {
+export const getServerSideProps: GetServerSideProps = async() => {    
     const pinnedProjects: IProject[] = await getPinnedProjects();
 
     return { props: { pinnedProjects } }

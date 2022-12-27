@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
     const [display, setDisplay] = useState('none');
 
     return (
-        <Flex>
+        <Flex color="brand.stroke">
             <Flex w="100%" pos='fixed' top="1rem" align="center">
                 <Flex w="100%" justifyContent="space-between" display={['none', 'none', 'flex', 'flex']}>
                     <Flex>
@@ -26,11 +26,11 @@ const Navbar: React.FC = () => {
                     </Flex>
 
                     <Flex>
-                        <Button as='a' variant='ghost' aria-label="GitHub" my={5} w="100%">
+                        <Button as='a' href="https://github.com/SumitNalavade" target="_blank" variant='ghost' aria-label="GitHub" my={5} w="100%">
                             <Icon boxSize={6} as={AiOutlineGithub} />
                         </Button>
 
-                        <Button as='a' variant='ghost' aria-label="LinkedIn" my={5} w="100%">
+                        <Button as='a' href="https://www.linkedin.com/in/sumit-nalavade/" target="_blank" variant='ghost' aria-label="LinkedIn" my={5} w="100%">
                             <Icon boxSize={6} as={AiFillLinkedin} />
                         </Button>
                     </Flex>

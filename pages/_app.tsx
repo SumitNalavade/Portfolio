@@ -12,7 +12,7 @@ const colors = {
     main: "#fffffe",
     highlight: "#3da9fc",
     secondary: "#90b4ce",
-    teriary: "#ef4565"
+    tertiary: "#ef4565"
   },
 }
 

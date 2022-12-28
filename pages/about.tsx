@@ -7,6 +7,7 @@ import { Flex, Heading, Text, Box, Button } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 
 const About: NextPage = () => {
+    
     return (
         <Layout>
             <Flex flexDirection={"column"} justifyContent="center">

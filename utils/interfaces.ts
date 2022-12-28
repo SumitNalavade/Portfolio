@@ -10,6 +10,8 @@ export interface IProject {
     }
     imageUrl: string
     readmeUrl: string
+    readme: string
+    nameWithOwner: String
 }
 
 /*

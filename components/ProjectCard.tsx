@@ -12,12 +12,12 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
     return (
-        <Flex bg="gray.50" my={6} flexDirection="column" borderRadius={"lg"} h={"100%"}>
-            <Flex justifyContent={"center"} w={"100%"} maxW={"sm"}>
-                <Image loader={() => project.imageUrl} src="me.png" alt='Image of myself' height={30} width={30} layout="responsive"  />
+        <Flex bg="gray.50" my={6} flexDirection="column" borderRadius={"lg"}>
+            <Flex justifyContent={"center"} w={"sm"} >
+                <Image loader={() => project.imageUrl} src="project.png" alt={project.name} height={30} width={30} layout="responsive"  />
             </Flex>
 
-            <Flex flexDirection="column" w={"100%"} p={4}>
+            <Flex flexDirection="column" w={"sm"} h={"3xs"} p={4}>
                 <Flex w={"100%"} justifyContent={"space-between"} alignItems="center" >
                     <Text color="brand.headline" fontWeight={"bold"} fontSize="xl">{ project.name }</Text>
 

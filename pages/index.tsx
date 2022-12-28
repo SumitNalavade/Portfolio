@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             </Text>
           </Box>
 
-          <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' mr={2} mt={8} w="2xs" _hover={{ bg: '#fffafb' }}>
+          <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' mr={2} mt={8} mb={4} w="2xs" _hover={{ bg: '#fffafb' }}>
             <Link href="/projects">Check out my work!</Link>
           </Button>
         </Flex>

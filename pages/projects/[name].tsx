@@ -1,19 +1,54 @@
 import React from "react";
-import { NextPage } from "next";
+import Image from "next/image";
+import { NextPage, GetServerSideProps } from "next";
+import axios from "axios";
 
-import client, { GET_PINNED_REPOSITORIES } from "../../utils/apollo-client";
+import ReactMarkdown from "react-markdown";
+import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
+import { Flex,} from "@chakra-ui/react";
 
-const Project: NextPage = () => {
-    const data = client.readQuery({
-        query: GET_PINNED_REPOSITORIES,
-        variables: { username: "SumitNalavade" }
-    });
-    
-    console.log(data);
+import ProjectCard from "../../components/ProjectCard";
+import useAppStore from "../../hooks/useAppState";
+import { IProject } from "../../utils/interfaces";
 
-    return (
-        <h1>Howdy World</h1>
-    )
+import Layout from "../../components/Layout";
+
+interface Props {
+  project: IProject;
 }
+
+const Project: NextPage<Props> = ({ project }) => {
+
+  return (
+    <Layout>
+        <Flex w={"100%"} justifyContent={"space-around"} flexWrap={"wrap"}>
+            <Flex maxH={"md"}>
+                <ProjectCard project={project} />
+            </Flex>
+
+            <Flex my={4} flexDirection={"column"}  w={"md"}>
+                <ReactMarkdown components={ChakraUIRenderer()} children={project.readme} skipHtml />;
+            </Flex>
+      </Flex>
+    </Layout>
+  );
+};
+
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
+  const { name } = query;
+
+  const project = useAppStore
+    .getState()
+    .projects.find((project) => project.name === name);
+
+  const readme = (
+    await axios.get(
+      `https://raw.githubusercontent.com/${project?.nameWithOwner}/${project?.defaultBranchRef.name}/README.md`
+    )
+  ).data;
+
+  // Pass data to the page via props
+  return { props: { project: { ...project, readme } } };
+};
 
 export default Project;

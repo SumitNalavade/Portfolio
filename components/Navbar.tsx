@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
     const [display, setDisplay] = useState('none');
 
     return (
-        <Flex color="brand.stroke">
-            <Flex w="100%" pos='fixed' top="1rem" align="center">
+        <Flex m={4} color="brand.stroke">
+            <Flex w="100%" align="center">
                 <Flex w="100%" justifyContent="space-between" display={['none', 'none', 'flex', 'flex']}>
                     <Flex>
                         <Link href='/'>
@@ -36,12 +36,12 @@ const Navbar: React.FC = () => {
                     </Flex>
                 </Flex>
 
-                <IconButton aria-label="Open Menu" size='lg' ml={2} icon={<Icon as={AiOutlineMenu} />} display={['flex', 'flex', 'none', 'none']} onClick={() => setDisplay("flex")} />
+                <IconButton aria-label="Open Menu" size='lg' icon={<Icon as={AiOutlineMenu} />} display={['flex', 'flex', 'none', 'none']} onClick={() => setDisplay("flex")} />
             </Flex>
 
             <Flex w="100vw" bgColor="gray.50" zIndex={20} pos="fixed" top="0" left="0" overflow="auto" flexDirection="column" display={display} >
                 <Flex>
-                    <IconButton mt={2} ml={2} aria-label="Close Menu" size="lg" icon={<Icon as={AiOutlineClose} />} onClick={() => setDisplay("none")} />
+                    <IconButton m={4} aria-label="Close Menu" size="lg" icon={<Icon as={AiOutlineClose} />} onClick={() => setDisplay("none")} />
                 </Flex>
 
                 <Flex direction='column' alignItems='center'>

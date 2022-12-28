@@ -1,39 +1,46 @@
-import React, { useEffect } from 'react'
-import type { NextPage } from 'next';
+import React from "react";
+import Image from 'next/image'
 import Link from "next/link";
-import Head from 'next/head';
+import { NextPage } from "next";
 
-import styles from "../styles/pages/index.module.scss";
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
+
+import Layout from '../components/Layout'
+import useWindowSize from "../hooks/useWindowSize";
 
 const Home: NextPage = () => {
+  const { width, height } = useWindowSize();
+
   return (
-    <>
-    <Head>
-        <title>Sumit Nalavade</title>
-        <meta name="description" content="Sumit Nalavade - Full-stack developer based in Frisco, Texas. Incoming engineering freshman at Texas A&M University"></meta>
-    </Head>
-    <div className={`container-fluid d-flex justify-content-center align-items-center h-100 ${styles.topContainer}`}>
-          <div className={`card rounded bg-background m-lg-5 container-fluid ${styles.infoContainer}`}>
-            <div className='card-body text-main text-center'>
-                <div className='text-center'>
-                  <p className="display-1 my-4">Sumit Nalavade</p>
-                  <div className={styles.wrapper}>
-                    <p className={`display-8 my-2 ${styles.typingDemo}`}>Full-Stack Developer</p>
-                    <p className={`display-8 my-4 ${styles.typingDemo}`}>Texas A&M Engineering '26</p>
-                  </div>
-                </div>
+    <Layout>
+        <Flex flexDirection={"column"} justifyContent="center">
+          <Heading size="sm" color="brand.headline" mb={2} ml={2}>Hi, my name is</Heading>
+          <Heading size="4xl" color="brand.headline">Sumit Nalavade.</Heading>
 
-                <div className="">
-                  <Link className='text-main' href="/about">
-                    <button type="button" className="btn btn-large btn-highlight text-main w-75 py-3">Check Out My Work!</button>
-                  </Link>
-                </div>
-            </div>
-          </div>
-    </div>
-    </>
+          <Box color="brand.paragraph" mt={8} maxW={"3xl"}>
+            <Text my={2}>
+              I'm an engineering student at Texas A&M University '26 !
+            </Text>
+
+            <Text my={2} noOfLines={2}>
+              My interests include software design and development, machine learning and artificial intelligence.
+            </Text>
+
+            <Text my={2} noOfLines={2}>
+              Currently, I'm focused on earning my bachelors degree in Computer Engineering on the Computer Science track.
+            </Text>
+          </Box>
+
+          <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' mr={2} mt={8} w="2xs" _hover={{ bg: '#fffafb' }}>
+            <Link href="/projects">Check out my work!</Link>
+          </Button>
+        </Flex>
+
+        <Flex my={4} flexDirection={"column"} justifyContent="center" w={"sm"} order={ width < 1183 ? "-1" : "1" } >
+          <Image loader={() => `https://avatars.githubusercontent.com/u/48499839?v=4`} src="me.png" alt='Image of myself' height={50} width={50} layout="responsive"  />
+        </Flex>
+    </Layout>
   )
-};
-
+}
 
 export default Home;

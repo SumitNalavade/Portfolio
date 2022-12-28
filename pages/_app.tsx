@@ -1,30 +1,27 @@
-import { useEffect } from 'react';
-import type { AppProps } from 'next/app';
-import { useRouter } from "next/router";
-import Head from "next/head";
+import type { AppProps } from 'next/app'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
-import 'bootstrap/dist/css/bootstrap.css'
-import "../styles/cssreset.css";
-import '../styles/globals.scss';
-import variables from "../styles/variables.module.scss";
-
-
-function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-  useEffect(() => {
-    typeof document !== undefined
-      ? require("bootstrap/dist/js/bootstrap")
-      : null;
-  }, [router.events]);
-
-  return (<>
-    <Head>
-       <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </Head>
-    <Component {...pageProps} /></>
-  );
+const colors = {
+  brand: {
+    background: "#fffffe",
+    headline: "#094067",
+    paragraph: "#5f6c7b",
+    button: "#3da9fc",
+    buttonText: "#fffffe",
+    stroke: "#094067",
+    main: "#fffffe",
+    highlight: "#3da9fc",
+    secondary: "#90b4ce",
+    tertiary: "#ef4565"
+  },
 }
 
-export default MyApp
+const theme = extendTheme({ colors })
 
-//Add footer (https://abdulrahman.id/projects)
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
+}

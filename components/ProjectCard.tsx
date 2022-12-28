@@ -12,7 +12,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
     return (
-        <Flex bg="gray.50" my={6} flexDirection="column" borderRadius={"lg"}>
+        <Flex bg="gray.50" my={6} flexDirection="column" borderRadius={"lg"} h={"100%"}>
             <Flex justifyContent={"center"} w={"100%"} maxW={"sm"}>
                 <Image loader={() => project.imageUrl} src="me.png" alt='Image of myself' height={30} width={30} layout="responsive"  />
             </Flex>

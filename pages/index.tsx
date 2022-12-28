@@ -1,29 +1,19 @@
-import Head from 'next/head'
+import React from "react";
 import Image from 'next/image'
 
-import { Box, Button, Flex, Heading, Text, SimpleGrid } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
 
-import Navbar from '../components/Navbar'
+import Layout from '../components/Layout'
+import useWindowSize from "../hooks/useWindowSize";
 
-export default function Home() {
-  const myLoader = () => {
-    return `https://avatars.githubusercontent.com/u/48499839?v=4`
-  }
+const Home = () => {
+  const { width, height } = useWindowSize();
 
   return (
-    <>
-      <Head>
-        <title>Sumit Nalavade - Portfolio</title>
-        <meta name="description" content="Sumit Nalavade - Texas A&M Engineering"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icon.png" />
-      </Head>
-
-      <Navbar />
-
+    <Layout>
       <Flex p={4} justifyContent="space-between" flexWrap={"wrap"} m={"auto"} maxW="container.xl" h="75vh">
         <Flex flexDirection={"column"} justifyContent="center">
-          <Heading size="sm" color="brand.headline" mb={4} ml={2}>Hi, my name is</Heading>
+          <Heading size="sm" color="brand.headline" mb={2} ml={2}>Hi, my name is</Heading>
           <Heading size="4xl" color="brand.headline">Sumit Nalavade.</Heading>
 
           <Box color="brand.paragraph" mt={8} maxW={"3xl"}>
@@ -45,10 +35,12 @@ export default function Home() {
           </Button>
         </Flex>
 
-        <Flex mt={4} flexDirection={"column"} justifyContent="center" w={"sm"}>
-          <Image loader={myLoader} src="me.png" alt='Image of myself' height={50} width={50} layout="responsive"  />
+        <Flex my={4} flexDirection={"column"} justifyContent="center" w={"sm"} order={ width < 1183 ? "-1" : "1" } >
+          <Image loader={() => `https://avatars.githubusercontent.com/u/48499839?v=4`} src="me.png" alt='Image of myself' height={50} width={50} layout="responsive"  />
         </Flex>
       </Flex>
-    </>
+    </Layout>
   )
 }
+
+export default Home;

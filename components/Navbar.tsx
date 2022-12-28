@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
                             <Button as='a' variant='ghost' aria-label="Home" my={5} w="100$">Home</Button>
                         </Link>
 
-                        <Link href='/'>
+                        <Link href='/about'>
                             <Button as='a' variant='ghost' aria-label="About" my={5} w="100%">About</Button>
                         </Link>
 

@@ -12,9 +12,9 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
     return (
-        <Flex bg="gray.50" mx={4} my={6} flexDirection="column" borderRadius={"lg"}>
-            <Flex justifyContent={"center"} w={"md"}>
-               <img src={project.imageUrl}></img>
+        <Flex bg="gray.50" my={6} flexDirection="column" borderRadius={"lg"}>
+            <Flex justifyContent={"center"} w={"100%"} maxW={"sm"}>
+                <Image loader={() => project.imageUrl} src="me.png" alt='Image of myself' height={30} width={30} layout="responsive"  />
             </Flex>
 
             <Flex flexDirection="column" w={"100%"} p={4}>
@@ -28,7 +28,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
 
                 <Text my={2} color="brand.secondary">{ project.primaryLanguage.name }</Text>
 
-                <Text color="brand.paragraph" w={"sm"}>{ project.description }</Text>
+                <Text color="brand.paragraph" w={"xs"}>{ project.description }</Text>
             </Flex>
         </Flex>
     );

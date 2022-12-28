@@ -3,7 +3,7 @@ import { NextPage, GetServerSideProps } from "next";
 
 import { getPinnedRepositories } from "../utils/queries";
 import { IProject } from "../utils/interfaces";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
 
 import { Flex, Box, Grid, GridItem } from "@chakra-ui/react";
@@ -14,11 +14,9 @@ interface Props {
 
 const Projects: NextPage<Props> = ({ projects }) => {
   return (
-    <>
-        <Navbar />
-        
-        <Flex p={4} justifyContent="space-between" flexWrap={"wrap"} m={"auto"} w="100%" h="75vh">        
-            <Flex justifyContent={"center"} flexWrap={"wrap"}>
+    <Layout>
+        <Flex justifyContent="space-between" flexWrap={"wrap"} m={"auto"} w="100%" >        
+            <Flex justifyContent={"space-around"} flexWrap={"wrap"}>
                 { projects.map((project) => {
                     return (
                         <ProjectCard project={project} />
@@ -26,7 +24,7 @@ const Projects: NextPage<Props> = ({ projects }) => {
                 }) }
             </Flex>
         </Flex>
-    </>
+    </Layout>
   );
 };
 

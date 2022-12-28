@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
                             <Button as='a' variant='ghost' aria-label="About" my={5} w="100%">About</Button>
                         </Link>
 
-                        <Link href='/'>
+                        <Link href='/projects'>
                             <Button as='a' variant='ghost' aria-label="Projects" my={5} w="100%">Projects</Button>
                         </Link>
                     </Flex>

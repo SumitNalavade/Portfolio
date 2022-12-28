@@ -1,6 +1,8 @@
 import React from "react";
 import Head from 'next/head'
 
+import { Flex } from "@chakra-ui/react";
+
 import Navbar from "./Navbar";
 
 interface Props {
@@ -19,7 +21,10 @@ const Layout: React.FC<Props> = ({ children }) => {
 
             <Navbar />
 
-            { children }
+            <Flex p={4} justifyContent="space-between" flexWrap={"wrap"} m={"auto"} maxW="container.xl" h="75vh">
+                { children }
+            </Flex>
+
 
         </>
     )

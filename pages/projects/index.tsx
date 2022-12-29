@@ -34,9 +34,11 @@ const Projects: NextPage<Props> = ({ projects }) => {
             </Flex>
         </Flex>
 
-        <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' my={6} _hover={{ bg: '#fffafb' }}>
-                <Link href="https://github.com/SumitNalavade" target={"_blank"}>See More</Link>
-        </Button>
+        <Flex w={"100%"} justifyContent={"center"}>
+            <Button as={Link} href="https://github.com/SumitNalavade" target={"_blank"} size={"lg"} width={"lg"} color="brand.tertiary" borderColor="brand.tertiary" variant='outline' my={6} _hover={{ bg: '#fffafb' }}>
+                See More
+            </Button>
+        </Flex>
     </Layout>
   );
 };

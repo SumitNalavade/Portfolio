@@ -23,7 +23,7 @@ const Projects: NextPage<Props> = ({ projects }) => {
         </Flex>
 
         <Flex justifyContent="space-between" flexWrap={"wrap"} m={"auto"} w="100%" >        
-            <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
+            <Flex justifyContent={"space-around"} flexWrap={"wrap"} w="100%">
                 { projects.map((project) => {
                     return (
                         <Link href={`/projects/${project.name}`}>

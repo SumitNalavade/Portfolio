@@ -10,7 +10,7 @@ export const getPinnedRepositories = async () => {
 
   const query = gql`
     {
-      user(login: "SumitNalavade") {
+      user(login: "${process.env.NEXT_PUBLIC_GITHUB_USERNAME}") {
         pinnedItems(first: 6) {
           edges {
             node {

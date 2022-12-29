@@ -25,6 +25,7 @@ export const getPinnedRepositories = async () => {
                   name
                 }
                 nameWithOwner
+                openGraphImageUrl
               }
             }
           }
@@ -37,7 +38,6 @@ export const getPinnedRepositories = async () => {
 
   return data.user.pinnedItems.edges.map((elm: any) => ({
     ...elm.node,
-    imageUrl: `https://opengraph.githubassets.com/1/${elm.node.nameWithOwner}`,
     readmeUrl: `https://raw.githubusercontent.com/${elm.node.nameWithOwner}/${elm.node.defaultBranchRef.name}/README.md`,
   }))
 };

@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import Link from "next/link";
+import React from "react";
 import { NextPage, GetServerSideProps } from "next";
 
-import { Flex } from "@chakra-ui/react";
+import { Button, Flex, Heading, Link } from "@chakra-ui/react";
 
 import useAppStore from "../../hooks/useAppState";
 import { getPinnedRepositories } from "../../utils/queries";
@@ -19,8 +18,12 @@ interface Props {
 const Projects: NextPage<Props> = ({ projects }) => {
   return (
     <Layout>
+        <Flex flexDirection={"column"}>
+            <Heading size="3xl" color="brand.headline">Featured Projects</Heading>
+        </Flex>
+
         <Flex justifyContent="space-between" flexWrap={"wrap"} m={"auto"} w="100%" >        
-            <Flex justifyContent={"space-around"} flexWrap={"wrap"}>
+            <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
                 { projects.map((project) => {
                     return (
                         <Link href={`/projects/${project.name}`}>
@@ -30,6 +33,10 @@ const Projects: NextPage<Props> = ({ projects }) => {
                 }) }
             </Flex>
         </Flex>
+
+        <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' my={6} _hover={{ bg: '#fffafb' }}>
+                <Link href="https://github.com/SumitNalavade" target={"_blank"}>See More</Link>
+        </Button>
     </Layout>
   );
 };

@@ -8,24 +8,8 @@ export interface IProject {
     defaultBranchRef: {
         name: string
     }
-    imageUrl: string
+    openGraphImageUrl: string
     readmeUrl: string
     readme: string
     nameWithOwner: String
 }
-
-/*
-{
-  "name": "VS-Code-ReadMe-Editor",
-  "description": "Create, Customize and Commit your project's ReadMe in VS Code with an integrated extension",
-  "url": "https://github.com/SumitNalavade/VS-Code-ReadMe-Editor",
-  "defaultBranchRef": {
-    "name": "main"
-  },
-  "primaryLanguage": {
-    "name": "TypeScript"
-  },
-  "imageUrl": "https://opengraph.githubassets.com/1/SumitNalavade/VS-Code-ReadMe-Editor",
-  "readmeUrl": "https://raw.githubusercontent.com/SumitNalavade/VS-Code-ReadMe-Editor/main/README.md"
-}
-*/

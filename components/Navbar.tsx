@@ -49,12 +49,12 @@ const Navbar: React.FC = () => {
                         <Button as='a' variant='ghost' aria-label="Home" my={2} w="100$">Home</Button>
                     </Link>
 
-                    <Link href='/'>
+                    <Link href='/about'>
                         <Button as='a' variant='ghost' aria-label="Home" my={2} w="100%">About</Button>
                     </Link>
 
-                    <Link href='/'>
-                        <Button as='a' variant='ghost' aria-label="Home" my={2} w="100%">Contact</Button>
+                    <Link href='/projects'>
+                        <Button as='a' variant='ghost' aria-label="Home" my={2} w="100%">Projects</Button>
                     </Link>
                 </Flex>
             </Flex>

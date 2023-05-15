@@ -1,7 +1,7 @@
 import React from "react";
 import { NextPage, GetServerSideProps } from "next";
 
-import { Button, Flex, Heading, Link } from "@chakra-ui/react";
+import { Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 
 import useAppStore from "../../hooks/useAppState";
 import { getPinnedRepositories } from "../../utils/queries";
@@ -20,6 +20,7 @@ const Projects: NextPage<Props> = ({ projects }) => {
     <Layout>
         <Flex flexDirection={"column"}>
             <Heading size="3xl" color="brand.headline">Featured Projects</Heading>
+            <Text py={2}>Some projects I've worked on recently. Visit my GitHub page to see more!</Text>
         </Flex>
 
         <Flex justifyContent="space-between" flexWrap={"wrap"} m={"auto"} w="100%" >        

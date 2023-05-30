@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { NextPage } from "next";
+import Link from "next/link";
 
 import { Flex, Heading, Text, Box, Button } from "@chakra-ui/react";
 
@@ -37,9 +38,9 @@ const About: NextPage = () => {
                     </Text>
                 </Box>
 
-                <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' mr={2} mt={8} w="2xs" _hover={{ bg: '#fffafb' }}>
-                    Check out my work!
-                </Button>
+                <Link href="/projects" style={{ width: "1px" }} >
+                    <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' mr={2} mt={8} mb={4} w="2xs" _hover={{ bg: '#fffafb' }}>Check Out My Work!</Button>
+                </Link>
             </Flex>
 
             <Flex my={4} flexDirection={"column"} justifyContent="center" w={"sm"} order={ width < 1184 ? "-1" : "1" } >

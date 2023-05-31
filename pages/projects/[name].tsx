@@ -1,11 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import { NextPage, GetServerSideProps } from "next";
 import axios from "axios";
 
 import ReactMarkdown from "react-markdown";
-import ChakraUIRenderer from 'chakra-ui-markdown-renderer';
-import { Flex,} from "@chakra-ui/react";
 
 import ProjectCard from "../../components/ProjectCard";
 import useAppStore from "../../hooks/useAppState";
@@ -18,18 +15,20 @@ interface Props {
 }
 
 const Project: NextPage<Props> = ({ project }) => {
-
   return (
     <Layout>
-        <Flex w={"100%"} justifyContent={"space-around"} flexWrap={"wrap"}>
-            <Flex maxH={"md"}>
-                <ProjectCard project={project} />
-            </Flex>
+      <div className="flex justify-between w-full">
+        <div className="w-1/2 mx-2">
+          <ProjectCard project={project} />
+        </div>
 
-            <Flex my={4} flexDirection={"column"}  w={"md"}>
-                <ReactMarkdown components={ChakraUIRenderer()} children={project.readme} skipHtml />;
-            </Flex>
-      </Flex>
+        <div className="w-1/2 mx-2 prose">
+          <ReactMarkdown
+            children={project.readme}
+            skipHtml
+          />
+        </div>
+      </div>
     </Layout>
   );
 };

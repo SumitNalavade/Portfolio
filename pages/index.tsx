@@ -1,11 +1,8 @@
 import React from "react";
-import Image from 'next/image'
 import Link from "next/link";
 import { NextPage } from "next";
 
-import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
-
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
 import useWindowSize from "../hooks/useWindowSize";
 
 const Home: NextPage = () => {
@@ -13,34 +10,43 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-        <Flex flexDirection={"column"} justifyContent="center">
-          <Heading size="sm" color="brand.headline" mb={2} ml={2}>Hi, my name is</Heading>
-          <Heading size="4xl" color="brand.headline">Sumit Nalavade.</Heading>
+      <div className="flex flex-col justify-center">
+        <h1 className="text-lg font-semibold text-headline mb-2 ml-2 mt-4">
+          Hi, my name is
+        </h1>
+        <h1 className="text-6xl font-bold text-headline">Sumit Nalavade.</h1>
 
-          <Box color="brand.paragraph" mt={8} maxW={"3xl"}>
-            <Text my={2}>
-              I'm an engineering student at Texas A&M University '26 !
-            </Text>
+        <div className="text-paragraph mt-8 max-w-3xl font-light">
+          <p className="my-2">
+            I'm an engineering student at Texas A&amp;M University '26!
+          </p>
 
-            <Text my={2} noOfLines={2}>
-              My interests include software design and development, machine learning and artificial intelligence.
-            </Text>
+          <p className="my-2">
+            My interests include software design and development, machine
+            learning and artificial intelligence.
+          </p>
 
-            <Text my={2} noOfLines={2}>
-              Currently, I'm focused on earning my bachelors degree in Computer Engineering on the Computer Science track.
-            </Text>
-          </Box>
+          <p className="my-2">
+            Currently, I'm focused on earning my bachelor's degree in Computer
+            Engineering on the Computer Science track.
+          </p>
+        </div>
 
-          <Link href="/projects" style={{ width: "1px" }} >
-            <Button color="brand.tertiary" borderColor="brand.tertiary" variant='outline' mr={2} mt={8} mb={4} w="2xs" _hover={{ bg: '#fffafb' }}>Check Out My Work!</Button>
-          </Link>
-        </Flex>
+        <Link
+          href="/projects"
+          className="border-tertiary border rounded-lg max-w-sm text-tertiary font-medium px-6 py-2 my-6 text-center"
+        >
+          Check Out My Work!
+        </Link>
+      </div>
 
-        <Flex my={4} flexDirection={"column"} justifyContent="center" w={"sm"} order={ width < 1184 ? "-1" : "1" } >
-          <Image loader={() => `https://avatars.githubusercontent.com/u/48499839?v=4`} src="me.png" alt='Image of myself' height={50} width={50} layout="responsive"  />
-        </Flex>
+      <div className={` flex justify-center items-center ${width < 1184 ? "order-first" : ""}`}>
+        <img
+          src={`https://avatars.githubusercontent.com/u/48499839?v=4`}
+        />
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default Home;

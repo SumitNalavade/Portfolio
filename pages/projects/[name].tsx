@@ -51,13 +51,13 @@ const Project: NextPage = ({}) => {
 
   return (
     <Layout>
-      <div className="flex w-full">
-        <div className="w-1/2 mx-2">
+      <div className="md:flex w-full">
+        <div className="md:w-1/2 mx-2">
           {/* @ts-ignore */}
           <ProjectCard project={project} />
         </div>
 
-        <div className="w-1/2 mx-2 prose">
+        <div className="md:w-1/2 mx-2 prose">
           <ReactMarkdown children={project?.readme} skipHtml />
         </div>
       </div>

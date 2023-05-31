@@ -1,5 +1,7 @@
 import React from "react";
-import { NextPage, GetServerSideProps } from "next";
+import { NextPage } from "next";
+import Link from "next/link";
+import useSWR from "swr";
 
 import useAppStore from "../../hooks/useAppState";
 import { getPinnedRepositories } from "../../utils/queries";
@@ -8,11 +10,27 @@ import { IProject } from "../../utils/interfaces";
 import Layout from "../../components/Layout";
 import ProjectCard from "../../components/ProjectCard";
 
-interface Props {
-  projects: IProject[];
-}
+const Projects: NextPage = ({  }) => {
+  const { data: projects, error, isLoading } = useSWR("https://api.github.com/graphql", getPinnedRepositories);
 
-const Projects: NextPage<Props> = ({ projects }) => {
+  if(isLoading) {
+    return (<div className="min-h-screen ">
+    <div className="mx-auto p-4">
+      <div className="rounded p-6">
+        <div className="animate-pulse">
+          {Array.from({ length: 10 }, (_, index) => (
+            <div key={index} className="h-4 bg-gray-300 rounded mb-2"></div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>)
+  }
+
+  if(projects) {
+    useAppStore.setState({ projects }) 
+  }
+
   return (
     <Layout>
       <div className="flex flex-col">
@@ -25,10 +43,10 @@ const Projects: NextPage<Props> = ({ projects }) => {
 
       <div className="flex justify-between flex-wrap m-auto w-full">
         <div className="flex justify-around flex-wrap w-full">
-          {projects.map((project) => (
-            <a href={`/projects/${project.name}`} key={project.name}>
+          {projects.map((project: IProject) => (
+            <Link href={`/projects/${project.name}`} key={project.name}>
               <ProjectCard project={project} />
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -45,15 +63,6 @@ const Projects: NextPage<Props> = ({ projects }) => {
       </div>
     </Layout>
   );
-};
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const projects = await getPinnedRepositories();
-
-  useAppStore.setState({ projects });
-
-  // Pass data to the page via props
-  return { props: { projects } };
 };
 
 export default Projects;

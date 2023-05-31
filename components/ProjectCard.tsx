@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <div className="flex flex-col h-56 p-2 max-w-[350px]">
         <div className="flex flex-col p-2">
           <div className="flex justify-between">
-            <p className="font-bold text-xl text-stroke">{project.name}</p>
+            <p className="font-semibold text-xl text-stroke">{project.name}</p>
 
             <a
               href={project.url}

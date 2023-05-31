@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <Layout>
       <div className="flex flex-col justify-center">
         <h1 className="text-lg font-semibold text-headline mb-2 ml-2 mt-4">
-          Hi, my name is
+          Howdy, my name is
         </h1>
         <h1 className="text-6xl font-bold text-headline">Sumit Nalavade.</h1>
 

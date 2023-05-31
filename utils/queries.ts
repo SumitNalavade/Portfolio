@@ -1,8 +1,7 @@
 import { GraphQLClient, gql } from "graphql-request";
-import axios from "axios";
 
-export const getPinnedRepositories = async () => {
-  const graphQLClient = new GraphQLClient("https://api.github.com/graphql", {
+export const getPinnedRepositories = async (url: string) => {
+  const graphQLClient = new GraphQLClient(url, {
     headers: {
       authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN}`,
     },

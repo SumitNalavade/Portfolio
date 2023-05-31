@@ -14,17 +14,17 @@ const Projects: NextPage = ({  }) => {
   const { data: projects, error, isLoading } = useSWR("https://api.github.com/graphql", getPinnedRepositories);
 
   if(isLoading) {
-    return (<div className="min-h-screen ">
-    <div className="mx-auto p-4">
-      <div className="rounded p-6">
-        <div className="animate-pulse">
-          {Array.from({ length: 10 }, (_, index) => (
-            <div key={index} className="h-4 bg-gray-300 rounded mb-2"></div>
-          ))}
+    return (<div>
+      <div className="mx-auto p-4 h-screen">
+        <div className="rounded p-6 h-full">
+          <div className="animate-pulse h-full flex flex-col justify-around">
+            {Array.from({ length: 20 }, (_, index) => (
+              <div key={index} className="h-4 bg-gray-300 rounded mb-2"></div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  </div>)
+    </div>)
   }
 
   if(projects) {

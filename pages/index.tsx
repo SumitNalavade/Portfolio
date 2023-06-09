@@ -33,10 +33,10 @@ const Home: NextPage = () => {
         </div>
 
         <Link
-          href="/projects"
+          href="/about"
           className="border-tertiary border rounded-lg max-w-sm text-tertiary font-medium px-6 py-2 my-6 text-center"
         >
-          Check Out My Work!
+          Discover More
         </Link>
       </div>
 

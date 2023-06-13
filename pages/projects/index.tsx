@@ -56,7 +56,7 @@ const Projects: NextPage = ({  }) => {
           href="https://github.com/SumitNalavade"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-tertiary border rounded-lg px-6 py-2 my-6 w-2/5 text-center text-tertiary font-bold"
+          className="border-tertiary border rounded-lg px-6 py-2 my-6 max-w-sm w-full text-center text-tertiary font-bold"
         >
           See More
         </a>

@@ -17,7 +17,7 @@
     name: string;
     icon: string;
     description: string;
-    type: "language" | "library/framework" | "database" | "other";
+    type: "languages" | "libraries/frameworks" | "databases" | "other";
   }
 
   const technologies: ITechnology[] = [
@@ -25,56 +25,56 @@
       name: "React",
       icon: reactIcon,
       description: "UI Library",
-      type: "library/framework",
+      type: "libraries/frameworks",
     },
 
     {
       name: "Svelte",
       icon: svelteIcon,
       description: "UI Library",
-      type: "library/framework",
+      type: "libraries/frameworks",
     },
     {
       name: "Next.js",
       icon: nextIcon,
       description: "Full-Stack Framework",
-      type: "library/framework",
+      type: "libraries/frameworks",
     },
     {
       name: "SvelteKit",
       icon: sveltekitIcon,
       description: "Full-Stack Framework",
-      type: "library/framework",
+      type: "libraries/frameworks",
     },
     {
       name: "Node.js",
       icon: nodeIcon,
       description: "Backend Framework/Runtime",
-      type: "library/framework",
+      type: "libraries/frameworks",
     },
     {
       name: "TypeScript",
       icon: typescriptIcon,
       description: "Programming Language",
-      type: "library/framework",
+      type: "languages",
     },
     {
       name: "JavaScript",
       icon: javascriptIcon,
       description: "Programming Language",
-      type: "language",
+      type: "languages",
     },
     {
       name: "Python",
       icon: pythonIcon,
       description: "Programming Language",
-      type: "language",
+      type: "languages",
     },
     {
       name: "Java",
       icon: javaIcon,
       description: "Programming Language",
-      type: "language",
+      type: "languages",
     },
     {
       name: "Graph QL",
@@ -92,13 +92,13 @@
       name: "Mongo DB",
       icon: mongodbIcon,
       description: "Database",
-      type: "database",
+      type: "databases",
     },
     {
       name: "PostgreSQL",
       icon: postgresqlIcon,
       description: "Database",
-      type: "database"
+      type: "databases",
     },
   ];
 
@@ -115,10 +115,12 @@
 
     selectedTechnology = technology;
   };
+
+  $: console.log(selectedTechnology)
 </script>
 
-<main class="h-full">
-  <div class="h-full p-4 bg-neutral secondary rounded-lg text-text">
+<main class="min-h-screen">
+  <div class="min-h-screen p-4 bg-neutral secondary rounded-lg text-text">
     <div class="ml-3 flex items-center font-medium hover:text-white">
       <svg role="img" height="24" width="24" aria-hidden="true" fill="#b3b3b3"
         ><path
@@ -149,17 +151,17 @@
             >All</button
           >
           <button
-            value="language"
+            value="languages"
             class={`btn btn-sm btn-ghost flex justify-start normal-case ${ selectedTechnology === "languages" ? "text-primary" : "" }`}
             >Languages</button
           >
           <button
-            value="library/framework"
+            value="libraries/frameworks"
             class={`btn btn-sm btn-ghost flex justify-start normal-case ${ selectedTechnology === "libraries/frameworks" ? "text-primary" : "" }`}
             >Libraries/Frameworks</button
           >
           <button
-            value="database"
+            value="databases"
             class={`btn btn-sm btn-ghost flex justify-start normal-case ${ selectedTechnology === "databases" ? "text-primary" : "" }`}
             >Databases</button
           >

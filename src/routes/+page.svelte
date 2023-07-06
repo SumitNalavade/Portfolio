@@ -1,5 +1,6 @@
 <script lang="ts">
     import TopTechnologies from "../components/TopTechnologies.svelte";
+    import Hero from "../components/Hero.svelte";
 </script>
 
 <main class="flex gap-2 h-full">
@@ -46,4 +47,10 @@
 
     <TopTechnologies />
   </div>
+
+  <div class="w-full">
+      <Hero />
+      
+  </div>
+  
 </main>

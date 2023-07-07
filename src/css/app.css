@@ -5,3 +5,7 @@
 body {
     background-color: black;
 }
+
+#content-panel {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(112,128,104,1) 300%); 
+}

@@ -115,8 +115,6 @@
 
     selectedTechnology = technology;
   };
-
-  $: console.log(selectedTechnology)
 </script>
 
 <main class="min-h-screen">

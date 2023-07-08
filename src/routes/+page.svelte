@@ -1,7 +1,9 @@
 <script lang="ts">
-    import TopTechnologies from "../components/TopTechnologies.svelte";
-    import Hero from "../components/Hero.svelte";
-    import Experience from "../components/Experience.svelte";
+  import { focusedContent } from "../utils/store";
+
+  import TopTechnologies from "../components/TopTechnologies.svelte";
+  import Hero from "../components/Hero.svelte";
+  import Experience from "../components/Experience.svelte";
 </script>
 
 <main class="flex gap-2 h-full">
@@ -52,8 +54,38 @@
   <div class="w-full h-full text-white">
       <Hero />
 
-      <div id="content-panel" class="h-full p-6">
-        <Experience />
+      <div id="content-panel" class="h-full p-6 flex gap-12">
+        <div class="w-2/3">
+            <Experience />
+        </div>
+
+        <div class="w-1/2 text-sm">
+          <div class="flex items-end gap-4 mb-4">
+              <img src={$focusedContent.image} class="rounded-xl w-24" alt="">
+              <div>
+                <div class="mb-1">
+                  <p class="font-semibold text-xl">{ $focusedContent.title }</p>
+
+                  { #if $focusedContent.type === "Experience"}
+                    { $focusedContent.employer }
+                  {/if }
+
+                </div>
+                  <p>
+                      { $focusedContent.start } -
+                      { #if $focusedContent.end}
+                          <span>{$focusedContent.end}</span>
+                          {:else}
+                          <span>Present</span>
+                      {/if }
+                  </p>
+                  <p>{ $focusedContent.location }</p>
+              </div>
+          </div>
+          <div class="whitespace-pre-line">
+              { $focusedContent.description }
+          </div>
+      </div>
       </div>
   </div>
   

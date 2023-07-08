@@ -1,7 +1,7 @@
 export interface IContent {
     title: string
     description: string
-    image: string
+    icon: string
     type: "Experience" | "Project"
 }
 
@@ -14,5 +14,8 @@ export interface IExperience extends IContent {
 }
 
 export interface IProject extends IContent {
-    
+    demoUrl?: string
+    githubUrl?: string
+    screenshot: string
+    platform: "Web" | "Mobile" | "Desktop" | "Serverside" | "Other"
 }

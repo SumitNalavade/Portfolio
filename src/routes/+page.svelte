@@ -1,13 +1,13 @@
 <script lang="ts">
-  import { focusedContent } from "../utils/store";
-
   import TopTechnologies from "../components/TopTechnologies.svelte";
   import Hero from "../components/Hero.svelte";
   import Experience from "../components/Experience.svelte";
+  import Projects from "../components/Projects.svelte";
+  import FocusedContent from "../components/FocusedContent.svelte";
 </script>
 
 <main class="flex gap-2 h-full">
-  <div class="h-full w-1/4 flex flex-col gap-2 ">
+  <div class="h-full w-1/4 flex flex-col gap-2">
     <div class="p-6 bg-neutral rounded-lg text-text">
       <div
         class="mb-6 flex items-center gap-6 font-medium cursor-pointer hover:text-white"
@@ -52,41 +52,17 @@
   </div>
 
   <div class="w-full h-full text-white">
-      <Hero />
+    <Hero />
 
-      <div id="content-panel" class="h-full p-6 flex gap-12">
-        <div class="w-2/3">
-            <Experience />
-        </div>
-
-        <div class="w-1/2 text-sm">
-          <div class="flex items-end gap-4 mb-4">
-              <img src={$focusedContent.image} class="rounded-xl w-24" alt="">
-              <div>
-                <div class="mb-1">
-                  <p class="font-semibold text-xl">{ $focusedContent.title }</p>
-
-                  { #if $focusedContent.type === "Experience"}
-                    { $focusedContent.employer }
-                  {/if }
-
-                </div>
-                  <p>
-                      { $focusedContent.start } -
-                      { #if $focusedContent.end}
-                          <span>{$focusedContent.end}</span>
-                          {:else}
-                          <span>Present</span>
-                      {/if }
-                  </p>
-                  <p>{ $focusedContent.location }</p>
-              </div>
-          </div>
-          <div class="whitespace-pre-line">
-              { $focusedContent.description }
-          </div>
+    <div id="content-panel" class="h-full p-6 flex gap-12">
+      <div class="flex flex-col gap-4 w-2/3">
+        <Experience />
+        <Projects />
       </div>
+
+      <div class="w-1/2">
+        <FocusedContent />
       </div>
+    </div>
   </div>
-  
 </main>

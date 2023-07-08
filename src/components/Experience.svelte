@@ -15,8 +15,8 @@
       on:click={() => ($focusedContent = experiences[index])}
     >
       <img
-        src={experience.image}
-        class="w-[50px] rounded-lg"
+        src={experience.icon}
+        class="w-12 rounded-lg"
         alt={`${experience.employer} Logo`}
       />
       <div class="w-1/2">

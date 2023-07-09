@@ -18,4 +18,5 @@ export interface IProject extends IContent {
     githubUrl?: string
     screenshot: string
     platform: "Web" | "Mobile" | "Desktop" | "Serverside" | "Other"
+    language: string
 }

@@ -67,6 +67,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies__typescript_eslint_parser: string;
 	export const PATH: string;
 	export const npm_config_argv: string;
+	export const LaunchInstanceID: string;
 	export const _: string;
 	export const __CFBundleIdentifier: string;
 	export const USER_ZDOTDIR: string;
@@ -108,6 +109,7 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const npm_config_init_version: string;
 	export const npm_config_ignore_optional: string;
+	export const SECURITYSESSIONID: string;
 	export const npm_package_scripts_check: string;
 	export const COLORTERM: string;
 	export const npm_node_execpath: string;
@@ -183,6 +185,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies__typescript_eslint_parser: string;
 		PATH: string;
 		npm_config_argv: string;
+		LaunchInstanceID: string;
 		_: string;
 		__CFBundleIdentifier: string;
 		USER_ZDOTDIR: string;
@@ -224,6 +227,7 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_ASKPASS_NODE: string;
 		npm_config_init_version: string;
 		npm_config_ignore_optional: string;
+		SECURITYSESSIONID: string;
 		npm_package_scripts_check: string;
 		COLORTERM: string;
 		npm_node_execpath: string;

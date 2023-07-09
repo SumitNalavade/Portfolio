@@ -9,12 +9,16 @@ import CNTVLogo from "../assets/CNTV-icon.jpg";
 import readmeEditorIcon from "../assets/readmeEditor-icon.png";
 import fisdIcon from "../assets/fisd-icon.jpg";
 import gradualIcon from "../assets/gradual-icon.jpg";
+import yelpcampV2Icon from "../assets/yelpcampV2-icon.png";
 import yelpcampIcon from "../assets/yelpcamp-icon.png";
+import gptStudyIcon from "../assets/gptStudy-icon.webp";
 
 import readmeEditorScreenshot from "../assets/vscode-readme-editor-screenshot.png";
 import fisdHacApiScreenshot from "../assets/friscoisd-hac-api-screenshot.png";
 import yelpcampV2Screenshot from "../assets/yelpcampV2-screenshot.png";
+import yelpcampScreenshot from "../assets/yelpcamp-screenshot.png";
 import gradualScreenshot from "../assets/gradual-screenshot.png";
+import gptStudyScreenshot from "../assets/gptStudy-screenshot.png";
 
 export const experiences: IExperience[] = [
   {
@@ -109,7 +113,10 @@ Documented and tested codebase before releasing to the company.`,
     duration: "3 Years",
     start: "August, 2019",
     end: "May, 2022",
-    description: `As a student journalist at Coyote Nation TV, I work with a small team of passionate creators to maintain Heritage High School's broadcasting program, a media outlet meant to educate, inform and entertain the students of HHS. In my three years in this program so far I've been able to create dozens of stories and segments tailored to tell the stories of students and offer an insight into the dynamic world of a High School student's life.`,
+    description: `
+As a student journalist at Coyote Nation TV, I worked with a small team of passionate creators to maintain Heritage High School's broadcasting program, a media outlet meant to educate, inform and entertain the students body.
+
+In my three years with this program, I was able to create dozens of stories and segments tailored to tell the stories of students and offer an insight into the dynamic world of a High School student's life.`,
   },
 ];
 
@@ -123,6 +130,7 @@ export const projects: IProject[] = [
       "https://marketplace.visualstudio.com/items?itemName=SumitNalavade.vscode-readme-editor",
     githubUrl: "https://github.com/SumitNalavade/VS-Code-ReadMe-Editor",
     platform: "Other",
+    language: "TypeScript",
     description: `
 Built a VS Code extension with React.js to allow users to create beautiful ReadMe files for their projects without having to leave their editor.
 
@@ -145,6 +153,7 @@ Dark/Light Mode based on VS Code theme`,
     screenshot: fisdHacApiScreenshot,
     demoUrl: "https://https://friscoisdhacapi.vercel.app/",
     githubUrl: "https://github.com/SumitNalavade/FriscoISDHACAPI",
+    language: "Python",
     description: `
 Built and maintained a free and open source REST API to interact with data from the Frisco ISD Home Access Center (HAC).
 
@@ -160,24 +169,9 @@ Used by several other Frisco ISD student’s projects.`,
   },
   {
     type: "Project",
-    title: "YelpCamp V2",
-    platform: "Web",
-    icon: yelpcampIcon,
-    screenshot: yelpcampV2Screenshot,
-    demoUrl: "https://yelpcampv2.vercel.app/",
-    githubUrl: "https://github.com/SumitNalavade/YelpCampV2",
-    description: `
-Rewrite of the YelpCamp project from the 2022 web developer bootcamp
-
-Tech Stack:
-Client: React, Next.js, TailwindCSS, DaisyUI, NextAuth
-Server: Apollo Server, GraphQL, Prisma, PostgreSQL
-    `
-  },
-  {
-    type: "Project",
-    title: "YelpCamp V2",
-    platform: "Web",
+    title: "Gradual Grades",
+    platform: "Mobile",
+    language: "JavaScript",
     icon: gradualIcon,
     screenshot: gradualScreenshot,
     githubUrl: "https://github.com/SumitNalavade/Gradual-React-Native",
@@ -187,7 +181,7 @@ Cross platform mobile app for HAC client built for FRISCO ISD students
 Built with React Native/Expo for iOS and Android
   
 Features:
-Custom API powers real time grades from Home   Access Center (HAC)
+Custom API powers real time grades from Home Access Center (HAC)
     
 Real time GPA Predictor
     
@@ -200,6 +194,78 @@ Node.js
 Express.js
 Flask
 Vercel
-    `
-  }
+    `,
+  },
+  {
+    type: "Project",
+    title: "GPT Study",
+    platform: "Web",
+    language: "TypeScript",
+    icon: gptStudyIcon,
+    screenshot: gptStudyScreenshot,
+    githubUrl: "https://github.com/SumitNalavade/GPTStudy",
+    demoUrl: "https://gpt-study.vercel.app/",
+    description: `
+GPT Study is a web app that revolutionizes the way students study – akin to Quizlet but with a twist.
+
+This platform empowers users to effortlessly create comprehensive study sets with artificial intelligence technology.
+
+Once a user uploads a set of example questions, the AI algorithm generates an array of additional questions based on the provided examples. This feature enhances the study experience, offering users a vast repertoire of diverse and challenging questions to master.
+
+The study sets are then saved to users accounts allowing them to access their materials from anywhere and at anytime!GPT Study is a web app that revolutionizes the way students study – akin to Quizlet but with a twist. This platform empowers users to effortlessly create comprehensive study sets with artificial intelligence technology. Once a user uploads a set of example questions, the AI algorithm generates an array of additional questions based on the provided examples. This feature enhances the study experience, offering users a vast repertoire of diverse and challenging questions to master. The study sets are then saved to users accounts allowing them to access their materials from anywhere and at anytime!
+    `,
+  },
+  {
+    type: "Project",
+    title: "YelpCamp V2",
+    platform: "Web",
+    language: "TypeScript",
+    icon: yelpcampV2Icon,
+    screenshot: yelpcampV2Screenshot,
+    demoUrl: "https://yelpcampv2.vercel.app/",
+    githubUrl: "https://github.com/SumitNalavade/YelpCampV2",
+    description: `
+Rewrite of the YelpCamp project from the 2022 web developer bootcamp
+
+Tech Stack:
+Client: React, Next.js, TailwindCSS, DaisyUI, NextAuth
+Server: Apollo Server, GraphQL, Prisma, PostgreSQL
+    `,
+  },
+  {
+    type: "Project",
+    title: "YelpCamp",
+    platform: "Web",
+    language: "JavaScript",
+    icon: yelpcampIcon,
+    screenshot: yelpcampScreenshot,
+    githubUrl: "https://github.com/SumitNalavade/YelpCamp",
+    demoUrl: "https://yelpcamp-dwzt.onrender.com/",
+    description: `
+Yelp-like full-stack web application from the 2022 Web Developer Bootcamp
+
+Lessons Learned / Technologies Used
+MVC (Model-View-Controller) architecture to achieve seperation of concerns and maintain independence in relation to backend/frontend services.
+    
+Express.js minimal, unopinionated backend framework to keep serverside boilerplate as low as possible. Especially useful for learning how to piece different technologies together to develop a complete backend.
+    
+Express-Session to learn how cookies work to deliver a rich user experience through client and serverside cookies.
+    
+Passport.js for authentication and authorization.
+    
+MongoDB as the primary NoSQL database to store campgrounds, users, reviews and session details.
+    
+Mongoose as an ORM(Object relation mapping) library to interact with MongoDB.
+    
+Cloudinary to store images of campgrounds when users create new campgrounds, and to optimize them for when client-side requests them.
+    
+Mapbox to deliver an interactive map for users to visually see the location of campgrounds through a cluster map and a zoomed in map for each campground.
+    
+EJS (Embedded JavaScript Templates) as a templating language to create dynamic user experices.
+    
+Bootstrap as the driving CSS framework to create visually appealing user experiences.
+    
+Render to host the complete application
+    `,
+  },
 ];

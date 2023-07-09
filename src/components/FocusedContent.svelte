@@ -18,23 +18,39 @@
 </script>
 
 <main class="text-sm">
-  <div class="flex items-end gap-4 mb-4">
+  <div class="flex items-center gap-4 mb-4">
     <img src={$focusedContent.icon} class="rounded-xl w-24" alt="" />
+
     <div>
       <div class="mb-1">
         <p class="font-semibold text-xl">{$focusedContent.title}</p>
 
-        <p>{experienceContent?.employer}</p>
+        { #if experienceContent}
+          <p>{experienceContent.employer}</p>
+
+          {:else}
+          <div class="flex gap-4 my-2">
+            <a href={projectContent?.demoUrl} target="_blank" class="btn btn-secondary btn-xs">Demo</a>
+            <a href={projectContent?.githubUrl} target="_blank" class="btn btn-secondary btn-xs">GitHub</a>
+          </div>
+        {/if }
+
       </div>
-      <p>
-        {experienceContent?.start} -
-        {#if experienceContent?.end}
-          <span>{experienceContent?.end}</span>
-        {:else}
-          <span>Present</span>
-        {/if}
-      </p>
-      <p>{experienceContent?.location}</p>
+
+      { #if experienceContent}
+        <p>
+          {experienceContent?.start} -
+          {#if experienceContent?.end}
+            <span>{experienceContent?.end}</span>
+          {:else}
+            <span>Present</span>
+          {/if}
+        </p>
+      {/if }
+
+      { #if experienceContent}
+        <p>{experienceContent?.location}</p>         
+      {/if }
     </div>
   </div>
   <div class="whitespace-pre-line">

@@ -9,13 +9,11 @@ import CNTVLogo from "../assets/CNTV-icon.jpg";
 import readmeEditorIcon from "../assets/readmeEditor-icon.png";
 import fisdIcon from "../assets/fisd-icon.jpg";
 import gradualIcon from "../assets/gradual-icon.jpg";
-import yelpcampV2Icon from "../assets/yelpcampV2-icon.png";
 import yelpcampIcon from "../assets/yelpcamp-icon.png";
 import gptStudyIcon from "../assets/gptStudy-icon.webp";
 
 import readmeEditorScreenshot from "../assets/vscode-readme-editor-screenshot.png";
 import fisdHacApiScreenshot from "../assets/friscoisd-hac-api-screenshot.png";
-import yelpcampV2Screenshot from "../assets/yelpcampV2-screenshot.png";
 import yelpcampScreenshot from "../assets/yelpcamp-screenshot.png";
 import gradualScreenshot from "../assets/gradual-screenshot.png";
 import gptStudyScreenshot from "../assets/gptStudy-screenshot.png";
@@ -141,7 +139,7 @@ Built with React.js and TypeScript inside a VS Code Webview.
 Inspired by:
 https://readme.so/
 
-Features:
+## Features:
 - Accessible directly inside VS Code project workspace
 - Prebuilt components and templates to speed up users' workflow
 - Ability to import and manipulate existing markdown files
@@ -189,7 +187,7 @@ Built a mobile application to enable Frisco ISD students to access their grades 
 
 Leveraged React Native / Expo to build cross platform for iOS and Android with one singular codebase
 
-Features:
+## Features:
 - Custom API to access data from Frisco ISD Home Access Center
 - Real time updates for student grades, GPAs and schedules
 - Real Time GPA Predictor
@@ -218,24 +216,17 @@ This platform empowers users to effortlessly create comprehensive study sets wit
 
 Once a user uploads a set of example questions, the AI algorithm generates an array of additional questions based on the provided examples. This feature enhances the study experience, offering users a vast repertoire of diverse and challenging questions to master.
 
-The study sets are then saved to users accounts allowing them to access their materials from anywhere and at anytime!GPT Study is a web app that revolutionizes the way students study – akin to Quizlet but with a twist. This platform empowers users to effortlessly create comprehensive study sets with artificial intelligence technology. Once a user uploads a set of example questions, the AI algorithm generates an array of additional questions based on the provided examples. This feature enhances the study experience, offering users a vast repertoire of diverse and challenging questions to master. The study sets are then saved to users accounts allowing them to access their materials from anywhere and at anytime!
-    `,
-  },
-  {
-    type: "Project",
-    title: "YelpCamp V2",
-    platform: "Web",
-    language: "TypeScript",
-    icon: yelpcampV2Icon,
-    screenshot: yelpcampV2Screenshot,
-    demoUrl: "https://yelpcampv2.vercel.app/",
-    githubUrl: "https://github.com/SumitNalavade/YelpCampV2",
-    description: `
-Rewrite of the YelpCamp project from the 2022 web developer bootcamp
+The study sets are then saved to users accounts allowing them to access their materials from anywhere and at anytime!
 
-Tech Stack:
-Client: React, Next.js, TailwindCSS, DaisyUI, NextAuth
-Server: Apollo Server, GraphQL, Prisma, PostgreSQL
+## Built with:
+- TypeScript
+- React.js
+- Next.js
+- TailwindCSS
+- Open Ai API
+
+## Screenshots  
+![App Screenshot](https://github.com/SumitNalavade/GPTStudy/blob/main/public/screenshots.png?raw=true)
     `,
   },
   {
@@ -250,28 +241,28 @@ Server: Apollo Server, GraphQL, Prisma, PostgreSQL
     description: `
 Yelp-like full-stack web application from the 2022 Web Developer Bootcamp
 
-Lessons Learned / Technologies Used
-MVC (Model-View-Controller) architecture to achieve seperation of concerns and maintain independence in relation to backend/frontend services.
+## Lessons Learned / Technologies Used
+- MVC (Model-View-Controller) architecture to achieve seperation of concerns and maintain independence in relation to backend/frontend services.
     
-Express.js minimal, unopinionated backend framework to keep serverside boilerplate as low as possible. Especially useful for learning how to piece different technologies together to develop a complete backend.
+- Express.js minimal, unopinionated backend framework to keep serverside boilerplate as low as possible. Especially useful for learning how to piece different technologies together to develop a complete backend.
     
-Express-Session to learn how cookies work to deliver a rich user experience through client and serverside cookies.
+- Express-Session to learn how cookies work to deliver a rich user experience through client and serverside cookies.
     
-Passport.js for authentication and authorization.
+- Passport.js for authentication and authorization.
     
-MongoDB as the primary NoSQL database to store campgrounds, users, reviews and session details.
+- MongoDB as the primary NoSQL database to store campgrounds, users, reviews and session details.
     
-Mongoose as an ORM(Object relation mapping) library to interact with MongoDB.
+- Mongoose as an ORM(Object relation mapping) library to interact with MongoDB.
     
-Cloudinary to store images of campgrounds when users create new campgrounds, and to optimize them for when client-side requests them.
+- Cloudinary to store images of campgrounds when users create new campgrounds, and to optimize them for when client-side requests them.
     
-Mapbox to deliver an interactive map for users to visually see the location of campgrounds through a cluster map and a zoomed in map for each campground.
+- Mapbox to deliver an interactive map for users to visually see the location of campgrounds through a cluster map and a zoomed in map for each campground.
     
-EJS (Embedded JavaScript Templates) as a templating language to create dynamic user experices.
+- EJS (Embedded JavaScript Templates) as a templating language to create dynamic user experices.
     
-Bootstrap as the driving CSS framework to create visually appealing user experiences.
+- Bootstrap as the driving CSS framework to create visually appealing user experiences.
     
-Render to host the complete application
+- Render to host the complete application
     `,
   },
 ];

@@ -5,7 +5,7 @@
 </script>
 
 <main>
-  <h2 class="text-2xl font-semibold mb-2 ml-2">Projects</h2>
+  <h2 class="text-2xl font-semibold mb-2 ml-2">Feaured Projects</h2>
 
   {#each projects as project, index}
     <button

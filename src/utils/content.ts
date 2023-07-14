@@ -185,24 +185,21 @@ Continuing maintenance of API as it powers several iOS, Android and Web applicat
     screenshot: gradualScreenshot,
     githubUrl: "https://github.com/SumitNalavade/Gradual-React-Native",
     description: `
-Cross platform mobile app for HAC client built for FRISCO ISD students
+Built a mobile application to enable Frisco ISD students to access their grades and student information remotely from the Frisco ISD Home Access Center.
 
-Built with React Native/Expo for iOS and Android
-  
+Leveraged React Native / Expo to build cross platform for iOS and Android with one singular codebase
+
 Features:
-Custom API powers real time grades from Home Access Center (HAC)
-    
-Real time GPA Predictor
-    
-'What if' calculator to predict class averages by adding/manipulating assignment grades
-Cross platform
-    
-Technologies Used:
-React Native/Expo
-Node.js
-Express.js
-Flask
-Vercel
+- Custom API to access data from Frisco ISD Home Access Center
+- Real time updates for student grades, GPAs and schedules
+- Real Time GPA Predictor
+- Implemented a 'What if' calculator to predict students' grades and GPAs by manipulating assignment grades
+- Cross Platform
+- 100% free with no ads
+
+
+## Screenshots
+![](https://github.com/SumitNalavade/Gradual-React-Native/blob/master/assets/mockups.png?raw=true)
     `,
   },
   {

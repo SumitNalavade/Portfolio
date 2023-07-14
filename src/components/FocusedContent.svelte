@@ -1,6 +1,9 @@
 <script lang="ts">
+  import svelteMarkdown from "svelte-markdown";
+
   import type { IExperience, IProject } from "../utils/interfaces";
   import { focusedContent } from "../utils/store";
+    import SvelteMarkdown from "svelte-markdown";
 
   let experienceContent: IExperience | null;
   let projectContent: IProject | null;
@@ -53,7 +56,7 @@
       {/if }
     </div>
   </div>
-  <div class="whitespace-pre-line">
-    {$focusedContent.description}
+  <div class="whitespace-pre-line prose text-white">
+    <SvelteMarkdown source={$focusedContent.description} />
   </div>
 </main>

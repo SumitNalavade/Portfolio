@@ -132,18 +132,27 @@ export const projects: IProject[] = [
     platform: "Other",
     language: "TypeScript",
     description: `
-Built a VS Code extension with React.js to allow users to create beautiful ReadMe files for their projects without having to leave their editor.
+Built a VS Code Extension to allow users to easily create and manage ReadMe files for their projects.
 
-VS Code Extension Marketplace (10,000+ Downloads):
-https://marketplace.visualstudio.com/items?itemName=SumitNalavade.vscode-readme-editor
-    
+Built with React.js and TypeScript inside a VS Code Webview.
+
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/SumitNalavade.vscode-readme-editor) ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/SumitNalavade.vscode-readme-editor)
+
+Inspired by:
+https://readme.so/
+
 Features:
-Accessibility in VS Code
-Choose from components to speed up workflow.
-Download directly to project root
-Import existing Readme and customize
-Live Previews
-Dark/Light Mode based on VS Code theme`,
+- Accessible directly inside VS Code project workspace
+- Prebuilt components and templates to speed up users' workflow
+- Ability to import and manipulate existing markdown files
+- Live preview to see changes in real time
+- Ability to download updated documents for free
+
+
+## Demo 🚀
+![App Screenshot](https://github.com/SumitNalavade/VS-Code-ReadMe-Editor/blob/main/assets/demo/demo_1.gif?raw=true)
+![App Screenshot](https://github.com/SumitNalavade/VS-Code-ReadMe-Editor/blob/main/assets/demo/demo_2.gif?raw=true)
+`,
   },
   {
     type: "Project",

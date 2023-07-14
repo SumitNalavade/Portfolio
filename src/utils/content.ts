@@ -164,17 +164,17 @@ Features:
     githubUrl: "https://github.com/SumitNalavade/FriscoISDHACAPI",
     language: "Python",
     description: `
-Built and maintained a free and open source REST API to interact with data from the Frisco ISD Home Access Center (HAC).
+Built and maintained a free and open source REST API to interact with students' data and informations from the Frisco ISD Home Access Center (HAC).
 
-Used Next.js framework to create an interactive documentation site with an integrated API explorer.
-
-Deployed API on Vercel serverless functions. 
+Implemented webscraping and http request scraping in a python based backend environment.
 
 Used the Python Requests and BeautifulSoup library to send HTTP requests to Home Access Center, bypass CSRF token, parse the HTML content and return a student’s academic information in JSON format.
 
-API powers several Frisco ISD HAC Apps including Gradual for iOS and Android.
+Built an interactive documentation site along with an integrated API explorer with Typescript, React.js and Next.js 
 
-Used by several other Frisco ISD student’s projects.`,
+Deployed API and website on Vercel serverless functions. 
+
+Continuing maintenance of API as it powers several iOS, Android and Web applications serving Frisco ISD students.`,
   },
   {
     type: "Project",

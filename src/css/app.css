@@ -4,6 +4,7 @@
 
 body {
     background-color: black;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 #content-panel {

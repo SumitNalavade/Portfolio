@@ -34,7 +34,7 @@ Focused on building a resilient and scalable backend architecture with Python an
 
 Streamlined data flow, ensuring data consistency and establishing reliable communication channels between the frontend and backend systems.
 
-Continuously gathered valuable user feedback and conducted extensive usability testing, utilizing. libraries such as Jest and Selenium.`,
+Continuously gathered valuable user feedback and conducted extensive usability testing, utilizing libraries such as Jest and Selenium.`,
   },
   {
     type: "Experience",

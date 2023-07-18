@@ -2,6 +2,11 @@
     import { experiences } from "../utils/content";
 
     import { focusedContent } from "../utils/store";
+
+    const openModal = () => {
+      // @ts-ignore
+      window.focused_content_modal.showModal()
+    }
 </script>
 
 <main>
@@ -13,19 +18,19 @@
         $focusedContent === experience ? "text-primary" : ""
       }`}
       on:click={() => ($focusedContent = experiences[index])}
-      on:click={() => window.focused_content_modal.showModal()}
+      on:click={openModal}
     >
       <img
         src={experience.icon}
         class="w-12 rounded-lg"
         alt={`${experience.employer} Logo`}
       />
-      <div class="w-1/2">
+      <div class="w-full sm:w-1/2">
         <p class="font-medium">{experience.title}</p>
         <small>{experience.employer}</small>
       </div>
-      <p class="w-1/4">{experience.duration}</p>
-      <p class="w-1/4">{experience.location}</p>
+      <p class="w-1/4 hidden sm:block">{experience.duration}</p>
+      <p class="w-1/4 hidden sm:block">{experience.location}</p>
     </button>
   {/each}
 </main>

@@ -22,7 +22,7 @@
 <dialog id="focused_content_modal" class="modal modal-bottom bg-netural">
   <form
     method="dialog"
-    class="modal-box min-w-full bg-secondary text-white text-sm h-1/2"
+    class="modal-box min-w-full bg-secondary text-white text-sm h-3/5"
   >
     <div class="flex items-center gap-4">
       <img src={$focusedContent.icon} class="rounded-xl w-24" alt="" />

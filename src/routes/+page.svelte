@@ -5,12 +5,20 @@
   import Projects from "../components/Projects.svelte";
   import FocusedContent from "../components/FocusedContent.svelte";
   import FocusedContentModal from "../components/FocusedContentModal.svelte";
+
+  let modalVisible = false
+  let screenSize: number;
+
+  $: screenSize < 768 ? modalVisible = true : modalVisible = false
 </script>
 
+<svelte:window bind:innerWidth={screenSize}></svelte:window>
+
 <main class="flex gap-2">
-  <div class="md:hidden">
+
+  {#if modalVisible}
     <FocusedContentModal />
-  </div>
+  {/if}
 
   <div class="w-1/4 flex-col gap-2 hidden xl:flex">
     <div class="p-6 bg-neutral rounded-lg text-text">
@@ -59,7 +67,7 @@
   <div class="w-full h-full text-white">
     <Hero />
 
-    <div id="content-panel" class="h-full p-6 flex gap-12">
+    <div id="content-panel" class="h-full p-2 sm:p-6 flex gap-12">
       <div class="flex flex-col gap-4 w-full">
         <Experience />
         <Projects />

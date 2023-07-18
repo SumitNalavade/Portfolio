@@ -3,7 +3,7 @@
 </script>
 
 <main class="p-2 bg-black min-h-screen">
-    <div class="h-screen grow">
+    <div class="h-screen overflow-y-auto">
         <slot />
     </div>
 </main>

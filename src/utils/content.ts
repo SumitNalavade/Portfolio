@@ -12,12 +12,6 @@ import gradualIcon from "../assets/gradual-icon.jpg";
 import yelpcampIcon from "../assets/yelpcamp-icon.png";
 import gptStudyIcon from "../assets/gptStudy-icon.webp";
 
-import readmeEditorScreenshot from "../assets/vscode-readme-editor-screenshot.png";
-import fisdHacApiScreenshot from "../assets/friscoisd-hac-api-screenshot.png";
-import yelpcampScreenshot from "../assets/yelpcamp-screenshot.png";
-import gradualScreenshot from "../assets/gradual-screenshot.png";
-import gptStudyScreenshot from "../assets/gptStudy-screenshot.png";
-
 export const experiences: IExperience[] = [
   {
     type: "Experience",
@@ -123,7 +117,6 @@ export const projects: IProject[] = [
     type: "Project",
     title: "VS Code ReadMe Editor",
     icon: readmeEditorIcon,
-    screenshot: readmeEditorScreenshot,
     demoUrl:
       "https://marketplace.visualstudio.com/items?itemName=SumitNalavade.vscode-readme-editor",
     githubUrl: "https://github.com/SumitNalavade/VS-Code-ReadMe-Editor",
@@ -157,8 +150,7 @@ https://readme.so/
     title: "FriscoISD HAC API",
     platform: "Serverside",
     icon: fisdIcon,
-    screenshot: fisdHacApiScreenshot,
-    demoUrl: "https://https://friscoisdhacapi.vercel.app/",
+    demoUrl: "https://friscoisdhacapi.vercel.app/",
     githubUrl: "https://github.com/SumitNalavade/FriscoISDHACAPI",
     language: "Python",
     description: `
@@ -180,7 +172,6 @@ Continuing maintenance of API as it powers several iOS, Android and Web applicat
     platform: "Mobile",
     language: "JavaScript",
     icon: gradualIcon,
-    screenshot: gradualScreenshot,
     githubUrl: "https://github.com/SumitNalavade/Gradual-React-Native",
     description: `
 Built a mobile application to enable Frisco ISD students to access their grades and student information remotely from the Frisco ISD Home Access Center.
@@ -206,7 +197,6 @@ Leveraged React Native / Expo to build cross platform for iOS and Android with o
     platform: "Web",
     language: "TypeScript",
     icon: gptStudyIcon,
-    screenshot: gptStudyScreenshot,
     githubUrl: "https://github.com/SumitNalavade/GPTStudy",
     demoUrl: "https://gpt-study.vercel.app/",
     description: `
@@ -235,7 +225,6 @@ The study sets are then saved to users accounts allowing them to access their ma
     platform: "Web",
     language: "JavaScript",
     icon: yelpcampIcon,
-    screenshot: yelpcampScreenshot,
     githubUrl: "https://github.com/SumitNalavade/YelpCamp",
     demoUrl: "https://yelpcamp-dwzt.onrender.com/",
     description: `

@@ -6,8 +6,8 @@
   import FocusedContent from "../components/FocusedContent.svelte";
 </script>
 
-<main class="flex gap-2 h-full">
-  <div class="h-full w-1/4 flex flex-col gap-2">
+<main class="flex gap-2">
+  <div class="w-1/4 flex flex-col gap-2">
     <div class="p-6 bg-neutral rounded-lg text-text">
       <div
         class="mb-6 flex items-center gap-6 font-medium cursor-pointer hover:text-white"

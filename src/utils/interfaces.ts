@@ -16,7 +16,6 @@ export interface IExperience extends IContent {
 export interface IProject extends IContent {
     demoUrl?: string
     githubUrl?: string
-    screenshot: string
     platform: "Web" | "Mobile" | "Desktop" | "Serverside" | "Other"
     language: string
 }

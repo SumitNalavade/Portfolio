@@ -117,8 +117,8 @@
   };
 </script>
 
-<main class="min-h-screen">
-  <div class="min-h-screen p-4 bg-neutral secondary rounded-lg text-text">
+<main class="h-full">
+  <div class="h-full p-4 bg-neutral secondary rounded-lg text-text ">
     <div class="ml-3 flex items-center font-medium hover:text-white">
       <svg role="img" height="24" width="24" aria-hidden="true" fill="#b3b3b3"
         ><path

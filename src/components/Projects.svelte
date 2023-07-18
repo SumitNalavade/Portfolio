@@ -13,6 +13,7 @@
         $focusedContent === project ? "text-primary" : ""
       }`}
       on:click={() => $focusedContent = projects[index]}
+      on:click={() => window.focused_content_modal.showModal()}
     >
       <img
         src={project.icon}

@@ -13,6 +13,7 @@
         $focusedContent === experience ? "text-primary" : ""
       }`}
       on:click={() => ($focusedContent = experiences[index])}
+      on:click={() => window.focused_content_modal.showModal()}
     >
       <img
         src={experience.icon}

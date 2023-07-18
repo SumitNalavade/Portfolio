@@ -117,23 +117,23 @@
   };
 </script>
 
-<main class="h-full">
-  <div class="h-full p-4 bg-neutral secondary rounded-lg text-text ">
+<main class="h-full max-w-sm">
+  <div class="h-full p-2 bg-neutral secondary rounded-lg text-text ">
     <div class="ml-3 flex items-center font-medium hover:text-white">
       <svg role="img" height="24" width="24" aria-hidden="true" fill="#b3b3b3"
         ><path
           d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
         /></svg
       >
-      <div class="dropdown dropdown-bottom dropdown-right">
+      <div class="dropdown dropdown-bottom dropdown-right w-full">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label
           tabIndex={0}
-          class="btn btn-ghost hover:bg-inherit m-1 bg-neutral border-none"
+          class="btn btn-ghost hover:bg-inherit m-1 bg-neutral border-none w-full flex justify-start"
           >Top Technologies <svg
             role="img"
-            height="16"
-            width="16"
+            height="14"
+            width="14"
             fill="#b3b3b3"
             aria-hidden="true"><path d="m14 6-6 6-6-6h12z" /></svg
           ></label
@@ -176,7 +176,7 @@
       {#each technologies as technology}
         {#if technology.type === selectedTechnology || selectedTechnology === "all"}
           <div
-            class="flex gap-4 my-4 p-2 rounded-lg hover:bg-zinc-900 hover:text-white"
+            class="flex gap-4 my-4 p-2 rounded-lg hover:bg-zinc-900 hover:text-white cursor-pointer"
           >
             <img
               src={technology.icon}

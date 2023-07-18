@@ -1,9 +1,8 @@
 <script lang="ts">
-  import svelteMarkdown from "svelte-markdown";
-
+  import SvelteMarkdown from "svelte-markdown";
+  
   import type { IExperience, IProject } from "../utils/interfaces";
   import { focusedContent } from "../utils/store";
-    import SvelteMarkdown from "svelte-markdown";
 
   let experienceContent: IExperience | null;
   let projectContent: IProject | null;
@@ -20,7 +19,7 @@
   }
 </script>
 
-<main class="text-sm">
+<main class="text-sm" >
   <div class="flex items-center gap-4 mb-4">
     <img src={$focusedContent.icon} class="rounded-xl w-24" alt="" />
 
@@ -56,7 +55,7 @@
       {/if }
     </div>
   </div>
-  <div class="whitespace-pre-line prose text-white">
+  <div class="whitespace-pre-line prose text-sm text-white">
     <SvelteMarkdown source={$focusedContent.description} />
   </div>
 </main>

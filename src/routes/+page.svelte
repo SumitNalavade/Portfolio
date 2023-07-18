@@ -4,10 +4,15 @@
   import Experience from "../components/Experience.svelte";
   import Projects from "../components/Projects.svelte";
   import FocusedContent from "../components/FocusedContent.svelte";
+  import FocusedContentModal from "../components/FocusedContentModal.svelte";
 </script>
 
 <main class="flex gap-2">
-  <div class="w-1/4 flex flex-col gap-2">
+  <div class="md:hidden">
+    <FocusedContentModal />
+  </div>
+
+  <div class="w-1/4 flex-col gap-2 hidden xl:flex">
     <div class="p-6 bg-neutral rounded-lg text-text">
       <div
         class="mb-6 flex items-center gap-6 font-medium cursor-pointer hover:text-white"
@@ -55,12 +60,12 @@
     <Hero />
 
     <div id="content-panel" class="h-full p-6 flex gap-12">
-      <div class="flex flex-col gap-4 w-2/3">
+      <div class="flex flex-col gap-4 w-full">
         <Experience />
         <Projects />
       </div>
 
-      <div class="w-1/2">
+      <div class="w-2/3 hidden md:block">
         <FocusedContent />
       </div>
     </div>

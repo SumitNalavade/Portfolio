@@ -1,4 +1,4 @@
-import type { IExperience, IProject } from "./interfaces";
+import type { IExperience, IProject, ITechnology } from "./interfaces";
 
 import TAMUHealthLogo from "../assets/TAMUHealth-icon.jpg";
 import TAMULogo from "../assets/TAMU-icon.jpg";
@@ -11,6 +11,102 @@ import fisdIcon from "../assets/fisd-icon.jpg";
 import gradualIcon from "../assets/gradual-icon.jpg";
 import yelpcampIcon from "../assets/yelpcamp-icon.png";
 import gptStudyIcon from "../assets/gptStudy-icon.webp";
+
+import reactIcon from "../assets/react-icon.png";
+import svelteIcon from "../assets/svelte-icon.png";
+import nextIcon from "../assets/next-icon.png";
+import sveltekitIcon from "../assets/sveltekit-icon.svg";
+import typescriptIcon from "../assets/typescript-icon.png";
+import javascriptIcon from "../assets/javascript-icon.png";
+import pythonIcon from "../assets/python-icon.png";
+import javaIcon from "../assets/java-icon.png";
+import nodeIcon from "../assets/node-icon.png";
+import graphqlIcon from "../assets/graphql-icon.png";
+import mongodbIcon from "../assets/mongodb-icon.png";
+import postgresqlIcon from "../assets/postgresql-icon.svg";
+import firebaseIcon from "../assets/firebaseIcon.png";
+
+export const topTechnologies: ITechnology[] = [
+  {
+    name: "React",
+    icon: reactIcon,
+    description: "UI Library",
+    type: "libraries/frameworks",
+  },
+
+  {
+    name: "Svelte",
+    icon: svelteIcon,
+    description: "UI Library",
+    type: "libraries/frameworks",
+  },
+  {
+    name: "Next.js",
+    icon: nextIcon,
+    description: "Full-Stack Framework",
+    type: "libraries/frameworks",
+  },
+  {
+    name: "SvelteKit",
+    icon: sveltekitIcon,
+    description: "Full-Stack Framework",
+    type: "libraries/frameworks",
+  },
+  {
+    name: "Node.js",
+    icon: nodeIcon,
+    description: "Backend Framework/Runtime",
+    type: "libraries/frameworks",
+  },
+  {
+    name: "TypeScript",
+    icon: typescriptIcon,
+    description: "Programming Language",
+    type: "languages",
+  },
+  {
+    name: "JavaScript",
+    icon: javascriptIcon,
+    description: "Programming Language",
+    type: "languages",
+  },
+  {
+    name: "Python",
+    icon: pythonIcon,
+    description: "Programming Language",
+    type: "languages",
+  },
+  {
+    name: "Java",
+    icon: javaIcon,
+    description: "Programming Language",
+    type: "languages",
+  },
+  {
+    name: "Graph QL",
+    icon: graphqlIcon,
+    description: "Query Language",
+    type: "other",
+  },
+  {
+    name: "Firebase",
+    icon: firebaseIcon,
+    description: "Backend-As-A-Service",
+    type: "other",
+  },
+  {
+    name: "Mongo DB",
+    icon: mongodbIcon,
+    description: "Database",
+    type: "databases",
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresqlIcon,
+    description: "Database",
+    type: "databases",
+  },
+];
 
 export const experiences: IExperience[] = [
   {

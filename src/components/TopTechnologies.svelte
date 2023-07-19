@@ -1,106 +1,5 @@
 <script lang="ts">
-  import reactIcon from "../assets/react-icon.png";
-  import svelteIcon from "../assets/svelte-icon.png";
-  import nextIcon from "../assets/next-icon.png";
-  import sveltekitIcon from "../assets/sveltekit-icon.svg";
-  import typescriptIcon from "../assets/typescript-icon.png";
-  import javascriptIcon from "../assets/javascript-icon.png";
-  import pythonIcon from "../assets/python-icon.png";
-  import javaIcon from "../assets/java-icon.png";
-  import nodeIcon from "../assets/node-icon.png";
-  import graphqlIcon from "../assets/graphql-icon.png";
-  import mongodbIcon from "../assets/mongodb-icon.png";
-  import postgresqlIcon from "../assets/postgresql-icon.svg";
-  import firebaseIcon from "../assets/firebaseIcon.png";
-
-  interface ITechnology {
-    name: string;
-    icon: string;
-    description: string;
-    type: "languages" | "libraries/frameworks" | "databases" | "other";
-  }
-
-  const technologies: ITechnology[] = [
-    {
-      name: "React",
-      icon: reactIcon,
-      description: "UI Library",
-      type: "libraries/frameworks",
-    },
-
-    {
-      name: "Svelte",
-      icon: svelteIcon,
-      description: "UI Library",
-      type: "libraries/frameworks",
-    },
-    {
-      name: "Next.js",
-      icon: nextIcon,
-      description: "Full-Stack Framework",
-      type: "libraries/frameworks",
-    },
-    {
-      name: "SvelteKit",
-      icon: sveltekitIcon,
-      description: "Full-Stack Framework",
-      type: "libraries/frameworks",
-    },
-    {
-      name: "Node.js",
-      icon: nodeIcon,
-      description: "Backend Framework/Runtime",
-      type: "libraries/frameworks",
-    },
-    {
-      name: "TypeScript",
-      icon: typescriptIcon,
-      description: "Programming Language",
-      type: "languages",
-    },
-    {
-      name: "JavaScript",
-      icon: javascriptIcon,
-      description: "Programming Language",
-      type: "languages",
-    },
-    {
-      name: "Python",
-      icon: pythonIcon,
-      description: "Programming Language",
-      type: "languages",
-    },
-    {
-      name: "Java",
-      icon: javaIcon,
-      description: "Programming Language",
-      type: "languages",
-    },
-    {
-      name: "Graph QL",
-      icon: graphqlIcon,
-      description: "Query Language",
-      type: "other",
-    },
-    {
-      name: "Firebase",
-      icon: firebaseIcon,
-      description: "Backend-As-A-Service",
-      type: "other",
-    },
-    {
-      name: "Mongo DB",
-      icon: mongodbIcon,
-      description: "Database",
-      type: "databases",
-    },
-    {
-      name: "PostgreSQL",
-      icon: postgresqlIcon,
-      description: "Database",
-      type: "databases",
-    },
-  ];
+  import { topTechnologies } from "../utils/content";
 
   let selectedTechnology:
     | "languages"
@@ -173,7 +72,7 @@
     </div>
 
     <div class="mt-6">
-      {#each technologies as technology}
+      {#each topTechnologies as technology}
         {#if technology.type === selectedTechnology || selectedTechnology === "all"}
           <div
             class="flex gap-4 my-4 p-2 rounded-lg hover:bg-zinc-900 hover:text-white cursor-pointer"

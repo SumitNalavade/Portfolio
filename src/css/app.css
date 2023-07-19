@@ -4,7 +4,10 @@
 
 body {
     background-color: black;
-    padding-bottom: env(safe-area-inset-bottom);
+}
+
+html {
+    height: -webkit-fill-available;
 }
 
 #content-panel {

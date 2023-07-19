@@ -27,7 +27,7 @@
   <div class="w-full h-full text-white">
     <Hero />
 
-    <div id="content-panel" class="h-full p-2 sm:p-6 flex gap-12">
+    <div class="content-panel h-full p-2 sm:p-6 flex gap-12">
       <div class="flex flex-col gap-4 w-full">
         <Experience />
         <Projects />

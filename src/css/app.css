@@ -10,6 +10,10 @@ html {
     height: -webkit-fill-available;
 }
 
-#content-panel {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(112,128,104,1) 300%); 
+.content-panel {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(112,128,104,1) 325%); 
+}
+
+.modal-content-panel {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(112,128,104,1) 375%); 
 }

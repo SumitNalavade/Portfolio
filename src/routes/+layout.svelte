@@ -5,7 +5,7 @@
 
 <MetaTags title="Sumit Nalavade - Portfolio" description="I'm an engineering student at Texas A&M University '26! My interests include software design and development, machine learning and artificial intelligence." />
 
-<main class="p-2 bg-black h-screen" >
+<main class="pt-2 sm:p-2 bg-black h-screen" >
     <div class="h-full">
         <slot />
     </div>

@@ -1,7 +1,7 @@
 import type { IExperience, IProject, ITechnology } from "./interfaces";
 
 import TAMUHealthLogo from "../assets/TAMUHealth-icon.jpg";
-import TAMULogo from "../assets/TAMU-icon.jpg";
+import TAMUEngineeringIcon from "../assets/TAMUEngineering-icon.png";
 import ACCLogo from "../assets/ACC-icon.jpg";
 import CryptLogo from "../assets/crypt-icon.jpg";
 import CNTVLogo from "../assets/CNTV-icon.jpg";
@@ -111,7 +111,7 @@ export const topTechnologies: ITechnology[] = [
 export const experiences: IExperience[] = [
   {
     type: "Experience",
-    title: "Computer Science Research Assistant",
+    title: "Full-Stack Software Engineering Research Assistant",
     employer: "Texas A&M University Health Science Center",
     icon: TAMUHealthLogo,
     location: "Bryan, Texas",
@@ -120,38 +120,44 @@ export const experiences: IExperience[] = [
     description: `
 Contributed to the development of OliviaHealth, a grant funded project lead by the Texas A&M Health Science Center to alleviate maternal and familial care.
 
-Developed a highly intuitive user interface using React.js and TypeScript, empowering users to effortlessly customize preferences and tailor the output to their specific needs.
+Developed an intuitive user interface using React.js, TypeScript, Vite.js, Google APIs and supporting client side libraries.
 
-Integrated an SBERT machine learning model into an API to enable responsive handling of user queries, akin to advanced language models like Chat-GPT and Google Bard.
+Built scalable backend services with Python, Flask and SQLAlchemy to securely handle server-side session based authentication, database querying and natural language processing with sentence transformers and Pytorch.
 
-Expanded the algorithm's scope by incorporating a broader range of parameters, including user preferences, historical data, and contextual information, to enhance the relevance of the generated output.
+Integrated an SBERT machine learning model into an API to turn natural language prompts from users into SQL queries to retrieve data from a PostgreSQL database.
 
-Focused on building a resilient and scalable backend architecture with Python and Flask, facilitating seamless integration with the frontend. 
+Continuously gathered user feedback and conducted usability testing, utilizing libraries such as Jest and Selenium.
 
-Streamlined data flow, ensuring data consistency and establishing reliable communication channels between the frontend and backend systems.
-
-Continuously gathered valuable user feedback and conducted extensive usability testing, utilizing libraries such as Jest and Selenium.`,
+Deployed application on the Texas A&M STAR (Secure Technologies for Aggie Researchers) infrastructure within an AWS (Amazon Web Services) virtual machine.`,
   },
   {
     type: "Experience",
-    title: "Academic Peer Mentor",
-    employer: "Texas A&M University",
-    icon: TAMULogo,
+    title: "Undergraduate Teaching Assistant",
+    employer: "Texas A&M University College of Engineering",
+    icon: TAMUEngineeringIcon,
     location: "College Station, Texas",
     duration: "Present",
     start: "June, 2023",
     description: `
-Provided regular, one-on-one peer academic coaching to students who live on campus.
+Served as a peer tutor for the ENGR 102 (Introduction to the design and development of computer applications for engineers in Python) course.
 
-Raised academic expectations with engagement and compassion through programs and services.
+Assisted students in their Python programming coursework by attending lectures and conducting weekly office hours.`,
+  },
+  {
+    type: "Experience",
+    title: "Front End Software Engineer",
+    employer: "Crypt Cloud",
+    icon: CryptLogo,
+    location: "Austin, Texas",
+    duration: "3 Months",
+    start: "June, 2022",
+    end: "Auguest, 2022",
+    description: `
+Architected and developed Crypt Cloud’s front-end web application that ensures the secure encryption, storage, and retrieval of user data on the IPFS network, employing the SHA-256 and AES block cipher algorithms.
 
-Serving as a resource to connect students with programs and initiatives that enhance learning and success.
+Leveraged capabilities of the Next.js framework to deliver performance, bolster search engine optimization (SEO), and enhance page insights.
 
-Partnered with Resident Advisors to foster campus community and feelings of belonging on-campus.
-
-Offered opportunities for academic and personal development within the residence halls
-
-Held weekly office hours to support students’ academic and personal goals`,
+Transitioned existing services from JavaScript to TypeScript, prioritizing modularity and maintainability reducing potential bugs and errors.`,
   },
   {
     type: "Experience",
@@ -163,34 +169,11 @@ Held weekly office hours to support students’ academic and personal goals`,
     end: "May, 2023",
     duration: "8 Months",
     description: `
-Led a team of 20+ students to create a cross platform mobile app at Texas A&M University to connect new students with similar interests.
+Served a project manager with the Aggie Coding Club, leading a team of 20+ students to develop a cross platform mobile app for iOS/Android.
 
-Implemented mobile technologies including React Native and TypeScript and backend technologies including Node.js, Express.js and Google Firebase.
+Utilized modern technologies including React Native, TypeScript, Express.js/Node.js and Google Firebase, resulting in a seamless developer and user experience.
 
-Created a REST API to relay information from frontend client to backend server to Google Firestore database.
-
-Taught team members how to use Git, React Native, TypeScript, Firebase etc…
-
-Held weekly stand-up meetings to discuss progress, update team on goals and held mini-lessons covering various technologies.
-    `,
-  },
-  {
-    type: "Experience",
-    title: "Front End Software Engineer",
-    employer: "Crypt",
-    icon: CryptLogo,
-    location: "Austin, Texas",
-    duration: "3 Months",
-    start: "June, 2022",
-    end: "Auguest, 2022",
-    description: `
-Designed and developed Crypt’s front-end web application to securely encrypt, store and retrieve user data on the IPFS network using SHA-256 and AES block cipher.
-
-Used modern technologies including TypeScript, Next.js, React.js and Tailwind.
-
-Replaced Create-React-App build tooling on the existing codebase to Next.js static site generation to greatly improve performance, SEO and page insights.
-
-Documented and tested codebase before releasing to the company.`,
+Conducted regular stand-up meetings to align goals, discuss progress, and provide mini-lessons, fostering growth and skill enhancement.`,
   },
   {
     type: "Experience",
@@ -219,9 +202,11 @@ export const projects: IProject[] = [
     platform: "Other",
     language: "TypeScript",
     description: `
-Built a VS Code Extension to allow users to easily create and manage ReadMe files for their projects.
+Built an extension within VS Code with React.js to create and edit ReadMe and other markdown files without having to leave the editor.
 
-Built with React.js and TypeScript inside a VS Code Webview.
+Improved the user experience by including prebuilt components and templates along with live edit previews.
+
+Deployed the project on the VS Code Marketplace and earned a 5 star rating with over 13,000 downloads.
 
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/SumitNalavade.vscode-readme-editor) ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/SumitNalavade.vscode-readme-editor)
 
@@ -270,9 +255,13 @@ Continuing maintenance of API as it powers several iOS, Android and Web applicat
     icon: gradualIcon,
     githubUrl: "https://github.com/SumitNalavade/Gradual-React-Native",
     description: `
-Built a mobile application to enable Frisco ISD students to access their grades and student information remotely from the Frisco ISD Home Access Center.
+Developed a cross platform mobile app with React Native for Frisco ISD students to access their online gradebook on iOS/Android platforms.
 
-Leveraged React Native / Expo to build cross platform for iOS and Android with one singular codebase
+Built a REST API with Python and Go to scrape student information such as course grades, transcripts and schedules from the Frisco ISD student portal with a sub 1000ms response time.
+
+Built a documentation website with React.js and Next.js providing language-specific examples and an interactive API explorer.
+
+Launched application on the Apple App Store and Google Play Store, accumulating over 3000 downloads and hundreds of daily requests
 
 ## Features:
 - Custom API to access data from Frisco ISD Home Access Center
@@ -296,13 +285,13 @@ Leveraged React Native / Expo to build cross platform for iOS and Android with o
     githubUrl: "https://github.com/SumitNalavade/GPTStudy",
     demoUrl: "https://gpt-study.vercel.app/",
     description: `
-GPT Study is a web app that revolutionizes the way students study – akin to Quizlet but with a twist.
+Built a web application for students to generate study material after uploading their course material with generative AI.
 
-This platform empowers users to effortlessly create comprehensive study sets with artificial intelligence technology.
+Integrated the Open AI GPT API and the Open API JavaScript SDK in a frontend built with React.js and Next.js.
 
 Once a user uploads a set of example questions, the AI algorithm generates an array of additional questions based on the provided examples. This feature enhances the study experience, offering users a vast repertoire of diverse and challenging questions to master.
 
-The study sets are then saved to users accounts allowing them to access their materials from anywhere and at anytime!
+Integrated Google Firebase to handle user authentication through OAuth and email/password verification along with a real-time document database to ensure user data was stored securely and delivered reliability.
 
 ## Built with:
 - TypeScript

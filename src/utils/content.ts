@@ -111,7 +111,7 @@ export const topTechnologies: ITechnology[] = [
 export const experiences: IExperience[] = [
   {
     type: "Experience",
-    title: "Full-Stack Software Engineering Research Assistant",
+    title: "Computer Science Research Assistant",
     employer: "Texas A&M University Health Science Center",
     icon: TAMUHealthLogo,
     location: "Bryan, Texas",

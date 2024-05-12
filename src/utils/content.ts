@@ -45,7 +45,9 @@ Deployed application on the Texas A&M STAR (Secure Technologies for Aggie Resear
     description: `
 Served as a peer tutor and technical lead for CSCE 482 (Senior Capstone Design), assisting students in building and deploying a full-stack web application to complete their degree requirements.
 
-Served as a peer tutor for the ENGR 102 (Introduction to the design and development of computer applications for engineers in Python) course.`,
+Served as a peer tutor for the ENGR 102 (Introduction to the design and development of computer applications for engineers in Python) course.
+
+![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/ichild-poster.png)`,
   },
   {
     type: "Experience",

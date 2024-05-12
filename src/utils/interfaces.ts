@@ -19,10 +19,3 @@ export interface IProject extends IContent {
     platform: "Web" | "Mobile" | "Desktop" | "Serverside" | "Other"
     language: string
 }
-
-export interface ITechnology {
-    name: string;
-    icon: string;
-    description: string;
-    type: "languages" | "libraries/frameworks" | "databases" | "other";
-  }

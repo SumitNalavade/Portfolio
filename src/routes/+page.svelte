@@ -1,5 +1,4 @@
 <script lang="ts">
-  import TopTechnologies from "../components/TopTechnologies.svelte";
   import Hero from "../components/Hero.svelte";
   import Experience from "../components/Experience.svelte";
   import Projects from "../components/Projects.svelte";
@@ -19,10 +18,6 @@
   {#if modalVisible}
     <FocusedContentModal />
   {/if}
-
-  <div class="w-1/4 flex-col gap-2 hidden xl:flex">
-    <TopTechnologies />
-  </div>
 
   <div class="w-full h-full text-white">
     <Hero />

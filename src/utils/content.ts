@@ -1,16 +1,31 @@
 import type { IExperience, IProject } from "./interfaces";
 
+import HumanaLogo from "../assets/humana-logo.webp";
 import TAMUHealthLogo from "../assets/TAMUHealth-icon.jpg";
 import TAMUEngineeringIcon from "../assets/TAMUEngineering-icon.png";
 import ACCLogo from "../assets/ACC-icon.jpg";
 import CryptLogo from "../assets/crypt-icon.jpg";
 import CNTVLogo from "../assets/CNTV-icon.jpg";
 
+import MaroonRidesIcon from "../assets/maroon-rides-icon.webp";
 import readmeEditorIcon from "../assets/readmeEditor-icon.png";
 import fisdIcon from "../assets/fisd-icon.jpg";
 import gradualIcon from "../assets/gradual-icon.jpg";
 
 export const experiences: IExperience[] = [
+  {
+    type: "Experience",
+    title: "Software Engineering Intern",
+    employer: "Humana",
+    icon: HumanaLogo,
+    location: "Louisville, Kentucky",
+    duration: "Present",
+    start: "May, 2024",
+    description: `
+Collaborated with experienced software engineers on developing and enhancing provider-facing applications and systems with Palantir Foundry, Azure Synapse, and Databricks.
+
+Participated in scrum meetings, assisted with analyzing requirements, writing clean and maintainable code, and conducted code reviews.`,
+  },
   {
     type: "Experience",
     title: "Computer Science Research Assistant",
@@ -45,9 +60,7 @@ Deployed application on the Texas A&M STAR (Secure Technologies for Aggie Resear
     description: `
 Served as a peer tutor and technical lead for CSCE 482 (Senior Capstone Design), assisting students in building and deploying a full-stack web application to complete their degree requirements.
 
-Served as a peer tutor for the ENGR 102 (Introduction to the design and development of computer applications for engineers in Python) course.
-
-![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/ichild-poster.png)`,
+Served as a peer tutor for the ENGR 102 (Introduction to the design and development of computer applications for engineers in Python) course.`,
   },
   {
     type: "Experience",
@@ -109,6 +122,55 @@ In my three years with this program, I was able to create dozens of stories and 
 export const projects: IProject[] = [
   {
     type: "Project",
+    title: "Maroon Rides",
+    icon: MaroonRidesIcon,
+    demoUrl:
+      "https://maroonrides.app/",
+    githubUrl: "https://github.com/Maroon-Rides/MaroonRides",
+    platform: "Mobile",
+    language: "TypeScript",
+    description: `
+Developed a cross platform mobile app with React Native to provide live transportation updates for Texas A&M students with over 10,000 installs and thousands of Daily-Active-Users.
+
+Built an open-source JavaScript library to scrape and process transit data including live bus locations, routes and stops.
+
+Built CI/CD pipelines for automating production build and submissions to app stores with GitHub Actions using Gradle for Android and XCodeBuild for iOS.
+
+<div style="display: flex; justify-content: space-around;">
+    <div style="width: 40%;">
+        <img src="https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/0x0ss-portrait.png" style="width: 100%;" alt="Image 1">
+    </div>
+    <div style="width: 40%;">
+        <img src="https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/0x0ss2-portrait.png" style="width: 100%;" alt="Image 2">
+    </div>
+</div>
+
+![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/revrides-poster.png)
+`,
+  },
+  {
+    type: "Project",
+    title: "Gradual Grades / FriscoISDHACAPI",
+    icon: gradualIcon,
+    demoUrl:
+      "https://friscoisdhacapi.vercel.app/",
+    githubUrl: "https://github.com/SumitNalavade/FriscoISDHACAPI",
+    platform: "Other",
+    language: "Python / Typescript",
+    description: `
+Developed a cross platform mobile app with React Native for Frisco ISD students to access their online gradebook on iOS/Android platforms.
+
+Built an open-source REST API with Python and Golang to scrape student information such as course grades, transcripts and schedules from the Frisco ISD student portal.
+
+Built a documentation website with React.js and Next.js providing language-specific examples and an interactive API explorer.
+
+Deployed application on the Apple App Store and Google Play Store, accumulating over 5000 downloads and hundreds of daily active users.
+
+![](https://github.com/SumitNalavade/Gradual-React-Native/blob/master/assets/mockups.png?raw=true)
+`,
+  },
+  {
+    type: "Project",
     title: "VS Code ReadMe Editor",
     icon: readmeEditorIcon,
     demoUrl:
@@ -140,55 +202,5 @@ https://readme.so/
 ![App Screenshot](https://github.com/SumitNalavade/VS-Code-ReadMe-Editor/blob/main/assets/demo/demo_1.gif?raw=true)
 ![App Screenshot](https://github.com/SumitNalavade/VS-Code-ReadMe-Editor/blob/main/assets/demo/demo_2.gif?raw=true)
 `,
-  },
-  {
-    type: "Project",
-    title: "FriscoISD HAC API",
-    platform: "Serverside",
-    icon: fisdIcon,
-    demoUrl: "https://friscoisdhacapi.vercel.app/",
-    githubUrl: "https://github.com/SumitNalavade/FriscoISDHACAPI",
-    language: "Python",
-    description: `
-Built and maintained a free and open source REST API to interact with students' data and informations from the Frisco ISD Home Access Center (HAC).
-
-Implemented webscraping and http request scraping in a python based backend environment.
-
-Used the Python Requests and BeautifulSoup library to send HTTP requests to Home Access Center, bypass CSRF token, parse the HTML content and return a student’s academic information in JSON format.
-
-Built an interactive documentation site along with an integrated API explorer with Typescript, React.js and Next.js 
-
-Deployed API and website on Vercel serverless functions. 
-
-Continuing maintenance of API as it powers several iOS, Android and Web applications serving Frisco ISD students.`,
-  },
-  {
-    type: "Project",
-    title: "Gradual Grades",
-    platform: "Mobile",
-    language: "JavaScript",
-    icon: gradualIcon,
-    githubUrl: "https://github.com/SumitNalavade/Gradual-React-Native",
-    description: `
-Developed a cross platform mobile app with React Native for Frisco ISD students to access their online gradebook on iOS/Android platforms.
-
-Built a REST API with Python and Go to scrape student information such as course grades, transcripts and schedules from the Frisco ISD student portal with a sub 1000ms response time.
-
-Built a documentation website with React.js and Next.js providing language-specific examples and an interactive API explorer.
-
-Launched application on the Apple App Store and Google Play Store, accumulating over 3000 downloads and hundreds of daily requests
-
-## Features:
-- Custom API to access data from Frisco ISD Home Access Center
-- Real time updates for student grades, GPAs and schedules
-- Real Time GPA Predictor
-- Implemented a 'What if' calculator to predict students' grades and GPAs by manipulating assignment grades
-- Cross Platform
-- 100% free with no ads
-
-
-## Screenshots
-![](https://github.com/SumitNalavade/Gradual-React-Native/blob/master/assets/mockups.png?raw=true)
-    `,
   },
 ];

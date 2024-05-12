@@ -32,7 +32,7 @@ Continuously gathered user feedback and conducted usability testing, utilizing l
 
 Deployed application on the Texas A&M STAR (Secure Technologies for Aggie Researchers) infrastructure within an AWS virtual machine.
 
-![](https://storage.googleapis.com/uxfolio/655e27943bd6280002750bfe/655e29613bd6280002750c07/RvxLNWGUCMSckQyN.png)`,
+![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/ichild-poster.png)`,
   },
   {
     type: "Experience",
@@ -60,7 +60,17 @@ Served a technical lead and developer to lead development of cross-platform mobi
 
 Conducted code reviews and meetings to prioritize high coding standards, emphasizing readability, maintainability and scalability.
 
-Coordinated efforts of backend and multiple frontend teams by hosting weekly meetings to align goals, expectations and progress.`,
+Coordinated efforts of backend and multiple frontend teams by hosting weekly meetings to align goals, expectations and progress.
+
+<div style="display: flex; justify-content: space-around;">
+    <div style="width: 40%;">
+        <img src="https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/0x0ss-portrait.png" style="width: 100%;" alt="Image 1">
+    </div>
+    <div style="width: 40%;">
+        <img src="https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/0x0ss2-portrait.png" style="width: 100%;" alt="Image 2">
+    </div>
+</div>
+`,
   },
   {
     type: "Experience",

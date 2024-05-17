@@ -28,7 +28,7 @@ Participated in scrum meetings, assisted with analyzing requirements, writing cl
   },
   {
     type: "Experience",
-    title: "Computer Science Research Assistant",
+    title: "Full Stack Software Engineer",
     employer: "Texas A&M University Health Science Center",
     icon: TAMUHealthLogo,
     location: "Bryan, Texas",
@@ -89,7 +89,7 @@ Coordinated efforts of backend and multiple frontend teams by hosting weekly mee
   },
   {
     type: "Experience",
-    title: "Front End Software Engineer",
+    title: "Front End Developer",
     employer: "Crypt Cloud",
     icon: CryptLogo,
     location: "Austin, Texas",

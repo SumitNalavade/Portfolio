@@ -24,6 +24,8 @@ export const experiences: IExperience[] = [
     description: `
 Collaborated with experienced software engineers on developing and enhancing provider-facing applications and systems with Palantir Foundry, Azure Synapse, and Databricks.
 
+Developed a RAG based Generative AI chat application using LangChain, ChromaDB, Redis, and React to answer customer questions from over 2000 Evidence of Coverage PDFs, speeding up call times for service agents and securing first place in the company-wide hackathon.
+
 Participated in scrum meetings, assisted with analyzing requirements, writing clean and maintainable code, and conducted code reviews.`,
   },
   {

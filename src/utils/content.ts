@@ -9,7 +9,6 @@ import CNTVLogo from "../assets/CNTV-icon.jpg";
 
 import MaroonRidesIcon from "../assets/maroon-rides-icon.webp";
 import readmeEditorIcon from "../assets/readmeEditor-icon.png";
-import fisdIcon from "../assets/fisd-icon.jpg";
 import gradualIcon from "../assets/gradual-icon.jpg";
 
 export const experiences: IExperience[] = [
@@ -22,11 +21,9 @@ export const experiences: IExperience[] = [
     duration: "Present",
     start: "May, 2024",
     description: `
-Collaborated with experienced software engineers on developing and enhancing provider-facing applications and systems with Palantir Foundry, Azure Synapse, and Databricks.
+Developed a RAG based Generative AI chat application using React, Java SpringBoot, PostgreSQL (PG Vector) and LangChain to answer customer questions from over 2000 Coverage PDFs and winning first place in the company-wide hackathon.
 
-Developed a RAG based Generative AI chat application using LangChain, ChromaDB, Redis, and React to answer customer questions from over 2000 Evidence of Coverage PDFs, speeding up call times for service agents and securing first place in the company-wide hackathon.
-
-Participated in scrum meetings, assisted with analyzing requirements, writing clean and maintainable code, and conducted code reviews.`,
+Implemented custom React components in TypeScript for Humana’s medicare enrollments platform as part of an Agile scrum team, writing clean and maintainable code, conducting code reviews and participating in Agile ceremonies.`,
   },
   {
     type: "Experience",
@@ -43,11 +40,9 @@ Developed an intuitive user interface using React.js, TypeScript, JWT (JSON Web 
 
 Built scalable backend services with Python, Flask and SQLAlchemy to securely handle server-side session based authentication, database querying and natural language processing with sentence transformers and Pytorch.
 
+Integrated cloud services such as AWS EC2 for scalable infrastructure, AWS S3 for storage, and AWS Lambda for serverless computing.
+
 Integrated an SBERT machine learning model into an API to turn natural language prompts from users into SQL queries to retrieve data from a PostgreSQL database.
-
-Continuously gathered user feedback and conducted usability testing, utilizing libraries such as Jest and Selenium.
-
-Deployed application on the Texas A&M STAR (Secure Technologies for Aggie Researchers) infrastructure within an AWS virtual machine.
 
 ![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/ichild-poster.png)`,
   },
@@ -124,6 +119,25 @@ In my three years with this program, I was able to create dozens of stories and 
 export const projects: IProject[] = [
   {
     type: "Project",
+    title: "RAG based Generative AI chat",
+    icon: HumanaLogo,
+    githubUrl: "https://github.com/SumitNalavade/InsureAI",
+    platform: "Web",
+    language: "TypeScript",
+    description: `
+Won first place in Humana hackathon by building a RAG (Retrieval-Augmented-Generation) chatbot with React, Java SpringBoot, PostgreSQL (PG Vector) and LangChain.
+
+Customers can upload insurance documentation and ask specific questions about their coverage details via a React.js web application.
+
+User queries are matched against embedded document vectors in a database with LangChain, and then used to generate responses about their specific insurance coverage details via GPT-4o large language model.
+
+![](https://raw.githubusercontent.com/SumitNalavade/InsureAI/refs/heads/main/Screenshot%202024-10-12%20at%202.13.45%20PM.png)  
+
+![](https://raw.githubusercontent.com/SumitNalavade/InsureAI/refs/heads/main/Screenshot%202024-10-12%20at%202.14.07%20PM.png)
+`,
+  },
+  {
+    type: "Project",
     title: "Maroon Rides",
     icon: MaroonRidesIcon,
     demoUrl:
@@ -132,9 +146,9 @@ export const projects: IProject[] = [
     platform: "Mobile",
     language: "TypeScript",
     description: `
-Developed a cross platform mobile app with React Native to provide live transportation updates for Texas A&M students with over 10,000 installs and thousands of Daily-Active-Users.
+Developed a cross platform mobile app with React Native to provide live transportation updates, including live bus locations, routes and stops for Texas A&M students with over 15,000 installs and thousands of Daily-Active-Users.
 
-Built an open-source JavaScript library to scrape and process transit data including live bus locations, routes and stops.
+Developed a route-planning features that integrates with Google Maps Platform to provide users with accurate route options and customizations.
 
 Built CI/CD pipelines for automating production build and submissions to app stores with GitHub Actions using Gradle for Android and XCodeBuild for iOS.
 
@@ -185,7 +199,7 @@ Built an extension within VS Code with React.js to create and edit ReadMe and ot
 
 Improved the user experience by including prebuilt components and templates along with live edit previews.
 
-Deployed the project on the VS Code Marketplace and earned a 5 star rating with over 13,000 downloads.
+Deployed the project on the VS Code Marketplace and earned a 5 star rating with over 23,000 downloads.
 
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/SumitNalavade.vscode-readme-editor) ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/SumitNalavade.vscode-readme-editor)
 

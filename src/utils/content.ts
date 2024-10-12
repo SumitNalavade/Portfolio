@@ -44,7 +44,9 @@ Integrated cloud services such as AWS EC2 for scalable infrastructure, AWS S3 fo
 
 Integrated an SBERT machine learning model into an API to turn natural language prompts from users into SQL queries to retrieve data from a PostgreSQL database.
 
-![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/ichild-poster.png)`,
+![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/main/src/assets/ichild-poster.png)  
+
+![](https://raw.githubusercontent.com/SumitNalavade/Portfolio/refs/heads/main/src/assets/ichild-demo.png)`,
   },
   {
     type: "Experience",

@@ -26,17 +26,17 @@ export default function Home() {
           <p>About Me</p>
         </a>
 
-        <a href="" className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <a href="https://www.linkedin.com/in/sumit-nalavade/" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiLinkedin />
           <p>LinkedIn</p>
         </a>
 
-        <a href="" className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <a href="https://github.com/SumitNalavade" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiGithub />
           <p>GitHub</p>
         </a>
 
-        <a href="" className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <a href="https://www.instagram.com/sumitnalavade_/" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiInstagram />
           <p>Instagram</p>
         </a>
@@ -133,7 +133,7 @@ export default function Home() {
       <div className='px-32 text-white space-y-4 text-sm'>
         <div className='pb-4 space-y-2'>
           <p className='text-4xl font-bold'>Projects</p>
-          <p>A collection of notable projects I've built from web to mobile apps and everything in between.</p>
+          <p>A collection of notable projects I&apos;ve built from web to mobile apps and everything in between.</p>
         </div>
 
         <div className='flex gap-x-6'>

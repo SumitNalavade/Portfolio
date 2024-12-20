@@ -42,10 +42,10 @@ export default function Home() {
         </a>
       </div>
 
-      <div className='px-32 text-white space-y-4 text-sm'>
-        <p className='text-4xl font-bold pb-4'>Experience</p>
+      <div className='px-28 text-white text-sm'>
+        <p className='text-4xl font-bold pb-4 px-4'>Experience</p>
 
-        <div className='flex items-center justify-between gap-x-8'>
+        <div className='flex items-center justify-between gap-x-8 hover:bg-[#171529] p-4 rounded-xl'>
           <Image
             src="/chase_logo.png"
             alt="Example"
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex items-center justify-between gap-x-8'>
+        <div className='flex items-center justify-between gap-x-8 p-4 rounded-xl hover:bg-[#171529]'>
           <Image
             src="/humana_logo.png"
             alt="Example"
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex items-center justify-between gap-x-8'>
+        <div className='flex items-center justify-between gap-x-8 p-4 rounded-xl hover:bg-[#171529]'>
           <Image
             src="/tamu_hsc_logo.png"
             alt="Example"
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex items-center justify-between gap-x-8'>
+        <div className='flex items-center justify-between gap-x-8 p-4 rounded-xl hover:bg-[#171529]'>
           <Image
             src="/tamu_coe_logo.png"
             alt="Example"
@@ -137,7 +137,7 @@ export default function Home() {
         </div>
 
         <div className='flex gap-x-6'>
-          <div className='bg-[#292A2A] rounded-3xl p-5 space-y-2'>
+          <div className='hover:bg-[#171529] rounded-3xl p-5 space-y-2'>
             <div className='w-44 h-44'>
               <Image
                 src="/maroon_rides_demo.png"
@@ -162,7 +162,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-[#292A2A] rounded-3xl p-5 space-y-2'>
+          <div className='hover:bg-[#171529] rounded-3xl p-5 space-y-2'>
             <div className='w-44 h-44 flex justify-center items-center'>
               <Image
                 src="/ichild_demo.png"
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-[#292A2A] rounded-3xl p-5 space-y-2'>
+          <div className='hover:bg-[#171529] rounded-3xl p-5 space-y-2'>
             <div className='w-44 h-44 flex justify-center items-center'>
               <Image
                 src="/gradual_demo.png"
@@ -208,7 +208,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-[#292A2A] rounded-3xl p-5 space-y-2'>
+          <div className='hover:bg-[#171529] rounded-3xl p-5 space-y-2'>
             <div className='w-44 h-44 flex justify-center items-center'>
               <Image
                 src="/vs_code_readme_editor_demo.png"
@@ -233,7 +233,7 @@ export default function Home() {
       </div>
 
       <div className='px-20 text-white space-y-4 py-10'>
-        <div className='pb-4 space-y-4 px-12 py-6 bg-[#292A2A] rounded-3xl'>
+        <div className='pb-4 space-y-4 px-12 py-6 rounded-3xl'>
           <p className='text-4xl font-bold'>About</p>
           <p>Howdy! I am a computer engineering student at Texas A&M University with a focus on computer science. With a passion for building software, I have hands on experience in modern technologies including full-stack and cross-platform development on web and mobile platforms.</p>
           <p>Currently, I am looking forward to starting my second software engineering internship at JP Morgan Chase while contiuing my software engineering co-op at Humana!</p>

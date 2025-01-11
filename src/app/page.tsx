@@ -32,11 +32,11 @@ export default function Home() {
   return (
     <div className='h-full space-y-6 sm:space-y-12'>
       <div
-        className="md:h-[250px] h-[200px] w-full rounded-2xl bg-cover bg-center relative"
+        className="md:h-[250px] h-[200px] w-full rounded-t-2xl bg-cover bg-center relative"
         style={{ backgroundImage: "url('/banner.jpg')" }}
       >
         {/* Overlay with blur */}
-        <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+        <div className="absolute inset-0 bg-black/40 rounded-t-2xl"></div>
 
         {/* Centered text */}
         <div className="absolute inset-0 flex flex-col justify-end mb-8 container mx-auto space-y-1 px-4">
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       <div className='text-white container mx-auto gap-x-4 flex font-bold text-xs sm:text-sm px-4'>
-        <a href="" className='border border-1 border-white bg-white text-black px-4 sm:py-2 rounded-full hidden sm:flex'>
+        <a href="" className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <p>About Me</p>
         </a>
 

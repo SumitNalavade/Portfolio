@@ -6,7 +6,7 @@ export default function Work() {
     return (
         <div className='h-full space-y-12'>
             <div
-                className="h-[200px] sm:h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#009073] to-[#00b18d]"
+                className="h-[200px] md:h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#009073] to-[#00b18d]"
             >
                 {/* Centered text */}
                 <div className="absolute inset-0 flex items-end justify-between mb-8 container mx-auto space-y-1 p-4 pt-6">

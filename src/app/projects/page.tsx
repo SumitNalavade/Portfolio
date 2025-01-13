@@ -9,7 +9,7 @@ export default function Work() {
     return (
         <div className='h-full space-y-6 sm:space-y-12'>
             <div
-                className="h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#0a5cbc] to-[#07438a]"
+                className="h-[200px] md:h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#0a5cbc] to-[#07438a]"
             >
                 {/* Centered text */}
                 <div className="absolute inset-0 flex items-end justify-between mb-8 container mx-auto space-y-1 p-4 pt-6">
@@ -26,6 +26,7 @@ export default function Work() {
                         <Image
                             src="/maroon_rides_demo.png"
                             alt="Example"
+                            className='max-w-[150px] md:max-w-[250px]'
                             width={300} // Aspect ratio width
                             height={9} // Aspect ratio height
                         />
@@ -57,6 +58,7 @@ export default function Work() {
                     <div>
                         <Image
                             src="/ichild_demo.png"
+                            className='max-w-[150px] md:max-w-[250px]'
                             alt="Example"
                             width={300} // Aspect ratio width
                             height={9} // Aspect ratio height
@@ -83,6 +85,7 @@ export default function Work() {
                     <div>
                         <Image
                             src="/gradual_demo.png"
+                            className='max-w-[150px] md:max-w-[250px]'
                             alt="Example"
                             width={300} // Aspect ratio width
                             height={9} // Aspect ratio height
@@ -109,6 +112,7 @@ export default function Work() {
                     <div>
                         <Image
                             src="/vs_code_readme_editor_demo.png"
+                            className='max-w-[150px] md:max-w-[250px]'
                             alt="Example"
                             width={300} // Aspect ratio width
                             height={9} // Aspect ratio height
@@ -131,7 +135,7 @@ export default function Work() {
                 </div>
 
                 <a href='https://github.com/SumitNalavade' target='_blank' className='flex justify-center items-center'>
-                    <button className='bg-gradient-to-r from-[#0a5ab9] to-[#084990] w-1/3 p-3 rounded-xl font-bold text-lg text-white'>
+                    <button className='bg-gradient-to-r from-[#0a5ab9] to-[#084990] w-1/3 min-w-[300px] p-3 rounded-xl font-bold text-lg text-white'>
                         See More
                     </button>
                 </a>

@@ -7,6 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { FaReact, FaApple, FaAndroid, FaJsSquare, FaNpm, FaPlus } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoTailwindCss, BiLogoGoogleCloud, BiLogoNodejs } from "react-icons/bi";
+import { IoPerson } from "react-icons/io5";
 import { VscVscode } from "react-icons/vsc";
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
   return (
     <div className='h-full space-y-6 sm:space-y-12'>
       <div
-        className="md:h-[300px] h-[300px] w-full rounded-t-2xl bg-cover bg-center relative"
+        className="md:h-[300px] h-[200px] w-full rounded-t-2xl bg-cover bg-center relative"
         style={{ backgroundImage: "url('/tamu_panorama.jpg')" }}
       >
         {/* Overlay with blur */}
@@ -46,22 +47,23 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='text-white container mx-auto gap-x-4 flex font-bold text-xs sm:text-sm px-4'>
-        <Link href='/about' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
-          <p>About Me</p>
+      <div className='text-white container mx-auto gap-x-2 sm:gap-x-4 flex justify-evenly sm:justify-normal font-bold text-xs sm:text-sm px-4'>
+        <Link href='/about' className='border border-1 border-white px-2 py-2 rounded-xl flex items-center gap-x-2 hover:bg-white hover:text-black'>
+          <IoPerson />
+          <p>About</p>
         </Link>
 
-        <a href="https://www.linkedin.com/in/sumit-nalavade/" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <a href="https://www.linkedin.com/in/sumit-nalavade/" target='_blank' className='border border-1 border-white px-2 py-2 rounded-xl flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiLinkedin />
           <p>LinkedIn</p>
         </a>
 
-        <a href="https://github.com/SumitNalavade" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <a href="https://github.com/SumitNalavade" target='_blank' className='border border-1 border-white px-2 py-2 rounded-xl flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiGithub />
           <p>GitHub</p>
         </a>
 
-        <a href="https://www.instagram.com/sumitnalavade_/" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <a href="https://www.instagram.com/sumitnalavade_/" target='_blank' className='border border-1 border-white px-2 py-2 rounded-xl flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiInstagram />
           <p>Instagram</p>
         </a>

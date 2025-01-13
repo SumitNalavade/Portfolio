@@ -5,9 +5,9 @@ import { FaRegEnvelope, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa
 
 export default function About() {
     return (
-        <div className='h-full space-y-6 sm:space-y-12'>
+        <div className='h-full space-y-12'>
             <div
-                className="h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#ac106e] to-[#7d0b50]"
+                className="h-[200px] sm:h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#ac106e] to-[#7d0b50]"
             >
                 {/* Centered text */}
                 <div className="absolute inset-0 flex items-end justify-between mb-8 container mx-auto space-y-1 p-4 pt-6">
@@ -16,7 +16,7 @@ export default function About() {
                         <h2 className='text-white font-bold md:text-xl px-2'>Texas A&M Computer Engineering &apos;26</h2>
                     </div>
 
-                    <div>
+                    <div className='hidden sm:block'>
                         <Image
                             src="/self.png"
                             alt="Example"
@@ -27,15 +27,15 @@ export default function About() {
                 </div>
             </div>
 
-            <div className='text-white container mx-auto gap-x-4 space-y-4 font-bold px-4'>
+            <div className='text-white container mx-auto gap-x-4 space-y-4 px-4'>
                 <p>Howdy! I am a computer engineering student at Texas A&M University with a focus on computer science. With a passion for building software, I have hands on experience in modern technologies including full-stack and cross-platform development on web and mobile platforms.</p>
                 <p>Currently, I am looking forward to starting my second software engineering internship at JP Morgan Chase while contiuing my software engineering co-op at Humana!</p>
             </div>
 
-            <div className='container mx-auto text-white text-xs md:text-sm px-4 font-medium'>
+            <div className='container mx-auto text-white text-xs md:text-sm px-4'>
                 <div className='pb-4 space-y-4 rounded-3xl'>
                     <p className='text-4xl font-bold'>Contact</p>
-                    <div className='text-lg flex space-x-20'>
+                    <div className='text-lg sm:flex sm:flex-row sm:space-x-20 sm:space-y-0 space-y-8'>
                         <div className='space-y-2'>
                             <a href="mailto:vs.nalavade2003@gmail.com" className='flex items-center space-x-2'>
                                 <FaRegEnvelope />

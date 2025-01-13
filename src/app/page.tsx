@@ -165,7 +165,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className='container mx-auto text-white text-xs sm:text-sm px-4'>
+      <div className='container mx-auto text-white text-xs sm:text-sm px-4 pb-8'>
         <div className='pb-4 space-y-2'>
           <p className='text-4xl font-bold'>Projects</p>
           <p>A collection of notable projects I&apos;ve built from web to mobile apps and everything in between.</p>
@@ -276,15 +276,6 @@ export default function Home() {
           </Link>
         </Carousel>
       </div>
-
-      <div className='container mx-auto text-white text-xs md:text-sm px-4 pb-8'>
-        <div className='pb-4 space-y-4 rounded-3xl'>
-          <p className='text-4xl font-bold'>About</p>
-          <p>Howdy! I am a computer engineering student at Texas A&M University with a focus on computer science. With a passion for building software, I have hands on experience in modern technologies including full-stack and cross-platform development on web and mobile platforms.</p>
-          <p>Currently, I am looking forward to starting my second software engineering internship at JP Morgan Chase while contiuing my software engineering co-op at Humana!</p>
-        </div>
-      </div>
-
     </div>
   );
 }

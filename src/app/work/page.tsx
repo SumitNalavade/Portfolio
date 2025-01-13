@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export default function Work() {
     return (
-        <div className='h-full space-y-6 sm:space-y-12'>
+        <div className='h-full space-y-12'>
             <div
-                className="h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#009073] to-[#00b18d]"
+                className="h-[200px] sm:h-[350px] w-full rounded-t-2xl bg-cover bg-center relative bg-gradient-to-r from-[#009073] to-[#00b18d]"
             >
                 {/* Centered text */}
                 <div className="absolute inset-0 flex items-end justify-between mb-8 container mx-auto space-y-1 p-4 pt-6">
@@ -40,6 +40,7 @@ export default function Work() {
                     <div>
                         <Image
                             src="/humana_logo.png"
+                            className='max-w-[100px]'
                             alt="Example"
                             width={100} // Aspect ratio width
                             height={9} // Aspect ratio height
@@ -62,6 +63,7 @@ export default function Work() {
                     <div>
                         <Image
                             src="/tamu_hsc_logo.png"
+                            className='max-w-[100px]'
                             alt="Example"
                             width={100} // Aspect ratio width
                             height={9} // Aspect ratio height
@@ -91,6 +93,7 @@ export default function Work() {
                         <Image
                             src="/tamu_coe_logo.png"
                             alt="Example"
+                            className='max-w-[100px]'
                             width={100} // Aspect ratio width
                             height={9} // Aspect ratio height
                         />
@@ -112,6 +115,7 @@ export default function Work() {
                     <div>
                         <Image
                             src="/crypt_logo.png"
+                            className='max-w-[100px]'
                             alt="Example"
                             width={100} // Aspect ratio width
                             height={9} // Aspect ratio height
@@ -131,7 +135,7 @@ export default function Work() {
                 </div>
 
                 <a href='https://www.linkedin.com/in/sumit-nalavade/' target='_blank' className='flex justify-center items-center'>
-                    <button className='bg-gradient-to-r from-[#009577] to-[#00CAA2] w-1/3 p-3 rounded-xl font-bold text-lg text-white'>
+                    <button className='bg-gradient-to-r from-[#009577] to-[#00CAA2] w-1/3 min-w-[300px] p-3 rounded-xl font-bold text-lg text-white'>
                         See More
                     </button>
                 </a>

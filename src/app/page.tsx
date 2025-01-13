@@ -1,10 +1,11 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
-import { FaReact, FaApple, FaAndroid, FaJsSquare, FaNpm } from "react-icons/fa";
+import { FaReact, FaApple, FaAndroid, FaJsSquare, FaNpm, FaPlus } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoTailwindCss, BiLogoGoogleCloud, BiLogoNodejs } from "react-icons/bi";
 import { VscVscode } from "react-icons/vsc";
 
@@ -32,11 +33,11 @@ export default function Home() {
   return (
     <div className='h-full space-y-6 sm:space-y-12'>
       <div
-        className="md:h-[250px] h-[200px] w-full rounded-t-2xl bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/banner.jpg')" }}
+        className="md:h-[300px] h-[300px] w-full rounded-t-2xl bg-cover bg-center relative"
+        style={{ backgroundImage: "url('/tamu_panorama.jpg')" }}
       >
         {/* Overlay with blur */}
-        <div className="absolute inset-0 bg-black/40 rounded-t-2xl"></div>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-t-2xl"></div>
 
         {/* Centered text */}
         <div className="absolute inset-0 flex flex-col justify-end mb-8 container mx-auto space-y-1 px-4">
@@ -46,9 +47,9 @@ export default function Home() {
       </div>
 
       <div className='text-white container mx-auto gap-x-4 flex font-bold text-xs sm:text-sm px-4'>
-        <a href="" className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
+        <Link href='/about' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <p>About Me</p>
-        </a>
+        </Link>
 
         <a href="https://www.linkedin.com/in/sumit-nalavade/" target='_blank' className='border border-1 border-white px-4 py-2 rounded-full flex items-center gap-x-2 hover:bg-white hover:text-black'>
           <FiLinkedin />
@@ -152,6 +153,16 @@ export default function Home() {
             <p className='font-bold text-[#9E9E9E] text-right'>June 2023 - Present</p>
           </div>
         </div>
+
+        <Link href="/work" className='flex items-center justify-between gap-x-8 hover:bg-[#171529] p-4 rounded-xl'>
+          <div className='flex justify-center items-center'>
+            <FaPlus className='text-4xl' />
+          </div>
+
+          <div className='w-full'>
+            <p className='font-bold'>See More</p>
+          </div>
+        </Link>
       </div>
 
       <div className='container mx-auto text-white text-xs sm:text-sm px-4'>
@@ -253,10 +264,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <Link href='/projects' className='hover:bg-[#171529] rounded-3xl p-5 space-y-2 flex flex-col justify-center items-center'>
+            <div className='w-44 h-44 flex justify-center items-center' style={{ paddingRight: 15 }}>
+              <FaPlus className='text-3xl' />
+            </div>
+
+            <div className='space-y-1'>
+              <p className='font-bold text-base text-center'>See More</p>
+            </div>
+          </Link>
         </Carousel>
       </div>
 
-      <div className='container mx-auto text-white text-xs md:text-sm px-4'>
+      <div className='container mx-auto text-white text-xs md:text-sm px-4 pb-8'>
         <div className='pb-4 space-y-4 rounded-3xl'>
           <p className='text-4xl font-bold'>About</p>
           <p>Howdy! I am a computer engineering student at Texas A&M University with a focus on computer science. With a passion for building software, I have hands on experience in modern technologies including full-stack and cross-platform development on web and mobile platforms.</p>

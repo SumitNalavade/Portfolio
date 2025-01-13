@@ -17,7 +17,7 @@ export default function Work() {
                 </div>
             </div>
 
-            <div className='container mx-auto text-white text-xs md:text-sm px-4 font-medium space-y-12 pb-8'>
+            <div className='container mx-auto text-white text-xs md:text-sm px-4 font-medium space-y-20 pb-8'>
                 <div className='flex space-x-8'>
                     <div>
                         <Image
@@ -129,6 +129,12 @@ export default function Work() {
                         <p>Served as a peer tutor for the ENGR 102 (Introduction to the design and development of computer applications for engineers in Python) course.</p>
                     </div>
                 </div>
+
+                <a href='https://www.linkedin.com/in/sumit-nalavade/' target='_blank' className='flex justify-center items-center'>
+                    <button className='bg-gradient-to-r from-[#009577] to-[#00CAA2] w-1/3 p-3 rounded-xl font-bold text-lg text-white'>
+                        See More
+                    </button>
+                </a>
             </div>
         </div>
     );

@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg bg-[#2454A6] flex items-center justify-center">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
                   src="/jpmc_logo.png"
                   alt="JPMorgan Chase"
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg bg-[#2454A6] flex items-center justify-center">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
                   src="/humana_logo.png"
                   alt="Humana"
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg bg-[#2454A6] flex items-center justify-center">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
                   src="/hsc_logo.png"
                   alt="Texas A&M Health Science Center"
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg bg-[#2454A6] flex items-center justify-center">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
                   src="/coe_logo.png"
                   alt="Texas A&M College of Engineering"
@@ -138,6 +138,65 @@ export default function Home() {
             {/* Right side: date */}
             <div className="text-sm text-gray-500 whitespace-nowrap">
               August 2023 – Present
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div className="space-y-5">
+        <p className="font-medium text-3xl">Activities</p>
+
+        <ul className="space-y-6">
+          <div className="flex items-center justify-between w-full">
+            {/* Left side: logo + text */}
+            <div className="flex items-center gap-4">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/figma_logo.png"
+                  alt="Figma"
+                  width={28}
+                  height={50}
+                />
+              </div>
+
+              <div>
+                <div className="font-semibold leading-tight">Figma</div>
+                <div className="text-sm text-gray-600 leading-tight">
+                  Campus Leader
+                </div>
+              </div>
+            </div>
+
+            {/* Right side: date */}
+            <div className="text-sm text-gray-500 whitespace-nowrap">
+              August 2025 – Present
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between w-full">
+            {/* Left side: logo + text */}
+            <div className="flex items-center gap-4">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/tacs_logo.png"
+                  alt="Texas A&M Computing Soceity"
+                  className="rounded-lg"
+                  width={50}
+                  height={50}
+                />
+              </div>
+
+              <div>
+                <div className="font-semibold leading-tight">Texas A&M Computing Society</div>
+                <div className="text-sm text-gray-600 leading-tight">
+                  Technical Officer
+                </div>
+              </div>
+            </div>
+
+            {/* Right side: date */}
+            <div className="text-sm text-gray-500 whitespace-nowrap">
+              August 2024 – Present
             </div>
           </div>
         </ul>

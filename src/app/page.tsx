@@ -42,7 +42,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/jpmc_logo.png"
+                  src="/logos/jpmc_logo.png"
                   alt="JPMorgan Chase"
                   width={50}
                   height={50}
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/humana_logo.png"
+                  src="/logos/humana_logo.png"
                   alt="Humana"
                   width={50}
                   height={50}
@@ -94,7 +94,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/hsc_logo.png"
+                  src="/logos/hsc_logo.png"
                   alt="Texas A&M Health Science Center"
                   width={50}
                   height={50}
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/coe_logo.png"
+                  src="/logos/coe_logo.png"
                   alt="Texas A&M College of Engineering"
                   width={50}
                   height={50}
@@ -152,7 +152,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/figma_logo.png"
+                  src="/logos/figma_logo.png"
                   alt="Figma"
                   width={28}
                   height={50}
@@ -178,7 +178,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/tacs_logo.png"
+                  src="/logos/tacs_logo.png"
                   alt="Texas A&M Computing Soceity"
                   className="rounded-lg"
                   width={50}
@@ -211,7 +211,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/tamu_logo.png"
+                  src="/logos/tamu_logo.png"
                   alt="Texas A&M University"
                   className="rounded-lg"
                   width={50}

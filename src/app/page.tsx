@@ -201,6 +201,39 @@ export default function Home() {
           </div>
         </ul>
       </div>
+
+      <div className="space-y-5">
+        <p className="font-medium text-3xl">Education</p>
+
+        <ul className="space-y-6">
+          <div className="flex items-center justify-between w-full">
+            {/* Left side: logo + text */}
+            <div className="flex items-center gap-4">
+              <div className="h-10 w-10 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/tamu_logo.png"
+                  alt="Texas A&M University"
+                  className="rounded-lg"
+                  width={50}
+                  height={50}
+                />
+              </div>
+
+              <div>
+                <div className="font-semibold leading-tight">Texas A&M University</div>
+                <div className="text-sm text-gray-600 leading-tight">
+                  Bachelor of Science, Computer Engineering
+                </div>
+              </div>
+            </div>
+
+            {/* Right side: date */}
+            <div className="text-sm text-gray-500 whitespace-nowrap">
+              August 2022 – May 2026
+            </div>
+          </div>
+        </ul>
+      </div>
     </div>
   );
 }

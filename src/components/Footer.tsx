@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer: React.FC = () => {
 
     return (
-        <div className="py-12 flex w-full bg justify-between items-center text-sm">
+        <div className="py-8 flex w-full bg justify-between items-center text-sm px-4">
             <a href="mailto:vs.nalavade2003@gmail.com">vs.nalavade2003@gmail.com</a>
 
             <ul className="flex gap-x-4">

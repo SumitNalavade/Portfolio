@@ -6,7 +6,7 @@ export default function Work() {
         <div className="flex flex-col gap-y-24 py-12">
             <div className="grid grid-cols-5 w-full gap-12">
                 {/* Left Thumbnail */}
-                <Link href={'/'} className="col-span-3 flex flex-col">
+                <Link href={'/work/chase'} className="col-span-3 flex flex-col">
                     <div className="flex justify-center items-center bg-gradient-to-br from-yellow-100 via-blue-100 to-cyan-100 rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/jpmc/banner_image.png"
@@ -27,7 +27,7 @@ export default function Work() {
                 </Link>
 
                 {/* Right Thumbnail */}
-                <Link href={'/'} className="col-span-2 flex flex-col">
+                <Link href={'/work/maroon-rides'} className="col-span-2 flex flex-col">
                     <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/maroon_rides/banner_image.png"
@@ -48,7 +48,7 @@ export default function Work() {
 
             <div className="grid grid-cols-5 w-full gap-12">
                 {/* Left Thumbnail */}
-                <Link href={'/'} className="col-span-3 flex flex-col">
+                <Link href={'/work/squawk'} className="col-span-3 flex flex-col">
                     <div className="flex justify-center items-center bg-gradient-to-br from-[#E7FAD9] via-[#C6F2E4] to-[#B9E5F5] rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/squawk/banner_image.png"
@@ -70,7 +70,7 @@ export default function Work() {
 
                 {/* Right Thumbnail */}
                 <div className="col-span-2 flex flex-col">
-                    <Link href={'/'} className="flex justify-center items-center bg-gradient-to-br from-[#E3D9F9] via-[#E8CFF2] to-[#C7E5FA] rounded-2xl h-[400px] p-6">
+                    <Link href={'/work/gradual'} className="flex justify-center items-center bg-gradient-to-br from-[#E3D9F9] via-[#E8CFF2] to-[#C7E5FA] rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/gradual/banner_image.png"
                             alt="Gradual Grades Thumbnail"
@@ -90,7 +90,7 @@ export default function Work() {
 
             <div className="grid grid-cols-3 w-full gap-12">
                 {/* Left Thumbnail */}
-                <Link href={'/'} className="flex flex-col">
+                <Link href={'/work/intelligentchild'} className="flex flex-col">
                     <div className="flex justify-center items-center bg-gradient-to-br from-[#CBE7FF] via-[#C4C4F9] to-[#8EA1F8] rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/ichild/banner_image.png"
@@ -111,7 +111,7 @@ export default function Work() {
                 </Link>
 
                 {/* Right Thumbnail */}
-                <Link href={'/'} className="flex flex-col">
+                <Link href={'/work/humana'} className="flex flex-col">
                     <div className="flex justify-center items-center bg-gradient-to-br from-[#BCE3FA] via-[#C9C4F7] to-[#F4C26A] rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/humana/banner_image.png"
@@ -129,7 +129,7 @@ export default function Work() {
                     </div>
                 </Link>
 
-                <Link href={"/"} className="flex flex-col">
+                <Link href={"/work/vscode-markdown-editor"} className="flex flex-col">
                     <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[400px] p-6">
                         <Image
                             src="/work/vscode/banner_image.png"

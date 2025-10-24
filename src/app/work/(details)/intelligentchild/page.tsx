@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Details() {
     return (
-        <div className="flex flex-col gap-y-12 py-8">
+        <div className="flex flex-col gap-y-12 py-8 px-4">
             <div className="text-center">
-                <p className="text-6xl font-light tracking-tight text-gray-900">
+                <p className="text-5xl lg:text-6xl font-light tracking-tight text-gray-900">
                     intelligentCHILD
                 </p>
                 <p className="mt-4 text-gray-500">
@@ -12,12 +12,12 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-[#CBE7FF] via-[#C4C4F9] to-[#8EA1F8] rounded-2xl h-[500px] p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-[#CBE7FF] via-[#C4C4F9] to-[#8EA1F8] rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/ichild/banner_image.png"
                     alt="Gradual Thumbnail"
-                    width={300}
-                    height={300}
+                    width={250}
+                    height={250}
                     className="object-contain"
                 />
             </div>
@@ -36,21 +36,21 @@ export default function Details() {
                     alt="iCHILD screenshot"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
             </div>
 
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Development</p>
 
-                <p>Initially, I focused on rebuilding the frontend of the iCHILD application. The previous version had been developed using a mix of vanilla JavaScript and templating languages, which made it difficult to maintain and extend. I decided to modernize the stack by introducing React.js, TypeScript, and Vite, a combination that significantly improved the app’s performance, scalability, and developer experience. This new setup also made the codebase easier to understand and opened the door for future contributors to build on top of it more efficiently.</p>
+                <p>Initially, I focused on rebuilding the frontend of the iCHILD application. The previous version had been developed using a mix of vanilla JavaScript and templating languages, which made it difficult to maintain and extend. I decided to modernize the stack by introducing React.js, TypeScript, and Vite, a combination that significantly improved the app's performance, scalability, and developer experience. This new setup also made the codebase easier to understand and opened the door for future contributors to build on top of it more efficiently.</p>
 
                 <Image
                     src="/work/ichild/ichild_tech_stack.png"
                     alt="ichild tech stack"
                     width={600}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>Working with a designer, we quickly modernized the frontend of the application, creating a sleek, responsive, and user-friendly interface. The new design focused on clean visuals, intuitive navigation, and accessibility, ensuring that users could easily search for resources and interact with the platform across all devices.</p>
@@ -60,7 +60,7 @@ export default function Details() {
                     alt="ichild before after"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>Next, it was necessary to develop the backend APIs from the ground up. My focus was on reliability and simplicity  using proven technologies and avoiding unnecessary architectural complexity. The goal was to build a solid, maintainable foundation that could scale as the platform grew, while keeping the system easy to debug and extend for future developers.</p>
@@ -72,7 +72,7 @@ export default function Details() {
                     alt="flask_logo"
                     width={600}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>Once the backend was fully developed and integrated with the frontend, it was time to deploy the new application for users. I chose to host the entire platform on an AWS EC2 virtual machine, as it provided full control over the deployment environment, flexible scaling options, and easy integration with other AWS services. This setup allowed us to manage both the frontend and backend within a single environment, simplifying deployment and maintenance while ensuring the system remained stable and responsive under real-world usage.</p>
@@ -82,7 +82,7 @@ export default function Details() {
                     alt="aws_logo"
                     width={300}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>This marked the completion of our full redevelopment of the iCHILD project, transforming it from the original version built by the computer science students into a modern, production-ready platform. The new application not only looked and felt more polished but was also built with clean, maintainable code and strong engineering practices under the hood. During user acceptance testing (UAT), we saw a significant improvement in user sentiment and feedback.</p>
@@ -104,27 +104,27 @@ export default function Details() {
                     alt="admin dashboard"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
             </div>
 
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Challenges - Chat Responses</p>
 
-                <p>Another major challenge our team faced involved the quality and contextual relevance of the AI-generated responses. While the system could retrieve and generate information from the knowledge base, the responses often lacked precision or context, sometimes pulling in irrelevant details or failing to surface the most appropriate data. We noticed that certain queries didn’t consistently retrieve the correct entries from the knowledge base, resulting in answers that were either incomplete or off-topic.</p>
+                <p>Another major challenge our team faced involved the quality and contextual relevance of the AI-generated responses. While the system could retrieve and generate information from the knowledge base, the responses often lacked precision or context, sometimes pulling in irrelevant details or failing to surface the most appropriate data. We noticed that certain queries didn't consistently retrieve the correct entries from the knowledge base, resulting in answers that were either incomplete or off-topic.</p>
 
-                <p>When the previous computer science students developed the system, they used a combination of BERT and a basic keyword-based retrieval method to generate responses. While BERT provided some level of semantic understanding, the retrieval process lacked contextual awareness — it didn’t always surface the most relevant information from the knowledge base. As a result, responses were often technically correct but contextually misaligned, especially when multiple similar entries existed.</p>
+                <p>When the previous computer science students developed the system, they used a combination of BERT and a basic keyword-based retrieval method to generate responses. While BERT provided some level of semantic understanding, the retrieval process lacked contextual awareness — it didn't always surface the most relevant information from the knowledge base. As a result, responses were often technically correct but contextually misaligned, especially when multiple similar entries existed.</p>
 
                 <p>To improve this, we decided to rebuild the entire response generation process from the ground up. Rather than relying on BERT and keyword-based retrieval, we adopted a Retrieval-Augmented Generation (RAG) approach.</p>
 
-                <p>With RAG, each user query is first converted into a vector embedding and compared against the stored embeddings of provider information in the database. The system then retrieves the most semantically relevant entries and feeds them into a large language model, which generates a contextually aware and factually aligned response. This shift dramatically improved the accuracy, consistency, and contextual depth of the system’s outputs.</p>
+                <p>With RAG, each user query is first converted into a vector embedding and compared against the stored embeddings of provider information in the database. The system then retrieves the most semantically relevant entries and feeds them into a large language model, which generates a contextually aware and factually aligned response. This shift dramatically improved the accuracy, consistency, and contextual depth of the system's outputs.</p>
 
                 <Image
                     src="/work/ichild/rag_diagram.png"
                     alt="RAG Diagram"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>Additionally, we wanted the iCHILD knowledge base to go beyond just physical, brick-and-mortar providers such as clinics, food pantries, and hospitals. The Texas A&M Health Science Center had developed a rich collection of digital resources — including academic journals, articles, infographics, and educational videos — that contained valuable, trustworthy information.</p>
@@ -134,7 +134,7 @@ export default function Details() {
                     alt="Olivia Screenshot"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>Our goal was to integrate these materials directly into the knowledge base, allowing the AI system to draw not only from location-based data but also from informational and educational content when generating responses. This would enable iCHILD to provide more holistic and informative answers, combining practical service recommendations with evidence-based health knowledge.</p>
@@ -148,7 +148,7 @@ export default function Details() {
                     alt="Olivia Screenshot"
                     width={600}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />          
 
                 <p>Furthermore, we integrated the new RAG pipeline with the admin dashboard developed earlier. This integration ensured that whenever staff members at the Health Science Center updated the iCHILD knowledge base whether by adding new providers, uploading resources, or editing existing entries, the system would automatically generate new embeddings for the updated content. These embeddings were then stored in the iCHILD database, allowing the platform to instantly reflect the latest information in its responses. As a result, updates made by administrators directly influenced the quality and accuracy of AI-generated answers, keeping the system both dynamic and continuously improving.</p>      
@@ -164,12 +164,12 @@ export default function Details() {
                     alt="HAC screenshot"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>In addition, we were able to present our work on iCHILD at several conferences including at The Office of Interprofessional Practice, Education, & Research (IPER) at Texas A&M Health Science Center where we won the people’s choice award</p>
+                <p>In addition, we were able to present our work on iCHILD at several conferences including at The Office of Interprofessional Practice, Education, & Research (IPER) at Texas A&M Health Science Center where we won the people's choice award</p>
 
-                <p>Personally, I’ve learned a tremendous amount from working on this project. From full-stack development to AI engineering, iCHILD gave me the opportunity to wear many different hats and gain hands-on experience across the entire product lifecycle. The lessons I learned about building scalable systems, managing data pipelines, and designing for real-world users have carried over into my professional work and continue to shape how I approach engineering challenges and product design today.</p>
+                <p>Personally, I've learned a tremendous amount from working on this project. From full-stack development to AI engineering, iCHILD gave me the opportunity to wear many different hats and gain hands-on experience across the entire product lifecycle. The lessons I learned about building scalable systems, managing data pipelines, and designing for real-world users have carried over into my professional work and continue to shape how I approach engineering challenges and product design today.</p>
             </div>
         </div>
     )

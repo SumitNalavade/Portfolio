@@ -55,15 +55,15 @@ export default function Details() {
                     className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>To address this issue, I helped build a mobile app called Maroon Rides, designed to provide a seamless and intuitive experience for students to access real-time bus information. The app lives on users' phones and simplifies navigation and ensures that students can quickly find bus locations, routes, and arrival times with just a few taps.</p>
+                <p>To address this issue, I helped build a mobile app called Maroon Rides, designed to provide a seamless and intuitive experience for students to access real-time bus information. The app lives on users&apos; phones and simplifies navigation and ensures that students can quickly find bus locations, routes, and arrival times with just a few taps.</p>
             </div>
 
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Aggie Spirit API</p>
 
-                <p>The first step in developing Maroon Rides was building the backend scripts required to extract real-time bus data from the university's transportation website. Since there was no publicly available API to directly access the data we needed, we implemented a web-scraping solution to retrieve and process the relevant information, such as bus locations, routes, and arrival times, in a structured and reliable format.</p>
+                <p>The first step in developing Maroon Rides was building the backend scripts required to extract real-time bus data from the university&apos;s transportation website. Since there was no publicly available API to directly access the data we needed, we implemented a web-scraping solution to retrieve and process the relevant information, such as bus locations, routes, and arrival times, in a structured and reliable format.</p>
 
-                <p>I wrote a TypeScript API wrapper around the hidden endpoints used by the university's website. This layer acts as the bridge between the raw web requests and our mobile frontend.</p>
+                <p>I wrote a TypeScript API wrapper around the hidden endpoints used by the university&apos;s website. This layer acts as the bridge between the raw web requests and our mobile frontend.</p>
 
 
                 <ul className="space-y-1 py-4">
@@ -140,7 +140,7 @@ export default function Details() {
 
                 <p>Our launch was a huge success as within just 48 hours, Maroon Rides reached over 1,800 downloads, and by the end of the first week, we had nearly 10,000 users. The response from students was overwhelmingly positive, earning the app a 5-star rating on the App Store. Many students praised how convenient and easy it was to have all their bus information right at their fingertips.</p>
 
-                <p>We also spread the word on Reddit, posting about Maroon Rides on the university's subreddit, and the response was overwhelmingly positive. Students shared their excitement, left encouraging comments, and helped the app gain even more visibility across campus.</p>
+                <p>We also spread the word on Reddit, posting about Maroon Rides on the university&apos;s subreddit, and the response was overwhelmingly positive. Students shared their excitement, left encouraging comments, and helped the app gain even more visibility across campus.</p>
 
                 <Image
                     src="/work/maroon_rides/maroon_rides_reddit.png"
@@ -156,7 +156,7 @@ export default function Details() {
 
                 <p>While we had a smooth launch and overall received very positive feedback, we noticed that for some users performance would rapidly degrade after having the app open for a period of time.</p>
 
-                <p>From a stable 60 frames per second (fps), the app's performance would slowly degrade to around 15 fps after being open for several minutes. This made animations and map interactions noticeably laggy, especially on older phones — a clear sign that something was off in our rendering or update cycle.</p>
+                <p>From a stable 60 frames per second (fps), the app&apos;s performance would slowly degrade to around 15 fps after being open for several minutes. This made animations and map interactions noticeably laggy, especially on older phones — a clear sign that something was off in our rendering or update cycle.</p>
 
                 <Image
                     src="/work/maroon_rides/react_memo_diagram.png"
@@ -166,7 +166,7 @@ export default function Details() {
                     className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>We found that the slowdown was caused by the way React re-renders components. In React, when a component's state changes, all of its child components that depend on that state are re-rendered too. This meant that every time the bus data updated — even slightly — the app would re-render most of its components. Since the Aggie Spirit API was constantly sending live updates as buses moved in real time, the frequent re-renders quickly overloaded the app and caused performance to drop.</p>
+                <p>We found that the slowdown was caused by the way React re-renders components. In React, when a component&apos;s state changes, all of its child components that depend on that state are re-rendered too. This meant that every time the bus data updated — even slightly — the app would re-render most of its components. Since the Aggie Spirit API was constantly sending live updates as buses moved in real time, the frequent re-renders quickly overloaded the app and caused performance to drop.</p>
 
                 <p>I worked extensively on optimizing the app by minimizing the re-renders caused by updating bus data. The main goal was to reduce the number of unnecessary re-renders caused by changing data. I achieved this by moving the data-fetching logic out of the UI components and into a separate layer, ensuring components only updated when absolutely necessary. For parts of the interface that remained static, I used memoization to prevent React from re-rendering them altogether. These changes drastically improved performance and brought the frame rate back to a stable 60 fps.</p>
             </div>

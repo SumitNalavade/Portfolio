@@ -20,11 +20,11 @@ export default function Home() {
             </div>
 
             <p className="mt-8 text-base text-gray-700 leading-relaxed">
-              Howdy! I'm a college student at Texas A&M University and a software
+              Howdy! I&apos;m a college student at Texas A&M University and a software
               engineer.
             </p>
             <p className="mt-3 text-base text-gray-700 leading-relaxed">
-              I am passionate about delivering experiences through engineering.
+              I am passionate about delivering experiences and engineering.
             </p>
             <p className="mt-3 text-base text-gray-700 leading-relaxed">
               I enjoy learning new things, building projects, and meeting people!

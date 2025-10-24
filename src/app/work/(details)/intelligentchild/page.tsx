@@ -43,7 +43,7 @@ export default function Details() {
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Development</p>
 
-                <p>Initially, I focused on rebuilding the frontend of the iCHILD application. The previous version had been developed using a mix of vanilla JavaScript and templating languages, which made it difficult to maintain and extend. I decided to modernize the stack by introducing React.js, TypeScript, and Vite, a combination that significantly improved the app's performance, scalability, and developer experience. This new setup also made the codebase easier to understand and opened the door for future contributors to build on top of it more efficiently.</p>
+                <p>Initially, I focused on rebuilding the frontend of the iCHILD application. The previous version had been developed using a mix of vanilla JavaScript and templating languages, which made it difficult to maintain and extend. I decided to modernize the stack by introducing React.js, TypeScript, and Vite, a combination that significantly improved the app&apos;s performance, scalability, and developer experience. This new setup also made the codebase easier to understand and opened the door for future contributors to build on top of it more efficiently.</p>
 
                 <Image
                     src="/work/ichild/ichild_tech_stack.png"
@@ -111,13 +111,13 @@ export default function Details() {
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Challenges - Chat Responses</p>
 
-                <p>Another major challenge our team faced involved the quality and contextual relevance of the AI-generated responses. While the system could retrieve and generate information from the knowledge base, the responses often lacked precision or context, sometimes pulling in irrelevant details or failing to surface the most appropriate data. We noticed that certain queries didn't consistently retrieve the correct entries from the knowledge base, resulting in answers that were either incomplete or off-topic.</p>
+                <p>Another major challenge our team faced involved the quality and contextual relevance of the AI-generated responses. While the system could retrieve and generate information from the knowledge base, the responses often lacked precision or context, sometimes pulling in irrelevant details or failing to surface the most appropriate data. We noticed that certain queries didn&apos;t consistently retrieve the correct entries from the knowledge base, resulting in answers that were either incomplete or off-topic.</p>
 
-                <p>When the previous computer science students developed the system, they used a combination of BERT and a basic keyword-based retrieval method to generate responses. While BERT provided some level of semantic understanding, the retrieval process lacked contextual awareness — it didn't always surface the most relevant information from the knowledge base. As a result, responses were often technically correct but contextually misaligned, especially when multiple similar entries existed.</p>
+                <p>When the previous computer science students developed the system, they used a combination of BERT and a basic keyword-based retrieval method to generate responses. While BERT provided some level of semantic understanding, the retrieval process lacked contextual awareness — it didn&apos;t always surface the most relevant information from the knowledge base. As a result, responses were often technically correct but contextually misaligned, especially when multiple similar entries existed.</p>
 
                 <p>To improve this, we decided to rebuild the entire response generation process from the ground up. Rather than relying on BERT and keyword-based retrieval, we adopted a Retrieval-Augmented Generation (RAG) approach.</p>
 
-                <p>With RAG, each user query is first converted into a vector embedding and compared against the stored embeddings of provider information in the database. The system then retrieves the most semantically relevant entries and feeds them into a large language model, which generates a contextually aware and factually aligned response. This shift dramatically improved the accuracy, consistency, and contextual depth of the system's outputs.</p>
+                <p>With RAG, each user query is first converted into a vector embedding and compared against the stored embeddings of provider information in the database. The system then retrieves the most semantically relevant entries and feeds them into a large language model, which generates a contextually aware and factually aligned response. This shift dramatically improved the accuracy, consistency, and contextual depth of the system&apos;s outputs.</p>
 
                 <Image
                     src="/work/ichild/rag_diagram.png"
@@ -167,9 +167,9 @@ export default function Details() {
                     className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>In addition, we were able to present our work on iCHILD at several conferences including at The Office of Interprofessional Practice, Education, & Research (IPER) at Texas A&M Health Science Center where we won the people's choice award</p>
+                <p>In addition, we were able to present our work on iCHILD at several conferences including at The Office of Interprofessional Practice, Education, & Research (IPER) at Texas A&M Health Science Center where we won the people&apos;s choice award</p>
 
-                <p>Personally, I've learned a tremendous amount from working on this project. From full-stack development to AI engineering, iCHILD gave me the opportunity to wear many different hats and gain hands-on experience across the entire product lifecycle. The lessons I learned about building scalable systems, managing data pipelines, and designing for real-world users have carried over into my professional work and continue to shape how I approach engineering challenges and product design today.</p>
+                <p>Personally, I&apos;ve learned a tremendous amount from working on this project. From full-stack development to AI engineering, iCHILD gave me the opportunity to wear many different hats and gain hands-on experience across the entire product lifecycle. The lessons I learned about building scalable systems, managing data pipelines, and designing for real-world users have carried over into my professional work and continue to shape how I approach engineering challenges and product design today.</p>
             </div>
         </div>
     )

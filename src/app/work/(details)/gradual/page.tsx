@@ -8,7 +8,7 @@ export default function Details() {
                     Gradual Grades
                 </p>
                 <p className="mt-4 text-gray-500">
-                    Mobile app to track students' grades
+                    Mobile app to track students&apos; grades
                 </p>
             </div>
 
@@ -41,7 +41,7 @@ export default function Details() {
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Background</p>
 
-                <p>Grades play an important role in a student's academic life, so being able to access them quickly and easily is essential. For Frisco ISD students, however, checking grades and other academic information wasn't simple as they had to log into the district's online portal, authenticate with their credentials, and navigate through several tabs just to find the information they needed.</p>
+                <p>Grades play an important role in a student&apos;s academic life, so being able to access them quickly and easily is essential. For Frisco ISD students, however, checking grades and other academic information wasn&apos;t simple as they had to log into the district&apos;s online portal, authenticate with their credentials, and navigate through several tabs just to find the information they needed.</p>
 
                 <Image
                     src="/work/gradual/hac_screenshot.png"
@@ -51,15 +51,15 @@ export default function Details() {
                     className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>This extra friction made it inconvenient for students to stay on top of their academic progress, which inspired me to create a faster and more intuitive solution. I wanted to build a mobile app that lived directly on students' phones, allowing them to access their grades and academic information instantly, with just the tap of a button.</p>
+                <p>This extra friction made it inconvenient for students to stay on top of their academic progress, which inspired me to create a faster and more intuitive solution. I wanted to build a mobile app that lived directly on students&apos; phones, allowing them to access their grades and academic information instantly, with just the tap of a button.</p>
             </div>
 
             <div className="space-y-2">
                 <p className="text-xl font-semibold">API Development</p>
 
-                <p>The first step in building Gradual Grades was developing the data source. I wanted to create an independent REST API that could later be accessed by any client application. The API would accept a student's credentials, scrape the academic data from the district's portal, and then return the results in a clean, structured JSON format.</p>
+                <p>The first step in building Gradual Grades was developing the data source. I wanted to create an independent REST API that could later be accessed by any client application. The API would accept a student&apos;s credentials, scrape the academic data from the district&apos;s portal, and then return the results in a clean, structured JSON format.</p>
 
-                <p>Each request begins by passing the student's username and password as query parameters. These credentials are used to establish a session.</p>
+                <p>Each request begins by passing the student&apos;s username and password as query parameters. These credentials are used to establish a session.</p>
 
                 <ul className="space-y-1 py-4">
                     <p>Once logged in, the API sends a request to the appropriate HAC endpoint — for example:</p>
@@ -99,15 +99,15 @@ export default function Details() {
 
                 <p>Soon after the API was developed and hosted, I began working on the mobile app itself. Since I was operating on a tight timeline and working with a small development team — just myself and another student — we decided to build the app using React Native, a cross-platform framework that allowed us to deploy to both iOS and Android from a single codebase. This decision helped us move quickly while maintaining a consistent user experience across devices, making Gradual Grades accessible to as many students as possible.</p>
 
-                <p>Development was smooth sailing as we didn't encounter any major issues with the frameworks. Using React Native and Expo gave us access to many ready-to-use components that worked well right out of the box. Our app design evolved organically throughout the development process as we refined the interface based on usability and feedback from early testers.</p>
+                <p>Development was smooth sailing as we didn&apos;t encounter any major issues with the frameworks. Using React Native and Expo gave us access to many ready-to-use components that worked well right out of the box. Our app design evolved organically throughout the development process as we refined the interface based on usability and feedback from early testers.</p>
             </div>
 
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Launch + Reception</p>
 
-                <p>We launched the app during the spring semester of the school year and received an overwhelmingly positive response from students. They appreciated the convenience of being able to check their grades instantly and loved the extra features we added, such as real-time GPA calculations and a "what-if" grade calculator that let them see how upcoming assignments could impact their overall scores.</p>
+                <p>We launched the app during the spring semester of the school year and received an overwhelmingly positive response from students. They appreciated the convenience of being able to check their grades instantly and loved the extra features we added, such as real-time GPA calculations and a &quot;what-if&quot; grade calculator that let them see how upcoming assignments could impact their overall scores.</p>
 
-                <p>We also received helpful feedback from students who suggested ways to improve the app's design and make a few minor user experience (UX) enhancements. These insights were invaluable, helping us identify small tweaks that could make the app even more intuitive and enjoyable to use.</p>
+                <p>We also received helpful feedback from students who suggested ways to improve the app&apos;s design and make a few minor user experience (UX) enhancements. These insights were invaluable, helping us identify small tweaks that could make the app even more intuitive and enjoyable to use.</p>
 
                 <Image
                     src="/work/gradual/gradual_yearbook_quote.png"
@@ -121,7 +121,7 @@ export default function Details() {
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Ongoing Support</p>
 
-                <p>While I haven't been able to actively maintain the Gradual Grades app since graduating from high school, I've continued to support and update the API. Over time, this API has become the foundation for many other student-built apps, enabling developers across the district to create their own tools similar to Gradual Grades.</p>
+                <p>While I haven&apos;t been able to actively maintain the Gradual Grades app since graduating from high school, I&apos;ve continued to support and update the API. Over time, this API has become the foundation for many other student-built apps, enabling developers across the district to create their own tools similar to Gradual Grades.</p>
 
                 <Image
                     src="/work/gradual/gradual_usage_screenshot.png"

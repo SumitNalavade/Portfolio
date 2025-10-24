@@ -84,7 +84,7 @@ export default function Work() {
                     <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">Gradual Grades</h3>
                         <p className="text-gray-500 text-sm">
-                            Mobile app to track students' grades
+                            Mobile app to track students&apos; grades
                         </p>
                     </div>
                 </Link>

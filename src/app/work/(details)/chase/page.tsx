@@ -47,7 +47,7 @@ export default function Details() {
 
                 <p>The majority of my work centered on Android development for the Benefits products, where I contributed to building and refining user-facing features within the Chase mobile app. I worked primarily with Kotlin and Java as well as Jetpack Compose and other modern Android frameworks.</p>
 
-                <p>This was a learning experience for me as it was my first time developing native mobile apps. While I had previously built cross-platform apps using React Native, working with Android's native stack allowed me to deepen my understanding of mobile architecture, UI frameworks, and performance optimization on a platform-specific level.</p>
+                <p>This was a learning experience for me as it was my first time developing native mobile apps. While I had previously built cross-platform apps using React Native, working with Android&apos;s native stack allowed me to deepen my understanding of mobile architecture, UI frameworks, and performance optimization on a platform-specific level.</p>
 
                 <Image
                     src="/work/jpmc/chase_android_tech_stack.png"

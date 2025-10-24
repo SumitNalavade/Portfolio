@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Details() {
     return (
-        <div className="flex flex-col gap-y-12 py-8">
+        <div className="flex flex-col gap-y-12 py-8 px-4">
             <div className="text-center">
-                <p className="text-6xl font-light tracking-tight text-gray-900">
+                <p className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-gray-900">
                     Card Benefits @ Chase
                 </p>
                 <p className="mt-4 text-gray-500">
@@ -12,7 +12,7 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-yellow-100 via-blue-100 to-cyan-100 rounded-2xl h-[500px] p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-yellow-100 via-blue-100 to-cyan-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/jpmc/banner_image.png"
                     alt="Chase Thumbnail"
@@ -34,7 +34,7 @@ export default function Details() {
                     alt="Chase app and website thumbnail"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 w-full h-auto"
                 />
 
                 <p>The highlight of my summer was seeing my work go live on the Chase mobile app and website, reaching millions of users nationwide. Equally meaningful was the opportunity to build lasting relationships with fellow interns and full-time associates, whose mentorship and collaboration made the experience both rewarding and memorable.</p>
@@ -47,14 +47,14 @@ export default function Details() {
 
                 <p>The majority of my work centered on Android development for the Benefits products, where I contributed to building and refining user-facing features within the Chase mobile app. I worked primarily with Kotlin and Java as well as Jetpack Compose and other modern Android frameworks.</p>
 
-                <p>This was a learning experience for me as it was my first time developing native mobile apps. While I had previously built cross-platform apps using React Native, working with Android’s native stack allowed me to deepen my understanding of mobile architecture, UI frameworks, and performance optimization on a platform-specific level.</p>
+                <p>This was a learning experience for me as it was my first time developing native mobile apps. While I had previously built cross-platform apps using React Native, working with Android's native stack allowed me to deepen my understanding of mobile architecture, UI frameworks, and performance optimization on a platform-specific level.</p>
 
                 <Image
                     src="/work/jpmc/chase_android_tech_stack.png"
                     alt="Chase Android Tech Stack"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 w-full h-auto"
                 />
 
                 <p>I began by working on apps that used XML-based layouts to understand the foundations of Android UI design and view hierarchies. As I grew more comfortable with the development environment and architecture, I transitioned to Jetpack Compose, where I explored modern declarative UI patterns and contributed to building cleaner, more scalable interfaces.</p>
@@ -66,7 +66,7 @@ export default function Details() {
                     alt="Chase App Screenshots"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 w-full h-auto"
                 />
 
                 <p>After some practice and mentorship from associates on my team, I was able to hit the ground running, contributing to agile stories that directly impacted the customer experience. I participated in code reviews, sprint planning, and feature development, gaining hands-on exposure to how large-scale production systems are built and maintained within a collaborative engineering environment.</p>
@@ -82,7 +82,7 @@ export default function Details() {
                     alt="Chase Web App"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 w-full h-auto"
                 />
 
                 <Image
@@ -90,7 +90,7 @@ export default function Details() {
                     alt="Chase travel site"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 w-full h-auto"
                 />
 
                 <p>On the web team, I worked primarily with TypeScript and React, developing reusable components and implementing new features. This experience helped me strengthen my understanding of frontend architecture, state management, and responsive design, while contributing to a unified user experience across platforms.</p>

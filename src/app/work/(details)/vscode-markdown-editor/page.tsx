@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Details() {
     return (
-        <div className="flex flex-col gap-y-12 py-8">
+        <div className="flex flex-col gap-y-12 py-8 px-4">
             <div className="text-center">
-                <p className="text-6xl font-light tracking-tight text-gray-900">
+                <p className="text-5xl lg:text-6xl font-light tracking-tight text-gray-900">
                     VSCode Markdown Editor
                 </p>
                 <p className="mt-4 text-gray-500">
@@ -12,11 +12,11 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[500px] p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/vscode/banner_image.png"
                     alt="VSCode Thumbnail"
-                    width={300}
+                    width={250}
                     height={300}
                     className="object-contain"
                 />
@@ -32,7 +32,7 @@ export default function Details() {
                     alt="VSCode Markdown Editor Screenshot"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>This project was a huge success, with the extension now reaching over 40,000 downloads on the Visual Studio Code Marketplace. Developers appreciated its intuitive interface and real-time Markdown preview, which made writing and editing README files much faster and more enjoyable. Seeing the community adopt and support the project has been one of the most rewarding parts of my development journey.</p>
@@ -50,7 +50,7 @@ export default function Details() {
                     alt="ReadMe.so screenshot"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>This served as the inspiration for my project, I wanted to bring this experience inside VSCode by creating an extension that allows developers to create and edit existing markdown files without having to leave their editor.</p>
@@ -65,14 +65,14 @@ export default function Details() {
 
                 <p>Extending this functionality even further, developers can create an entire web application using modern frontend frameworks and then bundle it as a Single-Page Application (SPA). The Webview API can then render this SPA directly inside VS Code, essentially turning the editor into a lightweight host for a full web experience. </p>
 
-                <p>This was the approach I decided to take. I used React.js to build a complete Single-Page Application (SPA), which I then bundled and rendered inside a VS Code panel using the Webview API. This setup allowed me to combine the power of React’s component-based architecture with the flexibility of VS Code’s extension system.</p>
+                <p>This was the approach I decided to take. I used React.js to build a complete Single-Page Application (SPA), which I then bundled and rendered inside a VS Code panel using the Webview API. This setup allowed me to combine the power of React's component-based architecture with the flexibility of VS Code's extension system.</p>
 
                 <Image
                     src="/work/vscode/webview_api_screenshot.png"
                     alt="VSCode Webview API Screenshot"
                     width={800}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
             </div>
 

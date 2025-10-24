@@ -18,7 +18,7 @@ export default function Details() {
                     alt="Chase Thumbnail"
                     width={600}
                     height={300}
-                    className="object-contain"
+                    className="object-contain w-[280px] sm:w-[400px] lg:w-[600px] h-auto max-w-full max-h-full"
                 />
             </div>
 

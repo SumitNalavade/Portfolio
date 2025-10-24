@@ -18,7 +18,7 @@ export default function Details() {
                     alt="Gradual Thumbnail"
                     width={250}
                     height={250}
-                    className="object-contain"
+                    className="object-contain w-[180px] sm:w-[220px] lg:w-[250px] h-auto max-w-full max-h-full"
                 />
             </div>
 
@@ -149,9 +149,9 @@ export default function Details() {
                     width={600}
                     height={500}
                     className="object-contain mx-auto my-8 h-auto"
-                />          
+                />
 
-                <p>Furthermore, we integrated the new RAG pipeline with the admin dashboard developed earlier. This integration ensured that whenever staff members at the Health Science Center updated the iCHILD knowledge base whether by adding new providers, uploading resources, or editing existing entries, the system would automatically generate new embeddings for the updated content. These embeddings were then stored in the iCHILD database, allowing the platform to instantly reflect the latest information in its responses. As a result, updates made by administrators directly influenced the quality and accuracy of AI-generated answers, keeping the system both dynamic and continuously improving.</p>      
+                <p>Furthermore, we integrated the new RAG pipeline with the admin dashboard developed earlier. This integration ensured that whenever staff members at the Health Science Center updated the iCHILD knowledge base whether by adding new providers, uploading resources, or editing existing entries, the system would automatically generate new embeddings for the updated content. These embeddings were then stored in the iCHILD database, allowing the platform to instantly reflect the latest information in its responses. As a result, updates made by administrators directly influenced the quality and accuracy of AI-generated answers, keeping the system both dynamic and continuously improving.</p>
             </div>
 
             <div className="space-y-2">

@@ -18,7 +18,7 @@ export default function Details() {
                     alt="Squawk Thumbnail"
                     width={600}
                     height={600}
-                    className="object-contain"
+                    className="object-contain w-[260px] sm:w-[350px] lg:w-[600px] h-auto max-w-full max-h-full"
                 />
             </div>
 

@@ -18,7 +18,7 @@ export default function Details() {
                     alt="Maroon Rides Thumbnail"
                     width={250}
                     height={250}
-                    className="object-contain"
+                    className="object-contain w-[180px] sm:w-[220px] lg:w-auto h-auto max-w-full max-h-full"
                 />
             </div>
 

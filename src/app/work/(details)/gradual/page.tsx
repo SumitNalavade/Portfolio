@@ -18,7 +18,7 @@ export default function Details() {
                     alt="Gradual Thumbnail"
                     width={250}
                     height={250}
-                    className="object-contain"
+                    className="object-contain w-[180px] sm:w-[220px] lg:w-[250px] h-auto max-w-full max-h-full"
                 />
             </div>
 

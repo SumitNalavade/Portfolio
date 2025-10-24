@@ -12,7 +12,7 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-[#BCE3FA] via-[#C9C4F7] to-[#F4C26A] rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-blue-100 via-cyan-100 to-teal-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/humana/banner_image.png"
                     alt="Humana Thumbnail"

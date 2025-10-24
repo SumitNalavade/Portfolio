@@ -12,7 +12,7 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-[#E7FAD9] via-[#C6F2E4] to-[#B9E5F5] rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-teal-100 via-cyan-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/squawk/banner_image.png"
                     alt="Squawk Thumbnail"

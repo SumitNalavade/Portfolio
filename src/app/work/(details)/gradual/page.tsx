@@ -12,7 +12,7 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-[#E3D9F9] via-[#E8CFF2] to-[#C7E5FA] rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-green-100 via-emerald-100 to-teal-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/gradual/banner_image.png"
                     alt="Gradual Thumbnail"

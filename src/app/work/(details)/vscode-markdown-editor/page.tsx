@@ -12,7 +12,7 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/vscode/banner_image.png"
                     alt="VSCode Thumbnail"

@@ -12,7 +12,7 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-indigo-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/maroon_rides/banner_image.png"
                     alt="Maroon Rides Thumbnail"

@@ -8,7 +8,7 @@ export default function Work() {
             <div className="grid grid-cols-1 md:grid-cols-5 w-full gap-6 sm:gap-12">
                 {/* Left Thumbnail */}
                 <Link href={'/work/chase'} className="md:col-span-3 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-yellow-100 via-blue-100 to-cyan-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/jpmc/banner_image.png"
                             alt="Chase Thumbnail"
@@ -29,7 +29,7 @@ export default function Work() {
 
                 {/* Right Thumbnail */}
                 <Link href={'/work/maroon-rides'} className="md:col-span-2 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-indigo-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/maroon_rides/banner_image.png"
                             alt="Maroon Rides Thumbnail"
@@ -51,7 +51,7 @@ export default function Work() {
             <div className="grid grid-cols-1 md:grid-cols-5 w-full gap-6 sm:gap-12">
                 {/* Left Thumbnail */}
                 <Link href={'/work/squawk'} className="md:col-span-3 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#E7FAD9] via-[#C6F2E4] to-[#B9E5F5] rounded-2xl h-[300px] sm:h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-teal-100 via-cyan-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/squawk/banner_image.png"
                             alt="Squawk Thumbnail"
@@ -72,7 +72,7 @@ export default function Work() {
 
                 {/* Right Thumbnail */}
                 <Link href={'/work/gradual'} className="md:col-span-2 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#E3D9F9] via-[#E8CFF2] to-[#C7E5FA] rounded-2xl h-[300px] sm:h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-green-100 via-emerald-100 to-teal-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/gradual/banner_image.png"
                             alt="Gradual Grades Thumbnail"
@@ -115,7 +115,7 @@ export default function Work() {
 
                 {/* Middle Thumbnail */}
                 <Link href={'/work/humana'} className="flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#BCE3FA] via-[#C9C4F7] to-[#F4C26A] rounded-2xl h-[300px] sm:h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-blue-100 via-cyan-100 to-teal-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/humana/banner_image.png"
                             alt="Humana Thumbnail"
@@ -134,7 +134,7 @@ export default function Work() {
 
                 {/* Right Thumbnail */}
                 <Link href={"/work/vscode-markdown-editor"} className="flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[300px] sm:h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/vscode/banner_image.png"
                             alt="VSCode Thumbnail"

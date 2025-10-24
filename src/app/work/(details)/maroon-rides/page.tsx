@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Details() {
     return (
-        <div className="flex flex-col gap-y-12 py-8">
+        <div className="flex flex-col gap-y-12 py-8 px-4">
             <div className="text-center">
-                <p className="text-6xl font-light tracking-tight text-gray-900">
+                <p className="text-5xl lg:text-6xl font-light tracking-tight text-gray-900">
                     Maroon Rides
                 </p>
                 <p className="mt-4 text-gray-500">
@@ -12,12 +12,12 @@ export default function Details() {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[500px] p-6">
+            <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] lg:h-[500px] p-4 lg:p-6">
                 <Image
                     src="/work/maroon_rides/banner_image.png"
                     alt="Maroon Rides Thumbnail"
-                    width={300}
-                    height={300}
+                    width={250}
+                    height={250}
                     className="object-contain"
                 />
             </div>
@@ -32,7 +32,7 @@ export default function Details() {
                     alt="Texas A&M University"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>However, because the network is so expansive, students need a convenient way to access real-time information about the buses — including their current locations, timetables, and any delays. Without an efficient system to relay this information, students often face uncertainty about when the next bus will arrive or which route to take to reach their destination on time.</p>
@@ -42,7 +42,7 @@ export default function Details() {
                     alt="Aggie Spirit Bus Routes Website"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>While the university provides a website and mobile app to display bus information, the overall user experience is lacking. The website is difficult to access and navigate, especially on mobile phones making it inconvenient for students who need quick, reliable updates on bus routes and arrival times.</p>
@@ -52,18 +52,18 @@ export default function Details() {
                     alt="Maroon Rides Screenshots"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>To address this issue, I helped build a mobile app called Maroon Rides, designed to provide a seamless and intuitive experience for students to access real-time bus information. The app lives on users’ phones and simplifies navigation and ensures that students can quickly find bus locations, routes, and arrival times with just a few taps.</p>
+                <p>To address this issue, I helped build a mobile app called Maroon Rides, designed to provide a seamless and intuitive experience for students to access real-time bus information. The app lives on users' phones and simplifies navigation and ensures that students can quickly find bus locations, routes, and arrival times with just a few taps.</p>
             </div>
 
             <div className="space-y-2">
                 <p className="text-xl font-semibold">Aggie Spirit API</p>
 
-                <p>The first step in developing Maroon Rides was building the backend scripts required to extract real-time bus data from the university’s transportation website. Since there was no publicly available API to directly access the data we needed, we implemented a web-scraping solution to retrieve and process the relevant information, such as bus locations, routes, and arrival times, in a structured and reliable format.</p>
+                <p>The first step in developing Maroon Rides was building the backend scripts required to extract real-time bus data from the university's transportation website. Since there was no publicly available API to directly access the data we needed, we implemented a web-scraping solution to retrieve and process the relevant information, such as bus locations, routes, and arrival times, in a structured and reliable format.</p>
 
-                <p>I wrote a TypeScript API wrapper around the hidden endpoints used by the university’s website. This layer acts as the bridge between the raw web requests and our mobile frontend.</p>
+                <p>I wrote a TypeScript API wrapper around the hidden endpoints used by the university's website. This layer acts as the bridge between the raw web requests and our mobile frontend.</p>
 
 
                 <ul className="space-y-1 py-4">
@@ -109,7 +109,7 @@ export default function Details() {
                     alt="Maroon Rides Screenshots"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>We decided to keep the app focused on a Minimum Viable Product (MVP) for our initial release.</p>
@@ -135,19 +135,19 @@ export default function Details() {
                     alt="Maroon Rides Poster"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
                 <p>Our launch was a huge success as within just 48 hours, Maroon Rides reached over 1,800 downloads, and by the end of the first week, we had nearly 10,000 users. The response from students was overwhelmingly positive, earning the app a 5-star rating on the App Store. Many students praised how convenient and easy it was to have all their bus information right at their fingertips.</p>
 
-                <p>We also spread the word on Reddit, posting about Maroon Rides on the university’s subreddit, and the response was overwhelmingly positive. Students shared their excitement, left encouraging comments, and helped the app gain even more visibility across campus.</p>
+                <p>We also spread the word on Reddit, posting about Maroon Rides on the university's subreddit, and the response was overwhelmingly positive. Students shared their excitement, left encouraging comments, and helped the app gain even more visibility across campus.</p>
 
                 <Image
                     src="/work/maroon_rides/maroon_rides_reddit.png"
                     alt="Maroon Rides Reddit"
-                    width={500}
+                    width={600}
                     height={200}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
             </div>
 
@@ -156,17 +156,17 @@ export default function Details() {
 
                 <p>While we had a smooth launch and overall received very positive feedback, we noticed that for some users performance would rapidly degrade after having the app open for a period of time.</p>
 
-                <p>From a stable 60 frames per second (fps), the app’s performance would slowly degrade to around 15 fps after being open for several minutes. This made animations and map interactions noticeably laggy, especially on older phones — a clear sign that something was off in our rendering or update cycle.</p>
+                <p>From a stable 60 frames per second (fps), the app's performance would slowly degrade to around 15 fps after being open for several minutes. This made animations and map interactions noticeably laggy, especially on older phones — a clear sign that something was off in our rendering or update cycle.</p>
 
                 <Image
                     src="/work/maroon_rides/react_memo_diagram.png"
                     alt="Maroon Rides Poster"
                     width={1000}
                     height={500}
-                    className="object-contain mx-auto my-8"
+                    className="object-contain mx-auto my-8 h-auto"
                 />
 
-                <p>We found that the slowdown was caused by the way React re-renders components. In React, when a component’s state changes, all of its child components that depend on that state are re-rendered too. This meant that every time the bus data updated — even slightly — the app would re-render most of its components. Since the Aggie Spirit API was constantly sending live updates as buses moved in real time, the frequent re-renders quickly overloaded the app and caused performance to drop.</p>
+                <p>We found that the slowdown was caused by the way React re-renders components. In React, when a component's state changes, all of its child components that depend on that state are re-rendered too. This meant that every time the bus data updated — even slightly — the app would re-render most of its components. Since the Aggie Spirit API was constantly sending live updates as buses moved in real time, the frequent re-renders quickly overloaded the app and caused performance to drop.</p>
 
                 <p>I worked extensively on optimizing the app by minimizing the re-renders caused by updating bus data. The main goal was to reduce the number of unnecessary re-renders caused by changing data. I achieved this by moving the data-fetching logic out of the UI components and into a separate layer, ensuring components only updated when absolutely necessary. For parts of the interface that remained static, I used memoization to prevent React from re-rendering them altogether. These changes drastically improved performance and brought the frame rate back to a stable 60 fps.</p>
             </div>

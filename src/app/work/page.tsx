@@ -3,11 +3,12 @@ import Link from "next/link";
 
 export default function Work() {
     return (
-        <div className="flex flex-col gap-y-24 py-12">
-            <div className="grid grid-cols-5 w-full gap-12">
+        <div className="flex flex-col gap-y-12 sm:gap-y-24 py-12 px-4">
+            {/* First Row: 3-2 split on desktop, stack on mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-5 w-full gap-6 sm:gap-12">
                 {/* Left Thumbnail */}
-                <Link href={'/work/chase'} className="col-span-3 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-yellow-100 via-blue-100 to-cyan-100 rounded-2xl h-[400px] p-6">
+                <Link href={'/work/chase'} className="md:col-span-3 flex flex-col">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-yellow-100 via-blue-100 to-cyan-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/jpmc/banner_image.png"
                             alt="Chase Thumbnail"
@@ -16,7 +17,7 @@ export default function Work() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">
                             Card Benefits @ Chase
                         </h3>
@@ -27,8 +28,8 @@ export default function Work() {
                 </Link>
 
                 {/* Right Thumbnail */}
-                <Link href={'/work/maroon-rides'} className="col-span-2 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[400px] p-6">
+                <Link href={'/work/maroon-rides'} className="md:col-span-2 flex flex-col">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100 rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/maroon_rides/banner_image.png"
                             alt="Maroon Rides Thumbnail"
@@ -37,7 +38,7 @@ export default function Work() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">Maroon Rides</h3>
                         <p className="text-gray-500 text-sm">
                             Helping 50k college students get around
@@ -46,10 +47,11 @@ export default function Work() {
                 </Link>
             </div>
 
-            <div className="grid grid-cols-5 w-full gap-12">
+            {/* Second Row: 3-2 split on desktop, stack on mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-5 w-full gap-6 sm:gap-12">
                 {/* Left Thumbnail */}
-                <Link href={'/work/squawk'} className="col-span-3 flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#E7FAD9] via-[#C6F2E4] to-[#B9E5F5] rounded-2xl h-[400px] p-6">
+                <Link href={'/work/squawk'} className="md:col-span-3 flex flex-col">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-[#E7FAD9] via-[#C6F2E4] to-[#B9E5F5] rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/squawk/banner_image.png"
                             alt="Squawk Thumbnail"
@@ -58,7 +60,7 @@ export default function Work() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">
                             Squawk
                         </h3>
@@ -69,8 +71,8 @@ export default function Work() {
                 </Link>
 
                 {/* Right Thumbnail */}
-                <div className="col-span-2 flex flex-col">
-                    <Link href={'/work/gradual'} className="flex justify-center items-center bg-gradient-to-br from-[#E3D9F9] via-[#E8CFF2] to-[#C7E5FA] rounded-2xl h-[400px] p-6">
+                <Link href={'/work/gradual'} className="md:col-span-2 flex flex-col">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-[#E3D9F9] via-[#E8CFF2] to-[#C7E5FA] rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/gradual/banner_image.png"
                             alt="Gradual Grades Thumbnail"
@@ -78,20 +80,21 @@ export default function Work() {
                             height={100}
                             className="object-contain"
                         />
-                    </Link>
-                    <div className="mt-4">
+                    </div>
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">Gradual Grades</h3>
                         <p className="text-gray-500 text-sm">
-                            Mobile app to track students’ grades
+                            Mobile app to track students' grades
                         </p>
                     </div>
-                </div>
+                </Link>
             </div>
 
-            <div className="grid grid-cols-3 w-full gap-12">
+            {/* Third Row: 3 equal columns on desktop, stack on mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6 sm:gap-12">
                 {/* Left Thumbnail */}
                 <Link href={'/work/intelligentchild'} className="flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#CBE7FF] via-[#C4C4F9] to-[#8EA1F8] rounded-2xl h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-[#CBE7FF] via-[#C4C4F9] to-[#8EA1F8] rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/ichild/banner_image.png"
                             alt="iCHILD Thumbnail"
@@ -100,7 +103,7 @@ export default function Work() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">
                             intelligentCHILD
                         </h3>
@@ -110,9 +113,9 @@ export default function Work() {
                     </div>
                 </Link>
 
-                {/* Right Thumbnail */}
+                {/* Middle Thumbnail */}
                 <Link href={'/work/humana'} className="flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#BCE3FA] via-[#C9C4F7] to-[#F4C26A] rounded-2xl h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-[#BCE3FA] via-[#C9C4F7] to-[#F4C26A] rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/humana/banner_image.png"
                             alt="Humana Thumbnail"
@@ -121,7 +124,7 @@ export default function Work() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">RAG Customer Service @ Humana</h3>
                         <p className="text-gray-500 text-sm">
                             Humana hackathon winner 2024
@@ -129,8 +132,9 @@ export default function Work() {
                     </div>
                 </Link>
 
+                {/* Right Thumbnail */}
                 <Link href={"/work/vscode-markdown-editor"} className="flex flex-col">
-                    <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[400px] p-6">
+                    <div className="flex justify-center items-center bg-gradient-to-br from-[#BEE7FA] via-[#C7D3F8] to-[#F7C6DA] rounded-2xl h-[300px] sm:h-[400px] p-6">
                         <Image
                             src="/work/vscode/banner_image.png"
                             alt="VSCode Thumbnail"
@@ -139,7 +143,7 @@ export default function Work() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 px-2">
                         <h3 className="text-lg font-medium text-gray-900">VSCode Markdown Editor</h3>
                         <p className="text-gray-500 text-sm">
                             Building a markdown editor extension for VSCode

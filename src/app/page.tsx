@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-y-12 sm:gap-y-24 py-12 px-4 sm:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 lg:gap-4">
-        <div className="text-5xl sm:text-6xl lg:text-7xl font-medium flex items-center">
+        <div className="text-6xl lg:text-7xl font-medium flex items-center">
           <div>
             <p>Sumit</p>
             <p>Nalavade</p>
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/jpmc_logo.png"
                   alt="JPMorgan Chase"
@@ -49,16 +49,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">JPMorgan Chase</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Software Engineering Intern
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  June – August 2025
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               June – August 2025
             </div>
           </div>
@@ -66,7 +69,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/humana_logo.png"
                   alt="Humana"
@@ -75,16 +78,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">Humana</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Software Engineering Intern
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  May - December 2024
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               May – December 2024
             </div>
           </div>
@@ -92,7 +98,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/hsc_logo.png"
                   alt="Texas A&M Health Science Center"
@@ -101,16 +107,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">Texas A&M Health Science Center</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Development Lead
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  June 2023 - Present
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               June 2023 – Present
             </div>
           </div>
@@ -118,7 +127,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/coe_logo.png"
                   alt="Texas A&M College of Engineering"
@@ -127,16 +136,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">Texas A&M College of Engineering</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Undergraduate Teaching Assistant
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  August 2023 - Present
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               August 2023 – Present
             </div>
           </div>
@@ -150,7 +162,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/figma_logo.png"
                   alt="Figma"
@@ -159,16 +171,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">Figma</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Campus Leader
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  August 2025 - Present
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               August 2025 – Present
             </div>
           </div>
@@ -176,7 +191,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/tacs_logo.png"
                   alt="Texas A&M Computing Soceity"
@@ -186,16 +201,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">Texas A&M Computing Society</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Technical Officer
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  August 2024 - Present
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               August 2024 – Present
             </div>
           </div>
@@ -209,7 +227,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2 sm:gap-0">
             {/* Left side: logo + text */}
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-10 w-12 sm:w-10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Image
                   src="/logos/tamu_logo.png"
                   alt="Texas A&M University"
@@ -219,16 +237,19 @@ export default function Home() {
                 />
               </div>
 
-              <div>
+              <div className="space-y-1">
                 <div className="font-semibold leading-tight">Texas A&M University</div>
                 <div className="text-sm text-gray-600 leading-tight">
                   Bachelor of Science, Computer Engineering
+                </div>
+                <div className="text-sm text-gray-500 leading-tight sm:hidden">
+                  August 2022 - May 2026
                 </div>
               </div>
             </div>
 
             {/* Right side: date */}
-            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4">
+            <div className="text-sm text-gray-500 sm:whitespace-nowrap sm:ml-4 hidden sm:block">
               August 2022 – May 2026
             </div>
           </div>

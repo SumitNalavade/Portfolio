@@ -2,6 +2,7 @@ import React from "react";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const Footer: React.FC = () => {
 
@@ -11,6 +12,7 @@ const Footer: React.FC = () => {
 
             <ul className="flex gap-x-4">
                 <a href="https://www.linkedin.com/in/sumit-nalavade/">{<FaLinkedin className="text-lg" />}</a>
+                <a href="https://github.com/SumitNalavade">{<FaGithub className="text-lg" />}</a>
                 <a href="https://x.com/SumitNalavade3">{<FaXTwitter className="text-lg" />}</a>
             </ul>
         </div>

@@ -11,7 +11,7 @@ export default function Home() {
 
             <div className="md:hidden flex justify-center sm:justify-start my-8">
               <Image
-                src="/profile.webp"
+                src="/profile.jpg"
                 alt="Sumit Nalavade"
                 width={500}
                 height={500}

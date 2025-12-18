@@ -1,4 +1,5 @@
 import Image from "next/image"
+import type { Metadata } from "next";
 
 export default function Details() {
     return (
@@ -54,7 +55,7 @@ export default function Details() {
 
                 <Image
                     src="/blog/fair-use-and-performance/vercel_edge_requests.png"
-                    alt="API Documentation Site"
+                    alt="Vercel edge requests over use"
                     width={800}
                     height={500}
                     className="object-contain mx-auto my-8 "
@@ -74,7 +75,7 @@ export default function Details() {
 
                 <Image
                     src="/blog/fair-use-and-performance/vercel_rate_limiter.png"
-                    alt="Chase Android Tech Stack"
+                    alt="Vercel WAF Rate Limiter Configuration"
                     width={1000}
                     height={500}
                     className="object-contain mx-auto my-8 w-full h-auto"
@@ -90,7 +91,7 @@ export default function Details() {
 
                 <Image
                     src="/blog/fair-use-and-performance/redis_rate_limit.png"
-                    alt="Chase App Screenshots"
+                    alt="Redis rate limiter"
                     width={800}
                     height={500}
                     className="object-contain mx-auto my-8"
@@ -106,7 +107,7 @@ export default function Details() {
 
                 <Image
                     src="/blog/fair-use-and-performance/vercel_function_duration.png"
-                    alt="Chase Web App"
+                    alt="Vercel function duration overuse"
                     width={800}
                     height={500}
                     className="object-contain mx-auto my-8"
@@ -126,7 +127,7 @@ export default function Details() {
 
                 <Image
                     src="/blog/fair-use-and-performance/redis_session_cookies.png"
-                    alt="Chase Web App"
+                    alt="Redis session cookie storage"
                     width={800}
                     height={500}
                     className="object-contain mx-auto my-8"
@@ -136,7 +137,7 @@ export default function Details() {
 
                 <Image
                     src="/blog/fair-use-and-performance/redis_caching_diagram.png"
-                    alt="Chase Web App"
+                    alt="Updated request response diagram"
                     width={600}
                     height={500}
                     className="object-contain mx-auto my-8"
@@ -165,3 +166,32 @@ export default function Details() {
         </div>
     )
 }
+
+export const metadata: Metadata = {
+  title: "Fair use and performance: A lesson from real-world engineering",
+  description:
+    "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
+  openGraph: {
+    title: "Fair use and performance: A lesson from real-world engineering",
+    description:
+      "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
+    url: "https://sumitnalavade.com/blog/fair-use-and-performance",
+    siteName: "Sumit Nalavade",
+    images: [
+      {
+        url: "https://sumitnalavade.com/blog/fair-use-and-performance/hero-tile.png",
+        width: 1200,
+        height: 630,
+        alt: "Fair use and performance",
+      },
+    ],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fair use and performance: A lesson from real-world engineering",
+    description:
+      "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
+    images: ["https://sumitnalavade.com/blog/fair-use-and-performance/hero-tile.png"],
+  },
+};

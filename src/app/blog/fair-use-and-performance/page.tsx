@@ -5,24 +5,28 @@ export default function Details() {
     return (
         <div className="flex flex-col gap-y-12 py-8 px-4 max-w-5xl mx-auto">
             <div className="text-center">
-                <p className="text-3xl sm:text-4xl lg:text-4xl font-light leading-16 tracking-tight text-gray-900">
+                <p className="text-3xl sm:text-4xl lg:text-4xl font-light sm:leading-16 tracking-tight text-gray-900">
                     Fair use and performance: A Lesson from real-world engineering
                 </p>
-                <p className="mt-4 text-gray-500 max-w-5/6 mx-auto">
+                <p className="mt-4 text-gray-500 sm:max-w-5/6 mx-auto">
                     As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.
                 </p>
             </div>
 
-            <div className="relative h-[400px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-                <Image
-                    src={'/blog/fair-use-and-performance/hero-tile.png'}
-                    alt={'Hero Image'}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 520px"
-                    priority
-                />
+            <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+                <div className="relative h-[240px] sm:h-[360px] lg:h-[420px]">
+                    <Image
+                        src="/blog/fair-use-and-performance/hero-tile.png"
+                        alt="Hero Image"
+                        fill
+                        priority
+                        sizes="(max-width: 768px) 100vw, 1024px"
+                        className="object-cover"
+                    />
+                </div>
             </div>
+
+
 
             <div className="space-y-4 leading-loose">
                 <p className="text-xl font-semibold">Overview</p>
@@ -168,30 +172,30 @@ export default function Details() {
 }
 
 export const metadata: Metadata = {
-  title: "Fair use and performance: A lesson from real-world engineering",
-  description:
-    "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
-  openGraph: {
     title: "Fair use and performance: A lesson from real-world engineering",
     description:
-      "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
-    url: "https://sumitnalavade.com/blog/fair-use-and-performance",
-    siteName: "Sumit Nalavade",
-    images: [
-      {
-        url: "https://sumitnalavade.com/blog/fair-use-and-performance/hero-tile.png",
-        width: 1200,
-        height: 630,
-        alt: "Fair use and performance",
-      },
-    ],
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Fair use and performance: A lesson from real-world engineering",
-    description:
-      "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
-    images: ["https://sumitnalavade.com/blog/fair-use-and-performance/hero-tile.png"],
-  },
+        "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
+    openGraph: {
+        title: "Fair use and performance: A lesson from real-world engineering",
+        description:
+            "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
+        url: "https://sumitnalavade.com/blog/fair-use-and-performance",
+        siteName: "Sumit Nalavade",
+        images: [
+            {
+                url: "https://sumitnalavade.com/blog/fair-use-and-performance/hero-tile.png",
+                width: 1200,
+                height: 630,
+                alt: "Fair use and performance",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Fair use and performance: A lesson from real-world engineering",
+        description:
+            "As a high school senior, I built a webscraping API for a personal project and later open sourced it. Four years later, I still maintain the API, and it continues to teach me lessons about serving real users in production.",
+        images: ["https://sumitnalavade.com/blog/fair-use-and-performance/hero-tile.png"],
+    },
 };

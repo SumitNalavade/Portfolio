@@ -20,7 +20,7 @@ export default function Home() {
             </div>
 
             <p className="mt-8 text-base text-gray-700 leading-relaxed">
-              Howdy! I'm a college student at Texas A&M University and a software
+              Howdy! I&apos;m a college student at Texas A&M University and a software
               engineer.
             </p>
             <p className="mt-3 text-base text-gray-700 leading-relaxed">

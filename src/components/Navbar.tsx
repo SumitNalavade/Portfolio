@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
             <ul className="flex gap-x-5">
                 <li className={`${pathname === '/' ? 'underline' : ''}`}><Link href={'/'}>About</Link></li>
                 <li className={`${pathname.includes('/work') ? 'underline' : ''}`}><Link href={'/work'}>Work</Link></li>
-                <li className={`${pathname.includes('/blog') ? 'underline' : ''}`}><Link href={'/blog'}>Blog</Link></li>
+                <li className={`${pathname.includes('/blog') ? 'underline' : ''}`}><a href={'https://substack.com/@sumitnalavade'} target="_blank">Blog</a></li>
             </ul>
         </div>
     )
